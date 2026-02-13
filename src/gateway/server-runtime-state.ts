@@ -13,6 +13,7 @@ import type { GatewayTlsRuntime } from "./server/tls.js";
 import type { GatewayWsClient } from "./server/ws-types.js";
 import { CANVAS_HOST_PATH } from "../canvas-host/a2ui.js";
 import { type CanvasHostHandler, createCanvasHostHandler } from "../canvas-host/server.js";
+import { createSeaTalkWebhookHandler } from "../seatalk/webhook.js";
 import { resolveGatewayListenHosts } from "./net.js";
 import { createGatewayBroadcaster } from "./server-broadcast.js";
 import {
@@ -123,6 +124,8 @@ export async function createGatewayRuntimeState(params: {
     log: params.logPlugins,
   });
 
+  const handleSeaTalkWebhookRequest = createSeaTalkWebhookHandler({ deps: params.deps });
+
   const bindHosts = await resolveGatewayListenHosts(params.bindHost);
   const httpServers: HttpServer[] = [];
   const httpBindHosts: string[] = [];
@@ -138,6 +141,7 @@ export async function createGatewayRuntimeState(params: {
       openResponsesConfig: params.openResponsesConfig,
       handleHooksRequest,
       handlePluginRequest,
+      handleSeaTalkWebhookRequest,
       resolvedAuth: params.resolvedAuth,
       tlsOptions: params.gatewayTls?.enabled ? params.gatewayTls.tlsOptions : undefined,
     });

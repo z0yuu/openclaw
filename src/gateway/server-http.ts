@@ -9,6 +9,7 @@ import {
 import { createServer as createHttpsServer } from "node:https";
 import type { CanvasHostHandler } from "../canvas-host/server.js";
 import type { createSubsystemLogger } from "../logging/subsystem.js";
+import type { SeaTalkWebhookHandler } from "../seatalk/webhook.js";
 import type { GatewayWsClient } from "./server/ws-types.js";
 import { resolveAgentAvatar } from "../agents/identity-avatar.js";
 import {
@@ -300,6 +301,7 @@ export function createGatewayHttpServer(opts: {
   openResponsesConfig?: import("../config/types.gateway.js").GatewayHttpResponsesConfig;
   handleHooksRequest: HooksRequestHandler;
   handlePluginRequest?: HooksRequestHandler;
+  handleSeaTalkWebhookRequest?: SeaTalkWebhookHandler;
   resolvedAuth: ResolvedGatewayAuth;
   tlsOptions?: TlsOptions;
 }): HttpServer {
@@ -314,6 +316,7 @@ export function createGatewayHttpServer(opts: {
     openResponsesConfig,
     handleHooksRequest,
     handlePluginRequest,
+    handleSeaTalkWebhookRequest,
     resolvedAuth,
   } = opts;
   const httpServer: HttpServer = opts.tlsOptions
@@ -333,6 +336,9 @@ export function createGatewayHttpServer(opts: {
     try {
       const configSnapshot = loadConfig();
       const trustedProxies = configSnapshot.gateway?.trustedProxies ?? [];
+      if (handleSeaTalkWebhookRequest && (await handleSeaTalkWebhookRequest(req, res))) {
+        return;
+      }
       if (await handleHooksRequest(req, res)) {
         return;
       }

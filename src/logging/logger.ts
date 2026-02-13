@@ -4,6 +4,7 @@ import path from "node:path";
 import { Logger as TsLogger } from "tslog";
 import type { OpenClawConfig } from "../config/types.js";
 import type { ConsoleStyle } from "./console.js";
+import { resolveConfigDir } from "../utils.js";
 import { readLoggingConfig } from "./config.js";
 import { type LogLevel, levelToMinLevel, normalizeLogLevel } from "./levels.js";
 import { loggingState } from "./state.js";
@@ -65,7 +66,7 @@ function resolveSettings(): ResolvedSettings {
     }
   }
   const level = normalizeLogLevel(cfg?.level, "info");
-  const file = cfg?.file ?? defaultRollingPathForToday();
+  const file = cfg?.file ?? defaultLogPath();
   return { level, file };
 }
 
@@ -213,6 +214,21 @@ function formatLocalDate(date: Date): string {
 function defaultRollingPathForToday(): string {
   const today = formatLocalDate(new Date());
   return path.join(DEFAULT_LOG_DIR, `${LOG_PREFIX}-${today}${LOG_SUFFIX}`);
+}
+
+/** 默认日志路径：有 state 目录时用 ~/.openclaw/logs/openclaw-YYYY-MM-DD.log，便于在 .openclaw 下查看 */
+function defaultLogPath(): string {
+  const today = formatLocalDate(new Date());
+  try {
+    const stateDir = resolveConfigDir(process.env);
+    if (stateDir && fs.existsSync(stateDir)) {
+      const logsDir = path.join(stateDir, "logs");
+      return path.join(logsDir, `${LOG_PREFIX}-${today}${LOG_SUFFIX}`);
+    }
+  } catch {
+    // ignore
+  }
+  return defaultRollingPathForToday();
 }
 
 function isRollingPath(file: string): boolean {
