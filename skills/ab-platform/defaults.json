@@ -1,0 +1,13 @@
+{
+  "ab_platform": {
+    "project_id": 27,
+    "scene_id": 381,
+    "experiment": {
+      "id": 6850,
+      "name": "vector in coarse ranking"
+    },
+    "template_group_name": "(org+ads)  by card",
+    "control_groups": [31430, 31438],
+    "treatment_groups": [31421, 31425]
+  }
+}

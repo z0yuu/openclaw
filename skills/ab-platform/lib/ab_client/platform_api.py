@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Shopee AB Report Open API 客户端（ab-platform skill 内嵌）
 """
