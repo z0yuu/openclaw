@@ -25,7 +25,7 @@ except ImportError:
     pass
 
 from ab_client import PlatformAPIClient, CacheManager, get_default_metrics
-from analysis import format_ab_summary, extract_metric_lifts
+from analysis import format_ab_summary, extract_metric_lifts, get_grouped_summary
 
 
 def _load_defaults():
@@ -72,12 +72,23 @@ def fetch_metrics(
     if not control:
         control_groups = defaults.get("control_groups") or []
         if control_groups:
-            control = ",".join([str(x) for x in control_groups])
+            parts = []
+            for x in control_groups:
+                for p in str(x).split(","):
+                    p = p.strip()
+                    if p:
+                        parts.append(p)
+            control = ",".join(parts) if parts else ""
 
     if not treatments:
         treatment_groups = defaults.get("treatment_groups") or []
         if treatment_groups:
-            treatments = [str(x) for x in treatment_groups]
+            treatments = []
+            for x in treatment_groups:
+                for p in str(x).split(","):
+                    p = p.strip()
+                    if p:
+                        treatments.append(p)
 
     if not regions:
         regions = defaults.get("regions") or []
@@ -90,6 +101,12 @@ def fetch_metrics(
 
     if not metrics:
         metrics = defaults.get("metrics") or get_default_metrics()
+
+    # 去掉 control/treatments 中可能的前后空格，避免 ClickHouse TYPE_MISMATCH
+    if control:
+        control = ",".join(s.strip() for s in str(control).split(",") if s.strip())
+    if treatments:
+        treatments = [str(t).strip() for t in treatments if str(t).strip()]
 
     call_kwargs = {}
     if regions:
@@ -117,6 +134,9 @@ def fetch_metrics(
         result["project_id"] = project_id
         result["formatted_text"] = format_ab_summary(result, experiment_id)
         result["lifts"] = extract_metric_lifts(result)
+        grouped = get_grouped_summary(result)
+        result["by_group"] = grouped.get("by_group", [])
+        result["overall_treatment"] = grouped.get("overall_treatment")
         if use_cache:
             cache.set(cache_key, result)
     return result or {}
@@ -138,10 +158,10 @@ def main():
     parser.add_argument("--no-cache", action="store_true", help="不使用缓存")
     args = parser.parse_args()
 
-    metrics = args.metrics.split(",") if args.metrics else None
-    treatments = args.treatments.split(",") if args.treatments else None
-    regions = args.regions.split(",") if args.regions else None
-    dims = args.dims.split(",") if args.dims else None
+    metrics = [m.strip() for m in args.metrics.split(",")] if args.metrics else None
+    treatments = [t.strip() for t in args.treatments.split(",") if t.strip()] if args.treatments else None
+    regions = [r.strip() for r in args.regions.split(",") if r.strip()] if args.regions else None
+    dims = [d.strip() for d in args.dims.split(",") if d.strip()] if args.dims else None
     dates = None
     if args.dates:
         parts = args.dates.split(",")
