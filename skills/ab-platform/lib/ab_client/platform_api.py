@@ -20,12 +20,33 @@ try:
 except Exception:
     HAS_REQUESTS = False
 
+def _load_env_file(path):
+    """不依赖 dotenv：手动读 .env 并写入 os.environ（Python 2 或无 dotenv 时回退）"""
+    if not path or not os.path.isfile(path):
+        return
+    try:
+        with open(path, "r") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if "=" in line:
+                    k, v = line.split("=", 1)
+                    k = k.strip()
+                    v = v.strip().strip("'\"")
+                    if k:
+                        os.environ[k] = v
+    except Exception:
+        pass
+
+
 try:
     from dotenv import load_dotenv
     load_dotenv(os.path.expanduser("~/.openclaw/.env"))
     load_dotenv()
 except Exception:
     pass
+_load_env_file(os.path.expanduser("~/.openclaw/.env"))
 
 from .default_metrics import get_default_metrics
 
@@ -281,9 +302,10 @@ class PlatformAPIClient(object):
         data = result.get("data") or {}
         columns = data.get("columns") or []
         # API 也可能在 "header" 字段返回列名（||分隔字符串）
+        # 用 hasattr(, 'split') 兼容 Py2 unicode / Py3 str
         if not columns:
             header = data.get("header") or ""
-            if isinstance(header, str) and header:
+            if hasattr(header, "split") and header:
                 columns = [c.strip() for c in header.split("||")]
             elif isinstance(header, list):
                 columns = header
@@ -291,7 +313,7 @@ class PlatformAPIClient(object):
         relative = data.get("relative") or []
         control_group_indexes = data.get("control_group_indexes") or []
 
-        # body/relative 可能是 list[str]（|| 分割）或 list[dict]
+        # body/relative 可能是 list[str/unicode]（|| 分割）或 list[dict]
         def _parse_rows(rows):
             parsed = []
             for r in rows:

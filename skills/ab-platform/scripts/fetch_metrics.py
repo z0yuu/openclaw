@@ -1,14 +1,23 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 AB 指标查询（ab-platform skill）
 从 Shopee AB Report Open API 获取单实验指标并格式化输出。
+兼容 Python 2.7.18 / Python 3.x
 """
 
+from __future__ import absolute_import, division, print_function
+
 import argparse
+import io
 import json
 import os
 import sys
+
+# Python 2: 让 sys.stdout 能输出 UTF-8（否则 print(unicode) 报 ascii 编码错误）
+if sys.version_info[0] < 3:
+    sys.stdout = io.open(sys.stdout.fileno(), mode="w", encoding="utf-8", closefd=False)
+    sys.stderr = io.open(sys.stderr.fileno(), mode="w", encoding="utf-8", closefd=False)
 
 # Skill 根目录 = scripts 的上一级
 SKILL_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -17,12 +26,36 @@ for p in [SKILL_ROOT, os.path.join(SKILL_ROOT, "lib")]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
+
+def _load_env_file(path):
+    """不依赖 dotenv：手动读 .env 并写入 os.environ，供 Python 2 或无 dotenv 时使用"""
+    if not path or not os.path.isfile(path):
+        return
+    try:
+        with open(path, "r") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if "=" in line:
+                    k, v = line.split("=", 1)
+                    k = k.strip()
+                    v = v.strip().strip("'\"")
+                    if k:
+                        os.environ[k] = v
+    except Exception:
+        pass
+
+
 try:
     from dotenv import load_dotenv
     load_dotenv(os.path.expanduser("~/.openclaw/.env"))
     load_dotenv(os.path.join(SKILL_ROOT, ".env"))
 except ImportError:
     pass
+# Python 2 常未安装 python-dotenv，用回退加载保证 token 等从 ~/.openclaw/.env 读入
+_load_env_file(os.path.expanduser("~/.openclaw/.env"))
+_load_env_file(os.path.join(SKILL_ROOT, ".env"))
 
 from ab_client import PlatformAPIClient, CacheManager, get_default_metrics
 from analysis import format_ab_summary, extract_metric_lifts, get_grouped_summary
@@ -151,6 +184,7 @@ def main():
     parser.add_argument("--treatments", type=str, default=None, help="实验组 ID，逗号分隔")
     parser.add_argument("--dates", type=str, default=None, help="日期范围 start,end")
     parser.add_argument("--regions", type=str, default=None, help="地区，逗号分隔")
+    parser.add_argument("--region", type=str, default=None, help="地区（单值，等同 --regions 的简写）")
     parser.add_argument("--dims", type=str, default=None, help="维度列表，逗号分隔")
     parser.add_argument("--normalization", type=str, default=None, help="归一化方式（如 control）")
     parser.add_argument("--token", type=str, default=None, help="AB API Token（不传则用环境变量 AB_API_TOKEN）")
@@ -160,7 +194,8 @@ def main():
 
     metrics = [m.strip() for m in args.metrics.split(",")] if args.metrics else None
     treatments = [t.strip() for t in args.treatments.split(",") if t.strip()] if args.treatments else None
-    regions = [r.strip() for r in args.regions.split(",") if r.strip()] if args.regions else None
+    regions_str = args.regions or args.region
+    regions = [r.strip() for r in regions_str.split(",") if r.strip()] if regions_str else None
     dims = [d.strip() for d in args.dims.split(",") if d.strip()] if args.dims else None
     dates = None
     if args.dates:
@@ -188,7 +223,7 @@ def main():
         sys.stderr.write("获取数据失败（返回为空）\n")
         sys.exit(1)
     if args.json:
-        out = {k: v for k, v in result.items() if k != "raw"}
+        out = dict((k, v) for k, v in result.items() if k != "raw")
         print(json.dumps(out, ensure_ascii=False, indent=2))
     else:
         print(result.get("formatted_text", "无数据"))

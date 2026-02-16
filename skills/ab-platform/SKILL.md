@@ -121,6 +121,10 @@ python skills/ab-platform/scripts/fetch_metrics.py 15367 --control=82930 --treat
 
 指标结果会缓存在 skill 目录下的 `.cache` 中，减少重复请求。使用 `--no-cache` 可跳过缓存。
 
+## 运行环境
+
+脚本兼容 **Python 2.7.18** 与 **Python 3.x**，可任选其一运行（如 `python2.7 scripts/...` 或 `python3 scripts/...`）。
+
 ## 代码结构
 
 ```

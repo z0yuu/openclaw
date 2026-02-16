@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+
 from .ab_report import (
     format_ab_summary,
     extract_metric_lifts,

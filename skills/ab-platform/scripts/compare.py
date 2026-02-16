@@ -1,17 +1,50 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 AB 多实验对比（ab-platform skill）
+兼容 Python 2.7.18 / Python 3.x
 """
 
+from __future__ import absolute_import, division, print_function
+
 import argparse
+import io
 import json
 import os
 import sys
 
+# Python 2: 让 sys.stdout 能输出 UTF-8
+if sys.version_info[0] < 3:
+    sys.stdout = io.open(sys.stdout.fileno(), mode="w", encoding="utf-8", closefd=False)
+    sys.stderr = io.open(sys.stderr.fileno(), mode="w", encoding="utf-8", closefd=False)
+
 SKILL_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if SKILL_ROOT not in sys.path:
     sys.path.insert(0, SKILL_ROOT)
+lib_path = os.path.join(SKILL_ROOT, "lib")
+if lib_path not in sys.path:
+    sys.path.insert(0, lib_path)
+
+
+def _load_env_file(path):
+    """不依赖 dotenv：手动读 .env 并写入 os.environ（Python 2 或无 dotenv 时回退）"""
+    if not path or not os.path.isfile(path):
+        return
+    try:
+        with open(path, "r") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if "=" in line:
+                    k, v = line.split("=", 1)
+                    k = k.strip()
+                    v = v.strip().strip("'\"")
+                    if k:
+                        os.environ[k] = v
+    except Exception:
+        pass
+
 
 try:
     from dotenv import load_dotenv
@@ -19,17 +52,19 @@ try:
     load_dotenv(os.path.join(SKILL_ROOT, ".env"))
 except ImportError:
     pass
+_load_env_file(os.path.expanduser("~/.openclaw/.env"))
+_load_env_file(os.path.join(SKILL_ROOT, ".env"))
 
-from lib.ab_client import PlatformAPIClient, CacheManager, get_default_metrics
-from lib.analysis import extract_metric_lifts, format_lift, get_metric_columns
-from lib.analysis.comparison import ComparisonAnalyzer
+from ab_client import PlatformAPIClient, CacheManager, get_default_metrics
+from analysis import extract_metric_lifts, format_lift, get_metric_columns
+from analysis.comparison import ComparisonAnalyzer
 
 
 def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None, dates=None, regions=None, token=None):
     if project_id is None:
         project_id = int(os.getenv("AB_PROJECT_ID", "27"))
     cache = CacheManager(cache_dir=os.path.join(SKILL_ROOT, ".cache"), ttl=300)
-    cache_key = f"ab_metrics_{project_id}_{experiment_id}_{metrics}_{dates}"
+    cache_key = "ab_metrics_{}_{}_{}_{}".format(project_id, experiment_id, metrics, dates)
     cached = cache.get(cache_key)
     if cached:
         return cached
@@ -43,7 +78,7 @@ def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None, d
         experiment_id=experiment_id,
         metrics=metrics or get_default_metrics(),
         dates=dates,
-        **kwargs,
+        **kwargs
     )
     if result:
         result["experiment_id"] = experiment_id
@@ -60,7 +95,7 @@ def compare_experiments(experiment_ids, project_id=None, metrics=None, sort_by=N
         if data:
             results.append({"experiment_id": exp_id, "data": data})
         else:
-            print(f"警告: 实验 {exp_id} 获取数据失败", file=sys.stderr)
+            sys.stderr.write("警告: 实验 %s 获取数据失败\n" % exp_id)
 
     if len(results) < 2:
         return {"error": "需要至少2个实验的有效数据"}
@@ -70,30 +105,30 @@ def compare_experiments(experiment_ids, project_id=None, metrics=None, sort_by=N
     columns = first_data.get("columns", [])
     metric_cols = metrics if metrics else get_metric_columns(columns)
 
-    lines = [f"实验对比（共 {len(results)} 个实验）", "=" * 60]
-    header = f"{'实验ID':>10}"
+    lines = ["实验对比（共 %s 个实验）" % len(results), "=" * 60]
+    header = "%10s" % "实验ID"
     for m in metric_cols:
-        header += f"  {m:>15}"
+        header += "  %15s" % m
     lines.append(header)
     lines.append("-" * len(header))
 
     for r in results:
         exp_id = r["experiment_id"]
         lifts = r["data"].get("lifts", {})
-        row = f"{exp_id:>10}"
+        row = "%10s" % exp_id
         for m in metric_cols:
             found = False
             for _gn, group_lifts in lifts.items():
                 if m in group_lifts:
-                    row += f"  {format_lift(group_lifts[m]):>15}"
+                    row += "  %15s" % format_lift(group_lifts[m])
                     found = True
                     break
             if not found:
-                row += f"  {'N/A':>15}"
+                row += "  %15s" % "N/A"
         lines.append(row)
 
     if sort_by and sort_by in metric_cols:
-        lines.append(f"\n按 {sort_by} 排序:")
+        lines.append("\n按 %s 排序:" % sort_by)
         sort_data = []
         for r in results:
             lifts = r["data"].get("lifts", {})
@@ -102,8 +137,8 @@ def compare_experiments(experiment_ids, project_id=None, metrics=None, sort_by=N
                     sort_data.append((r["experiment_id"], group_lifts[sort_by]))
                     break
         sort_data.sort(key=lambda x: x[1], reverse=True)
-        for i, (exp_id, lift) in enumerate(sort_data, 1):
-            lines.append(f"  {i}. 实验 {exp_id}: {format_lift(lift)}")
+        for i, (exp_id, lift) in enumerate(sort_data):
+            lines.append("  %s. 实验 %s: %s" % (i + 1, exp_id, format_lift(lift)))
 
     return {
         "experiment_ids": experiment_ids,
@@ -124,9 +159,9 @@ def main():
     args = parser.parse_args()
 
     exp_ids = [int(x.strip()) for x in args.experiment_ids.split(",")]
-    metrics = args.metrics.split(",") if args.metrics else None
+    metrics = [m.strip() for m in args.metrics.split(",")] if args.metrics else None
     if len(exp_ids) < 2:
-        print("错误: 需要至少 2 个实验 ID", file=sys.stderr)
+        sys.stderr.write("错误: 需要至少 2 个实验 ID\n")
         sys.exit(1)
 
     result = compare_experiments(
@@ -137,7 +172,7 @@ def main():
         token=args.token,
     )
     if "error" in result:
-        print(f"错误: {result['error']}", file=sys.stderr)
+        sys.stderr.write("错误: %s\n" % result["error"])
         sys.exit(1)
     if args.json:
         print(json.dumps({

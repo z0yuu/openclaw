@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
 多实验对比分析（ab-platform skill 内嵌）
+兼容 Python 2.7.18 / Python 3.x
 """
 
-from typing import Dict, List, Optional
+from __future__ import absolute_import, division
 
 try:
     import numpy as np
@@ -12,9 +13,9 @@ except ImportError:
     HAS_NUMPY = False
 
 
-class ComparisonAnalyzer:
+class ComparisonAnalyzer(object):
     @staticmethod
-    def compare_ab_results(results: List[Dict], metric_names: Optional[List[str]] = None) -> Dict:
+    def compare_ab_results(results, metric_names=None):
         if not results:
             return {"error": "没有实验数据"}
         comparison_table = []
@@ -41,10 +42,10 @@ class ComparisonAnalyzer:
 
     @staticmethod
     def rank_experiments(
-        experiments_data: List[Dict],
-        metric_name: str = "conversion_rate",
-        metric_key: str = "lift",
-    ) -> List[Dict]:
+        experiments_data,
+        metric_name="conversion_rate",
+        metric_key="lift",
+    ):
         ranked = []
         for exp in experiments_data:
             exp_id = exp.get("id", "unknown")

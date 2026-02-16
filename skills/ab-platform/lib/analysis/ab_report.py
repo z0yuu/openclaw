@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
 AB 报告解析（ab-platform skill 内嵌）
+兼容 Python 2.7.18 / Python 3.x
 """
 
-# typing (py3.5+) not required; keep runtime compatible
+from __future__ import absolute_import, division, unicode_literals
 
 DIMENSION_COLUMNS = {
     "group_prefix", "group_name", "abtest_group",
@@ -40,16 +41,22 @@ def _is_control_row(row):
 
 
 def _aggregate_metrics(rows, metric_cols):
-    """对多行按指标列求和，返回 {metric: sum}"""
+    """对多行按指标列求和，返回 {metric: sum}；非数值列不纳入（避免 mock 等出现 metric: 0）"""
     agg = {}
     for metric in metric_cols:
         total = 0
+        got = False
         for row in rows:
             try:
-                total += float(row.get(metric) or 0)
+                v = row.get(metric)
+                if v is None or v == "":
+                    continue
+                total += float(v)
+                got = True
             except (ValueError, TypeError):
                 pass
-        agg[metric] = total
+        if got:
+            agg[metric] = total
     return agg
 
 
@@ -68,16 +75,17 @@ def _compute_lift(treatment_agg, control_agg, metric_cols):
 
 def group_body_by_experiment_group(body, metric_cols):
     """
-    按实验组（abtest_group）拆分 body 行。
+    按实验组拆分 body 行：优先用 abtest_group，缺失时用 group_prefix/group_name（兼容 mock 等）。
     返回: [
-      {"group_key": "Control (82930)", "is_control": True, "abtest_group": "82930", "rows": [...], "agg": {metric: sum}},
-      {"group_key": "Treatment (82944)", "is_control": False, "abtest_group": "82944", "rows": [...], "agg": {...}},
+      {"group_key": "Control (82930)", "is_control": True, "abtest_group": "82930", "rows": [...], "agg": {...}},
+      ...
     ]
     """
     by_group = {}
     for row in body:
-        gid = row.get("abtest_group") or ""
-        prefix = row.get("group_prefix", "")
+        gid = (row.get("abtest_group") or "").strip()
+        if not gid:
+            gid = (row.get("group_prefix") or row.get("group_name") or "").strip() or "_"
         if gid not in by_group:
             by_group[gid] = []
         by_group[gid].append(row)
@@ -87,10 +95,15 @@ def group_body_by_experiment_group(body, metric_cols):
         if not rows:
             continue
         is_control = _is_control_row(rows[0])
-        label = "Control (%s)" % gid if is_control else "Treatment (%s)" % gid
+        if gid == "_":
+            label = rows[0].get("group_prefix") or rows[0].get("group_name") or "Unknown"
+        elif gid.isdigit() or (gid and gid.lstrip("-").isdigit()):
+            label = "Control (%s)" % gid if is_control else "Treatment (%s)" % gid
+        else:
+            label = gid
         result.append({
             "group_key": label,
-            "abtest_group": gid,
+            "abtest_group": gid if gid != "_" else "",
             "is_control": is_control,
             "rows": rows,
             "agg": _aggregate_metrics(rows, metric_cols),
