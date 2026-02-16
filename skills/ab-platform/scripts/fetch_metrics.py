@@ -19,8 +19,8 @@ for p in [SKILL_ROOT, os.path.join(SKILL_ROOT, "lib")]:
 
 try:
     from dotenv import load_dotenv
+    load_dotenv(os.path.expanduser("~/.openclaw/.env"))
     load_dotenv(os.path.join(SKILL_ROOT, ".env"))
-    load_dotenv(os.path.expanduser("~/.openclaw/workspace/.env"))
 except ImportError:
     pass
 
@@ -47,6 +47,8 @@ def fetch_metrics(
     treatments=None,
     dates=None,
     regions=None,
+    dims=None,
+    normalization=None,
     use_cache=True,
 ):
     defaults = _load_defaults()
@@ -76,24 +78,35 @@ def fetch_metrics(
         if treatment_groups:
             treatments = [str(x) for x in treatment_groups]
 
-    kwargs = {}
-    if regions:
-        kwargs["regions"] = regions
+    if not regions:
+        regions = defaults.get("regions") or []
 
-    # Python 3.8+ 允许在函数调用中混用命名参数与 **kwargs，
-    # 但 **kwargs 不能单独以 “**kwargs,” 的形式出现（会触发 SyntaxError）。
-    # 这里用显式 dict 合并，避免语法问题。
-    call_kwargs = dict(kwargs)
+    if not dims:
+        dims = defaults.get("dims") or []
+
+    if not normalization:
+        normalization = defaults.get("normalization") or None
+
+    if not metrics:
+        metrics = defaults.get("metrics") or get_default_metrics()
+
+    call_kwargs = {}
+    if regions:
+        call_kwargs["regions"] = regions
+    if dims:
+        call_kwargs["dims"] = dims
+
+    call_kwargs["template_name"] = defaults.get("template_name") or "One Page - Search Core Metric"
     call_kwargs["template_group_name"] = defaults.get("template_group_name") or "Rollout Checklist"
 
-    # 兼容 Python 2.7：不使用调用时的 **kwargs 语法。
     params = {
         "project_id": project_id,
         "experiment_id": experiment_id,
         "control": control,
         "treatments": treatments,
-        "metrics": metrics or get_default_metrics(),
+        "metrics": metrics,
         "dates": dates,
+        "normalization": normalization,
     }
     params.update(call_kwargs)
 
@@ -117,6 +130,8 @@ def main():
     parser.add_argument("--treatments", type=str, default=None, help="实验组 ID，逗号分隔")
     parser.add_argument("--dates", type=str, default=None, help="日期范围 start,end")
     parser.add_argument("--regions", type=str, default=None, help="地区，逗号分隔")
+    parser.add_argument("--dims", type=str, default=None, help="维度列表，逗号分隔")
+    parser.add_argument("--normalization", type=str, default=None, help="归一化方式（如 control）")
     parser.add_argument("--json", action="store_true", help="输出 JSON")
     parser.add_argument("--no-cache", action="store_true", help="不使用缓存")
     args = parser.parse_args()
@@ -124,6 +139,7 @@ def main():
     metrics = args.metrics.split(",") if args.metrics else None
     treatments = args.treatments.split(",") if args.treatments else None
     regions = args.regions.split(",") if args.regions else None
+    dims = args.dims.split(",") if args.dims else None
     dates = None
     if args.dates:
         parts = args.dates.split(",")
@@ -138,11 +154,10 @@ def main():
         treatments=treatments,
         dates=dates,
         regions=regions,
+        dims=dims,
+        normalization=args.normalization,
         use_cache=not args.no_cache,
     )
-    # PlatformAPIClient 在 token 缺失 / 请求失败时可能返回 mock 数据；
-    # 但也可能在 stderr 打印“API请求失败”。
-    # 这里更温和地判定失败：只要返回结构包含 columns/body/relative 任一即可继续。
     if not result:
         sys.stderr.write("获取数据失败\n")
         sys.exit(1)

@@ -15,8 +15,8 @@ if SKILL_ROOT not in sys.path:
 
 try:
     from dotenv import load_dotenv
+    load_dotenv(os.path.expanduser("~/.openclaw/.env"))
     load_dotenv(os.path.join(SKILL_ROOT, ".env"))
-    load_dotenv(os.path.expanduser("~/.openclaw/workspace/.env"))
 except ImportError:
     pass
 

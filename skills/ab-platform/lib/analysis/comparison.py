@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 多实验对比分析（ab-platform skill 内嵌）
 """
@@ -32,9 +33,9 @@ class ComparisonAnalyzer:
                     for metric in target_metrics:
                         if metric in rel_row:
                             try:
-                                row_data[f"{metric}_lift"] = float(rel_row[metric])
+                                row_data["%s_lift" % metric] = float(rel_row[metric])
                             except (ValueError, TypeError):
-                                row_data[f"{metric}_lift"] = rel_row[metric]
+                                row_data["%s_lift" % metric] = rel_row[metric]
                     comparison_table.append(row_data)
         return {"comparison_table": comparison_table, "experiment_count": len(results)}
 

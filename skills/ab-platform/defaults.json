@@ -6,8 +6,14 @@
       "id": 6850,
       "name": "vector in coarse ranking"
     },
-    "template_group_name": "(org+ads)  by card",
-    "control_groups": [31430, 31438],
-    "treatment_groups": [31421, 31425]
+    "template_name": "One Page - Search Core Metric",
+    "template_group_name": "Rollout Checklist",
+    "template_group_type": 1,
+    "normalization": "control",
+    "metrics": ["order_cnt", "gmv", "ads_revenue_usd"],
+    "dims": ["abtest_group", "abtest_region", "abtest_date"],
+    "regions": ["TW"],
+    "control_groups": ["82930"],
+    "treatment_groups": ["82944"]
   }
 }

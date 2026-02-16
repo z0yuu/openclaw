@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 默认指标配置（AB 平台 skill 内嵌）
 """
@@ -5,12 +6,7 @@
 DEFAULT_METRICS = [
     "order_cnt",
     "gmv",
-    "gmv_995",
-    "gmv_995_v2",
-    "nmv",
-    "ads_load",
     "ads_revenue_usd",
-    "bad_query_rate",
 ]
 
 METRICS_DESCRIPTION = {
@@ -22,6 +18,7 @@ METRICS_DESCRIPTION = {
     "ads_load": "广告加载率 (paidads)",
     "ads_revenue_usd": "广告收入 (USD)",
     "bad_query_rate": "坏查询率 (org+ads)",
+    "ctr": "点击率",
 }
 
 
@@ -29,5 +26,5 @@ def get_default_metrics():
     return list(DEFAULT_METRICS)
 
 
-def get_metrics_description(metric: str) -> str:
+def get_metrics_description(metric):
     return METRICS_DESCRIPTION.get(metric, metric)
