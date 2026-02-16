@@ -50,6 +50,7 @@ def fetch_metrics(
     dims=None,
     normalization=None,
     use_cache=True,
+    token=None,
 ):
     defaults = _load_defaults()
 
@@ -66,7 +67,7 @@ def fetch_metrics(
         if cached:
             return cached
 
-    client = PlatformAPIClient()
+    client = PlatformAPIClient(token=token)
 
     if not control:
         control_groups = defaults.get("control_groups") or []
@@ -132,6 +133,7 @@ def main():
     parser.add_argument("--regions", type=str, default=None, help="地区，逗号分隔")
     parser.add_argument("--dims", type=str, default=None, help="维度列表，逗号分隔")
     parser.add_argument("--normalization", type=str, default=None, help="归一化方式（如 control）")
+    parser.add_argument("--token", type=str, default=None, help="AB API Token（不传则用环境变量 AB_API_TOKEN）")
     parser.add_argument("--json", action="store_true", help="输出 JSON")
     parser.add_argument("--no-cache", action="store_true", help="不使用缓存")
     args = parser.parse_args()
@@ -157,6 +159,7 @@ def main():
         dims=dims,
         normalization=args.normalization,
         use_cache=not args.no_cache,
+        token=args.token,
     )
     if not result:
         sys.stderr.write("获取数据失败\n")

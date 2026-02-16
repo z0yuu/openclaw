@@ -25,7 +25,7 @@ from lib.analysis import extract_metric_lifts, format_lift, get_metric_columns
 from lib.analysis.comparison import ComparisonAnalyzer
 
 
-def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None, dates=None, regions=None):
+def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None, dates=None, regions=None, token=None):
     if project_id is None:
         project_id = int(os.getenv("AB_PROJECT_ID", "27"))
     cache = CacheManager(cache_dir=os.path.join(SKILL_ROOT, ".cache"), ttl=300)
@@ -34,7 +34,7 @@ def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None, d
     if cached:
         return cached
 
-    client = PlatformAPIClient()
+    client = PlatformAPIClient(token=token)
     kwargs = {}
     if regions:
         kwargs["regions"] = regions
@@ -53,10 +53,10 @@ def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None, d
     return result
 
 
-def compare_experiments(experiment_ids, project_id=None, metrics=None, sort_by=None, dates=None, regions=None):
+def compare_experiments(experiment_ids, project_id=None, metrics=None, sort_by=None, dates=None, regions=None, token=None):
     results = []
     for exp_id in experiment_ids:
-        data = fetch_metrics_for_experiment(exp_id, project_id, metrics, dates, regions)
+        data = fetch_metrics_for_experiment(exp_id, project_id, metrics, dates, regions, token=token)
         if data:
             results.append({"experiment_id": exp_id, "data": data})
         else:
@@ -119,6 +119,7 @@ def main():
     parser.add_argument("--project-id", type=int, default=None, help="项目 ID")
     parser.add_argument("--metrics", type=str, default=None, help="指标列表，逗号分隔")
     parser.add_argument("--sort-by", type=str, default=None, help="排序指标")
+    parser.add_argument("--token", type=str, default=None, help="AB API Token（不传则用环境变量 AB_API_TOKEN）")
     parser.add_argument("--json", action="store_true", help="输出 JSON")
     args = parser.parse_args()
 
@@ -133,6 +134,7 @@ def main():
         project_id=args.project_id,
         metrics=metrics,
         sort_by=args.sort_by,
+        token=args.token,
     )
     if "error" in result:
         print(f"错误: {result['error']}", file=sys.stderr)

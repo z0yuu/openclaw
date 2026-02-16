@@ -35,7 +35,7 @@ DEFAULT_METRICS = get_default_metrics()
 class PlatformAPIClient(object):
     """Shopee AB Report Open API 客户端"""
 
-    def __init__(self):
+    def __init__(self, token=None):
         env = (os.getenv("AB_API_ENV") or "live").lower()
         if env == "live":
             self.api_url = "https://httpgateway.abtest.shopee.io/request_spex"
@@ -44,7 +44,7 @@ class PlatformAPIClient(object):
         else:
             self.api_url = "https://httpgateway.abtest.test.shopee.io/request_spex"
 
-        self.token = (os.getenv("AB_API_TOKEN") or "").strip()
+        self.token = (token if token is not None else os.getenv("AB_API_TOKEN") or "").strip()
         self.client_server_name = (os.getenv("AB_CLIENT_SERVER_NAME") or "").strip()
         self.operator = (os.getenv("AB_OPERATOR") or "").strip()
         self.timeout = int(os.getenv("AB_API_TIMEOUT") or "30")
@@ -260,7 +260,11 @@ class PlatformAPIClient(object):
                 return {}
             if result.get("retcode", -1) != 0:
                 return {}
-            # status 可能在顶层或 key_info 子字段
+            # 若已返回有效数据（body/relative 非空），直接视为完成
+            data = result.get("data") or {}
+            if data.get("body") or data.get("relative"):
+                return result
+            # status 可能在顶层或 key_info 子字段，1/2 表示仍在计算
             status = result.get("status")
             if status is None:
                 ki = result.get("key_info") or {}
