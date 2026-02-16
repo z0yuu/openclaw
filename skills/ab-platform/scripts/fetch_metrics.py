@@ -87,7 +87,8 @@ def fetch_metrics(
         treatments=treatments,
         metrics=metrics or get_default_metrics(),
         dates=dates,
-        **kwargs
+        template_group_name=defaults.get("template_group_name") or "Rollout Checklist",
+        **kwargs,
     )
     if result:
         result["experiment_id"] = experiment_id

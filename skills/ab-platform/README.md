@@ -14,7 +14,32 @@ pip install requests python-dotenv
 
 ## 配置
 
+### 1) 环境变量
+
 环境变量：`AB_API_TOKEN`（必需），`AB_PROJECT_ID`、`AB_API_ENV` 等见 `SKILL.md`。
+
+### 2) defaults.json（推荐：团队默认配置）
+
+当你不想每次都手动输入 experiment_id / control / treatments / template_group_name 时，可在：
+
+- `skills/ab-platform/defaults.json`
+
+维护默认值。脚本 `scripts/fetch_metrics.py` 在未传参时会自动读取该文件。
+
+示例（节选）：
+
+```json
+{
+  "ab_platform": {
+    "project_id": 27,
+    "scene_id": 381,
+    "experiment": { "id": 6850, "name": "vector in coarse ranking" },
+    "template_group_name": "(org+ads)  by card",
+    "control_groups": [31430, 31438],
+    "treatment_groups": [31421, 31425]
+  }
+}
+```
 
 ## 代码结构
 

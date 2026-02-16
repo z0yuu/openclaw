@@ -94,6 +94,25 @@ python skills/ab-platform/scripts/compare.py 15367,15368
 python skills/ab-platform/scripts/compare.py 15367,15368,15369 --metrics=gmv --sort-by=gmv --json
 ```
 
+## defaults.json 默认配置（可选，但推荐）
+
+除环境变量外，本 skill 支持用 `defaults.json` 存放“团队常用默认配置”，便于不传参时直接查询。
+
+- 位置：`skills/ab-platform/defaults.json`
+- 读取逻辑：
+  - `scripts/fetch_metrics.py`：当 `experiment_id` 未传、`--control/--treatments` 未传时，会从 defaults.json 读取。
+  - `template_group_name`：若 defaults.json 配了 `template_group_name`，脚本会带到 API 请求中。
+
+运行示例：
+
+```bash
+# 不传 experiment_id：自动使用 defaults.json 的 experiment.id
+python skills/ab-platform/scripts/fetch_metrics.py
+
+# 仍可覆盖默认值
+python skills/ab-platform/scripts/fetch_metrics.py 15367 --control=82930 --treatments=82944,82945
+```
+
 ## 默认指标
 
 未指定 `--metrics` 时使用默认指标：order_cnt, gmv, gmv_995, gmv_995_v2, nmv, ads_load, ads_revenue_usd, bad_query_rate。可在 `lib/ab_client/default_metrics.py` 中修改。

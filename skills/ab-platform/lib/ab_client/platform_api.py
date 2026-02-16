@@ -73,6 +73,8 @@ class PlatformAPIClient:
                     err = resp.json().get("msg", resp.text[:200])
                 except Exception:
                     err = resp.text[:200]
+                # 注意：不要在这里直接返回空 {}，上层会误判为失败并打印“API请求失败”。
+                # 这里返回 {}，让上层决定是否 fallback 到 mock。
                 print(f"API请求失败: {err}", file=__import__("sys").stderr)
                 return {}
             result = resp.json()
