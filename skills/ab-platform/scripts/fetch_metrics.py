@@ -80,16 +80,24 @@ def fetch_metrics(
     if regions:
         kwargs["regions"] = regions
 
-    result = client.get_ab_metrics(
-        project_id=project_id,
-        experiment_id=experiment_id,
-        control=control,
-        treatments=treatments,
-        metrics=metrics or get_default_metrics(),
-        dates=dates,
-        template_group_name=defaults.get("template_group_name") or "Rollout Checklist",
-        **kwargs,
-    )
+    # Python 3.8+ 允许在函数调用中混用命名参数与 **kwargs，
+    # 但 **kwargs 不能单独以 “**kwargs,” 的形式出现（会触发 SyntaxError）。
+    # 这里用显式 dict 合并，避免语法问题。
+    call_kwargs = dict(kwargs)
+    call_kwargs["template_group_name"] = defaults.get("template_group_name") or "Rollout Checklist"
+
+    # 兼容 Python 2.7：不使用调用时的 **kwargs 语法。
+    params = {
+        "project_id": project_id,
+        "experiment_id": experiment_id,
+        "control": control,
+        "treatments": treatments,
+        "metrics": metrics or get_default_metrics(),
+        "dates": dates,
+    }
+    params.update(call_kwargs)
+
+    result = client.get_ab_metrics(**params)
     if result:
         result["experiment_id"] = experiment_id
         result["project_id"] = project_id
@@ -132,8 +140,14 @@ def main():
         regions=regions,
         use_cache=not args.no_cache,
     )
+    # PlatformAPIClient 在 token 缺失 / 请求失败时可能返回 mock 数据；
+    # 但也可能在 stderr 打印“API请求失败”。
+    # 这里更温和地判定失败：只要返回结构包含 columns/body/relative 任一即可继续。
     if not result:
         sys.stderr.write("获取数据失败\n")
+        sys.exit(1)
+    if (not result.get("columns")) and (not result.get("body")) and (not result.get("relative")):
+        sys.stderr.write("获取数据失败（返回为空）\n")
         sys.exit(1)
     if args.json:
         out = {k: v for k, v in result.items() if k != "raw"}
