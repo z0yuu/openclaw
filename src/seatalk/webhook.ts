@@ -9,10 +9,14 @@
 
 import type { IncomingMessage, ServerResponse } from "node:http";
 import { randomUUID } from "node:crypto";
+import type { MsgContext } from "../auto-reply/templating.js";
 import type { CliDeps } from "../cli/deps.js";
-import type { CronJob } from "../cron/types.js";
+import { dispatchInboundMessageWithDispatcher } from "../auto-reply/dispatch.js";
 import { loadConfig } from "../config/config.js";
-import { runCronIsolatedAgentTurn } from "../cron/isolated-agent.js";
+import {
+  injectTimestamp,
+  timestampOptsFromConfig,
+} from "../gateway/server-methods/agent-timestamp.js";
 import { createSubsystemLogger } from "../logging/subsystem.js";
 import { verifySignature, sendSingleChat } from "./client.js";
 
@@ -276,46 +280,57 @@ export function createSeaTalkWebhookHandler(opts: { deps: CliDeps }): SeaTalkWeb
 }
 
 async function handleTextMessage(
-  deps: CliDeps,
+  _deps: CliDeps,
   employeeCode: string,
   message: string,
 ): Promise<void> {
   try {
     const cfg = loadConfig();
-    const now = Date.now();
-    const job: CronJob = {
-      id: randomUUID(),
-      name: "seatalk-webhook",
-      enabled: true,
-      createdAtMs: now,
-      updatedAtMs: now,
-      schedule: { kind: "at", at: new Date(now).toISOString() },
-      sessionTarget: "isolated",
-      wakeMode: "now",
-      payload: {
-        kind: "agentTurn",
-        message,
-        deliver: false,
-      },
-      state: { nextRunAtMs: now },
-    };
     const sessionKey = `seatalk:${employeeCode}`;
-    const result = await runCronIsolatedAgentTurn({
+    const messageSid = randomUUID();
+
+    const stampedMessage = injectTimestamp(message, timestampOptsFromConfig(cfg));
+
+    const ctx: MsgContext = {
+      Body: message,
+      BodyForAgent: stampedMessage,
+      BodyForCommands: message,
+      RawBody: message,
+      CommandBody: message,
+      SessionKey: sessionKey,
+      Provider: "seatalk",
+      Surface: "seatalk",
+      OriginatingChannel: "seatalk",
+      ChatType: "direct",
+      CommandAuthorized: true,
+      MessageSid: messageSid,
+      SenderId: employeeCode,
+      SenderName: employeeCode,
+    };
+
+    const replyParts: string[] = [];
+
+    await dispatchInboundMessageWithDispatcher({
+      ctx,
       cfg,
-      deps,
-      job,
-      message,
-      sessionKey,
-      lane: "cron",
+      dispatcherOptions: {
+        deliver: async (payload) => {
+          const text = payload.text?.trim() ?? "";
+          if (text) {
+            replyParts.push(text);
+          }
+        },
+        onError: (err) => {
+          logSeatalk.warn(`seatalk dispatch failed: ${String(err)}`);
+        },
+      },
     });
-    const reply =
-      (result.outputText && result.outputText.trim()) ||
-      (result.summary && result.summary.trim()) ||
-      result.error ||
-      "处理完成。";
+
+    const reply = replyParts.join("\n\n").trim() || "处理完成。";
     await sendSingleChat(employeeCode, reply);
   } catch (err) {
     const msg = String(err);
+    logSeatalk.warn(`seatalk handleTextMessage error: ${msg}`);
     try {
       await sendSingleChat(employeeCode, `处理出错: ${msg.slice(0, 200)}`);
     } catch {
