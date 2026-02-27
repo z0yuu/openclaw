@@ -58,7 +58,10 @@ _load_env_file(os.path.expanduser("~/.openclaw/.env"))
 _load_env_file(os.path.join(SKILL_ROOT, ".env"))
 
 from ab_client import PlatformAPIClient, CacheManager, get_default_metrics
-from analysis import format_ab_summary, extract_metric_lifts, get_grouped_summary
+from analysis import (
+    format_ab_summary, format_lift_report, get_daily_lift_summary,
+    extract_metric_lifts, get_grouped_summary,
+)
 
 
 def _load_defaults():
@@ -70,6 +73,28 @@ def _load_defaults():
             return json.load(f).get("ab_platform", {})
     except Exception:
         return {}
+
+
+def _load_bucket_map():
+    """从 bucket_name.txt 加载 {numeric_id: bucket_name} 映射"""
+    path = os.path.join(SKILL_ROOT, "bucket_name.txt")
+    mapping = {}
+    if not os.path.exists(path):
+        return mapping
+    try:
+        with open(path, "r") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                parts = line.split()
+                if len(parts) >= 2:
+                    bucket_name = parts[0].strip()
+                    numeric_id = parts[1].strip()
+                    mapping[numeric_id] = bucket_name
+    except Exception:
+        pass
+    return mapping
 
 
 def fetch_metrics(
@@ -165,10 +190,13 @@ def fetch_metrics(
     if result:
         result["experiment_id"] = experiment_id
         result["project_id"] = project_id
-        result["formatted_text"] = format_ab_summary(result, experiment_id)
+        _bmap = _load_bucket_map()
+        _ctrl_ids = defaults.get("control_groups") or []
+        result["formatted_text"] = format_ab_summary(result, experiment_id,
+                                                     bucket_map=_bmap, control_group_ids=_ctrl_ids)
         result["lifts"] = extract_metric_lifts(result)
-        grouped = get_grouped_summary(result)
-        result["by_group"] = grouped.get("by_group", [])
+        grouped = get_grouped_summary(result, bucket_map=_bmap, control_group_ids=_ctrl_ids)
+        result["by_group"] = [g for g in grouped.get("by_group", []) if not g.get("is_control")]
         result["overall_treatment"] = grouped.get("overall_treatment")
         if use_cache:
             cache.set(cache_key, result)
@@ -189,7 +217,8 @@ def main():
     parser.add_argument("--normalization", type=str, default=None, help="归一化方式（如 control）")
     parser.add_argument("--token", type=str, default=None, help="AB API Token（不传则用环境变量 AB_API_TOKEN）")
     parser.add_argument("--json", action="store_true", help="输出 JSON")
-    parser.add_argument("--no-cache", action="store_true", help="不使用缓存")
+    parser.add_argument("--absolute", action="store_true", help="同时显示绝对值（默认只显示相对提升百分比）")
+    parser.add_argument("--cache", action="store_true", help="启用缓存（默认不缓存）")
     args = parser.parse_args()
 
     metrics = [m.strip() for m in args.metrics.split(",")] if args.metrics else None
@@ -213,7 +242,7 @@ def main():
         regions=regions,
         dims=dims,
         normalization=args.normalization,
-        use_cache=not args.no_cache,
+        use_cache=args.cache,
         token=args.token,
     )
     if not result:
@@ -222,11 +251,19 @@ def main():
     if (not result.get("columns")) and (not result.get("body")) and (not result.get("relative")):
         sys.stderr.write("获取数据失败（返回为空）\n")
         sys.exit(1)
+    bucket_map = _load_bucket_map()
+    defaults = _load_defaults()
+    ctrl_ids = defaults.get("control_groups") or []
+    _fmt_kwargs = dict(bucket_map=bucket_map, control_group_ids=ctrl_ids)
     if args.json:
         out = dict((k, v) for k, v in result.items() if k != "raw")
+        out["bucket_map"] = bucket_map
+        out["daily_lifts"] = get_daily_lift_summary(result, **_fmt_kwargs)
         print(json.dumps(out, ensure_ascii=False, indent=2))
     else:
-        print(result.get("formatted_text", "无数据"))
+        text = format_lift_report(result, experiment_id=result.get("experiment_id", 0),
+                                  show_absolute=args.absolute, **_fmt_kwargs)
+        print(text)
 
 
 if __name__ == "__main__":

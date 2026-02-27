@@ -17,7 +17,7 @@ metadata:
 
 - 用户问「实验 xxx 的指标」「看看实验 15367」「AB 实验数据」→ 使用 **指标查询**。
 - 用户问「对比实验 A 和 B」「哪个实验更好」→ 使用 **对比**。
-- 需要指定项目、日期范围、地区、指标列表时，从用户意图中解析或使用默认值。
+- 用户未指定的参数（实验 ID、项目 ID、地区、对照组、实验组等）一律从 `skills/ab-platform/defaults.json` 读取，不要自行编造。
 
 ## 环境变量
 
@@ -46,37 +46,38 @@ export AB_PROJECT_ID="27"
 
 ## 工具用法
 
-脚本需在 **skill 所在目录的上一级**（即 `skills/` 所在的工作区根或 agent 根）运行，或确保 `skills/ab-platform` 为当前目录的父级，以便正确解析 `lib`。
+所有脚本使用**绝对路径**调用，无需关心当前工作目录。
 
 ### 1. 指标查询
 
 ```bash
-python skills/ab-platform/scripts/fetch_metrics.py <experiment_id> [project_id] [options]
+python /root/agent/skills/ab-platform/scripts/fetch_metrics.py <experiment_id> [project_id] [options]
 ```
 
-| 参数          | 说明                | 示例                  |
-| ------------- | ------------------- | --------------------- |
-| experiment_id | 实验 ID             | 15367                 |
-| project_id    | 项目 ID（可选）     | 27                    |
-| --metrics     | 指标列表，逗号分隔  | order_cnt,gmv         |
-| --control     | 对照组 ID           | 82930                 |
-| --treatments  | 实验组 ID，逗号分隔 | 82944,82945           |
-| --dates       | 日期范围 start,end  | 2026-02-01,2026-02-10 |
-| --regions     | 地区，逗号分隔      | TW,ID                 |
-| --json        | 输出 JSON           |                       |
-| --no-cache    | 不使用缓存          |                       |
+| 参数          | 说明                   | 示例                  |
+| ------------- | ---------------------- | --------------------- |
+| experiment_id | 实验 ID                | 15367                 |
+| project_id    | 项目 ID（可选）        | 27                    |
+| --metrics     | 指标列表，逗号分隔     | order_cnt,gmv         |
+| --control     | 对照组 ID              | 82930                 |
+| --treatments  | 实验组 ID，逗号分隔    | 82944,82945           |
+| --dates       | 日期范围 start,end     | 2026-02-01,2026-02-10 |
+| --regions     | 地区，逗号分隔         | TW,ID                 |
+| --json        | 输出 JSON              |                       |
+| --absolute    | 同时显示绝对值         |                       |
+| --cache       | 启用缓存（默认不缓存） |                       |
 
 示例：
 
 ```bash
-python skills/ab-platform/scripts/fetch_metrics.py 15367
-python skills/ab-platform/scripts/fetch_metrics.py 15367 27 --metrics=order_cnt,gmv --json
+python /root/agent/skills/ab-platform/scripts/fetch_metrics.py 15367
+python /root/agent/skills/ab-platform/scripts/fetch_metrics.py 15367 27 --metrics=order_cnt,gmv --json
 ```
 
 ### 2. 多实验对比
 
 ```bash
-python skills/ab-platform/scripts/compare.py <exp_id1>,<exp_id2>,... [options]
+python /root/agent/skills/ab-platform/scripts/compare.py <exp_id1>,<exp_id2>,... [options]
 ```
 
 | 参数           | 说明                                | 示例          |
@@ -90,36 +91,135 @@ python skills/ab-platform/scripts/compare.py <exp_id1>,<exp_id2>,... [options]
 示例：
 
 ```bash
-python skills/ab-platform/scripts/compare.py 15367,15368
-python skills/ab-platform/scripts/compare.py 15367,15368,15369 --metrics=gmv --sort-by=gmv --json
+python /root/agent/skills/ab-platform/scripts/compare.py 15367,15368
+python /root/agent/skills/ab-platform/scripts/compare.py 15367,15368,15369 --metrics=gmv --sort-by=gmv --json
 ```
 
-## defaults.json 默认配置（可选，但推荐）
+## 默认配置（必读：用户不说就用这些值，不要再问）
 
-除环境变量外，本 skill 支持用 `defaults.json` 存放“团队常用默认配置”，便于不传参时直接查询。
+脚本会自动从 `/root/agent/skills/ab-platform/defaults.json` 读取以下默认值。**用户没有明确指定的参数直接用默认值运行，不要反问用户**。
 
-- 位置：`skills/ab-platform/defaults.json`
-- 读取逻辑：
-  - `scripts/fetch_metrics.py`：当 `experiment_id` 未传、`--control/--treatments` 未传时，会从 defaults.json 读取。
-  - `template_group_name`：若 defaults.json 配了 `template_group_name`，脚本会带到 API 请求中。
+| 参数                | 默认值                                                                                                                                              |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| experiment_id       | **6850**（实验名: vector in coarse ranking）                                                                                                        |
+| project_id          | **27**                                                                                                                                              |
+| regions             | **ID**                                                                                                                                              |
+| metrics             | **从 defaults.json 的 metrics 字段读取（当前: order_cnt, gmv, gmv_995, ads_revenue_usd, abtest_region, gmv_per_uu, order_per_uu, gmv_per_uu_995）** |
+| control_groups      | **31430, 31438**                                                                                                                                    |
+| treatment_groups    | **31421, 31425**                                                                                                                                    |
+| normalization       | **control**                                                                                                                                         |
+| template_name       | One Page - Search Core Metric                                                                                                                       |
+| template_group_name | (org+ads) by card                                                                                                                                   |
+| dims                | abtest_group, abtest_region, abtest_date                                                                                                            |
+| show_absolute       | **false**（默认只显示相对提升百分比）                                                                                                               |
 
-运行示例：
+### 调用规则
+
+1. 用户说"帮我看看实验数据"→ **直接运行** `python /root/agent/skills/ab-platform/scripts/fetch_metrics.py`，不需要传任何参数，脚本自动使用上表默认值。
+2. 用户说"看看前天的数据"→ 只需加 `--dates=2026-02-23,2026-02-23`，其余用默认值。
+3. 用户说"看实验 15367"→ 只需 `python /root/agent/skills/ab-platform/scripts/fetch_metrics.py 15367`，其余用默认值。
+4. 用户**显式指定**的参数会覆盖默认值。
+5. **绝不要反问用户"实验 ID 是什么"或"要哪些指标"**——直接用默认值运行。
+
+### 运行示例
 
 ```bash
-# 不传 experiment_id：自动使用 defaults.json 的 experiment.id
-python skills/ab-platform/scripts/fetch_metrics.py
+# 最常用：不传任何参数，全部用默认值
+python /root/agent/skills/ab-platform/scripts/fetch_metrics.py
 
-# 仍可覆盖默认值
-python skills/ab-platform/scripts/fetch_metrics.py 15367 --control=82930 --treatments=82944,82945
+# 指定日期范围
+python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --dates=2026-02-23,2026-02-23
+
+# 指定其他实验
+python /root/agent/skills/ab-platform/scripts/fetch_metrics.py 15367
+
+# 需要绝对值时加 --absolute
+python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --absolute
 ```
+
+## 默认输出格式
+
+- **默认只显示相对提升百分比**（Treatment vs Control 的 lift），不显示绝对值，不显示 Control 组数据。
+- 输出分两部分：
+  1. **汇总（全部天数）** — 所有天数合计后的相对提升。
+  2. **分天统计** — 每天各实验组相对 Control 的提升百分比。
+- **桶名映射**：输出自动将数字 bucket ID（如 31421）映射为 `bucket_name.txt` 中的桶名（如 `bucket_id_00`），格式为 `bucket_id_00 (31421)`，方便快速识别。
+- 若需要同时查看绝对值，传 `--absolute` 参数。
+- JSON 模式 (`--json`) 额外包含 `daily_lifts`（分天结构化数据）和 `bucket_map`（桶名→数字 ID 完整映射表）。
+
+### 桶号映射（必读）
+
+完整映射表保存在 `/root/agent/skills/ab-platform/bucket_name.txt`，格式为 `bucket_id_XX\t数字ID`。当前映射：
+
+| 桶名         | 数字 ID | 默认角色  |
+| ------------ | ------- | --------- |
+| bucket_id_00 | 31421   | treatment |
+| bucket_id_01 | 31422   | —         |
+| bucket_id_02 | 31423   | —         |
+| bucket_id_03 | 31424   | —         |
+| bucket_id_04 | 31425   | treatment |
+| bucket_id_05 | 31426   | —         |
+| bucket_id_06 | 31427   | —         |
+| bucket_id_07 | 31428   | —         |
+| bucket_id_08 | 31429   | —         |
+| bucket_id_09 | 31430   | control   |
+| bucket_id_10 | 31431   | —         |
+| bucket_id_11 | 31432   | —         |
+| bucket_id_12 | 31433   | —         |
+| bucket_id_13 | 31434   | —         |
+| bucket_id_14 | 31435   | —         |
+| bucket_id_15 | 31436   | —         |
+| bucket_id_16 | 31437   | —         |
+| bucket_id_17 | 31438   | control   |
+| bucket_id_18 | 29633   | —         |
+| bucket_id_19 | 29632   | —         |
+
+#### 用户提到桶号时的转换规则
+
+用户可能用口语化方式提到桶，例如「03号桶」「04桶」「桶03和桶04」「bucket 03」等。**必须按以下规则解析**：
+
+1. 提取用户说的数字部分（如"03号桶"→ `03`，"4号桶"→ `04`，"桶17"→ `17`）
+2. 补零到两位，拼成 `bucket_id_XX`（如 `03` → `bucket_id_03`，`4` → `bucket_id_04`）
+3. 查上表得到数字 ID（如 `bucket_id_03` → `31424`，`bucket_id_04` → `31425`）
+4. 将数字 ID 传给脚本的 `--treatments` 或 `--control` 参数
+
+**示例**：
+
+- 用户说「查03号桶和04号桶的数据」→ `bucket_id_03=31424`、`bucket_id_04=31425` 作为 treatment，对照组用默认 control → 运行：
+  ```bash
+  python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --treatments=31424,31425 --control=31430,31438
+  ```
+- 用户说「看看17号桶」→ `bucket_id_17=31438` 作为 treatment，对照组用默认 control → 运行：
+  ```bash
+  python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --treatments=31438 --control=31430,31438
+  ```
+- 用户说「用09桶做对照看03桶」→ 明确指定了对照组，用 `bucket_id_09=31430` 做 control → 运行：
+  ```bash
+  python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --treatments=31424 --control=31430
+  ```
+
+**注意**：
+
+- 用户指定了特定桶时，将这些桶作为 `--treatments`，**对照组仍使用默认的两个 control 桶（31430, 31438）**，除非用户明确指定了其他对照组。
+- 未指定的参数（实验 ID、指标等）仍用默认值。
+
+### 呈现结果时必须包含桶名
+
+向用户展示结果时，**必须保留脚本输出中的桶名（bucket name）**，不要只显示数字 ID。
+
+**展示规则**：
+
+- 每个桶的结果旁边都要标注桶名，格式：`bucket_id_03 (31424)`
+- 不要省略桶名只写数字 ID
+- 汇总结果时也要说明包含了哪些桶
 
 ## 默认指标
 
-未指定 `--metrics` 时使用默认指标：order_cnt, gmv, gmv_995, gmv_995_v2, nmv, ads_load, ads_revenue_usd, bad_query_rate。可在 `lib/ab_client/default_metrics.py` 中修改。
+由 `defaults.json` 的 `metrics` 字段决定。**不要硬编码指标列表，始终让脚本自己从 defaults.json 读取**。运行时不传 `--metrics` 参数即可。
 
 ## 缓存
 
-指标结果会缓存在 skill 目录下的 `.cache` 中，减少重复请求。使用 `--no-cache` 可跳过缓存。
+默认**不使用缓存**，每次直接请求 API。传 `--cache` 可启用本地缓存（缓存在 `.cache/` 目录，TTL 300 秒）。
 
 ## 运行环境
 
@@ -130,6 +230,7 @@ python skills/ab-platform/scripts/fetch_metrics.py 15367 --control=82930 --treat
 ```
 skills/ab-platform/
 ├── SKILL.md                 # 本说明
+├── defaults.json            # 默认配置（用户未指定参数时使用）
 ├── lib/
 │   ├── ab_client/           # AB 平台 API 客户端
 │   │   ├── platform_api.py  # 请求与轮询

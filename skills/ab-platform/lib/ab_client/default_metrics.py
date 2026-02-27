@@ -6,7 +6,12 @@
 DEFAULT_METRICS = [
     "order_cnt",
     "gmv",
+    "gmv_995",
     "ads_revenue_usd",
+    "abtest_region",
+    "gmv_per_uu",
+    "order_per_uu",
+    "gmv_per_uu_995",
 ]
 
 METRICS_DESCRIPTION = {

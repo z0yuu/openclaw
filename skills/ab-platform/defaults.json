@@ -7,13 +7,24 @@
       "name": "vector in coarse ranking"
     },
     "template_name": "One Page - Search Core Metric",
-    "template_group_name": "Rollout Checklist",
+    "template_group_name": "(org+ads)  by card",
     "template_group_type": 1,
     "normalization": "control",
-    "metrics": ["order_cnt", "gmv", "ads_revenue_usd"],
+    "metrics": [
+      "order_cnt",
+      "gmv",
+      "gmv_995",
+      "ads_revenue_usd",
+      "abtest_region",
+      "gmv_per_uu",
+      "order_per_uu",
+      "gmv_per_uu_995",
+      "gmv_per_uu_995"
+    ],
     "dims": ["abtest_group", "abtest_region", "abtest_date"],
-    "regions": ["TW"],
+    "regions": ["ID"],
     "control_groups": ["31430", "31438"],
-    "treatment_groups": ["31421", "31424"]
+    "treatment_groups": ["31421", "31425"],
+    "show_absolute": false
   }
 }

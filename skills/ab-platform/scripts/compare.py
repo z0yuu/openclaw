@@ -60,9 +60,39 @@ from analysis import extract_metric_lifts, format_lift, get_metric_columns
 from analysis.comparison import ComparisonAnalyzer
 
 
-def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None, dates=None, regions=None, token=None):
+def _load_defaults():
+    cfg_path = os.path.join(SKILL_ROOT, "defaults.json")
+    if not os.path.exists(cfg_path):
+        return {}
+    try:
+        with open(cfg_path, "r") as f:
+            return json.load(f).get("ab_platform", {})
+    except Exception:
+        return {}
+
+
+def _flatten_groups(groups):
+    """将 ['31430', '31438'] 扁平化为逗号分隔字符串"""
+    parts = []
+    for x in (groups or []):
+        for p in str(x).split(","):
+            p = p.strip()
+            if p:
+                parts.append(p)
+    return ",".join(parts) if parts else ""
+
+
+def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None,
+                                 dates=None, regions=None, token=None):
+    defaults = _load_defaults()
+
     if project_id is None:
-        project_id = int(os.getenv("AB_PROJECT_ID", "27"))
+        project_id = int(defaults.get("project_id") or os.getenv("AB_PROJECT_ID", "27"))
+    if not metrics:
+        metrics = defaults.get("metrics") or get_default_metrics()
+    if not regions:
+        regions = defaults.get("regions") or []
+
     cache = CacheManager(cache_dir=os.path.join(SKILL_ROOT, ".cache"), ttl=300)
     cache_key = "ab_metrics_{}_{}_{}_{}".format(project_id, experiment_id, metrics, dates)
     cached = cache.get(cache_key)
@@ -73,11 +103,27 @@ def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None, d
     kwargs = {}
     if regions:
         kwargs["regions"] = regions
+
+    dims = defaults.get("dims") or []
+    if dims:
+        kwargs["dims"] = dims
+
+    kwargs["template_name"] = defaults.get("template_name") or "One Page - Search Core Metric"
+    kwargs["template_group_name"] = defaults.get("template_group_name") or "Rollout Checklist"
+
+    control = _flatten_groups(defaults.get("control_groups"))
+    treatments_list = defaults.get("treatment_groups") or []
+    treatments = [str(t).strip() for t in treatments_list if str(t).strip()]
+    normalization = defaults.get("normalization")
+
     result = client.get_ab_metrics(
         project_id=project_id,
         experiment_id=experiment_id,
-        metrics=metrics or get_default_metrics(),
+        metrics=metrics,
         dates=dates,
+        control=control,
+        treatments=treatments,
+        normalization=normalization,
         **kwargs
     )
     if result:
@@ -88,7 +134,28 @@ def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None, d
     return result
 
 
-def compare_experiments(experiment_ids, project_id=None, metrics=None, sort_by=None, dates=None, regions=None, token=None):
+def _get_treatment_avg_lifts(lifts, defaults):
+    """从 per-bucket lifts 中只取 treatment 桶，按指标平均"""
+    ctrl_ids = set(str(x) for x in (defaults.get("control_groups") or []))
+    treatment_lifts = {}
+    count = 0
+    for gid, metrics in lifts.items():
+        if gid in ctrl_ids:
+            continue
+        count += 1
+        for metric, val in metrics.items():
+            if metric not in treatment_lifts:
+                treatment_lifts[metric] = 0.0
+            treatment_lifts[metric] += val
+    if count > 1:
+        for metric in treatment_lifts:
+            treatment_lifts[metric] /= count
+    return treatment_lifts
+
+
+def compare_experiments(experiment_ids, project_id=None, metrics=None,
+                        sort_by=None, dates=None, regions=None, token=None):
+    defaults = _load_defaults()
     results = []
     for exp_id in experiment_ids:
         data = fetch_metrics_for_experiment(exp_id, project_id, metrics, dates, regions, token=token)
@@ -115,15 +182,12 @@ def compare_experiments(experiment_ids, project_id=None, metrics=None, sort_by=N
     for r in results:
         exp_id = r["experiment_id"]
         lifts = r["data"].get("lifts", {})
+        avg_lifts = _get_treatment_avg_lifts(lifts, defaults)
         row = "%10s" % exp_id
         for m in metric_cols:
-            found = False
-            for _gn, group_lifts in lifts.items():
-                if m in group_lifts:
-                    row += "  %15s" % format_lift(group_lifts[m])
-                    found = True
-                    break
-            if not found:
+            if m in avg_lifts:
+                row += "  %15s" % format_lift(avg_lifts[m])
+            else:
                 row += "  %15s" % "N/A"
         lines.append(row)
 
@@ -132,10 +196,9 @@ def compare_experiments(experiment_ids, project_id=None, metrics=None, sort_by=N
         sort_data = []
         for r in results:
             lifts = r["data"].get("lifts", {})
-            for _gn, group_lifts in lifts.items():
-                if sort_by in group_lifts:
-                    sort_data.append((r["experiment_id"], group_lifts[sort_by]))
-                    break
+            avg_lifts = _get_treatment_avg_lifts(lifts, defaults)
+            if sort_by in avg_lifts:
+                sort_data.append((r["experiment_id"], avg_lifts[sort_by]))
         sort_data.sort(key=lambda x: x[1], reverse=True)
         for i, (exp_id, lift) in enumerate(sort_data):
             lines.append("  %s. 实验 %s: %s" % (i + 1, exp_id, format_lift(lift)))
@@ -154,12 +217,21 @@ def main():
     parser.add_argument("--project-id", type=int, default=None, help="项目 ID")
     parser.add_argument("--metrics", type=str, default=None, help="指标列表，逗号分隔")
     parser.add_argument("--sort-by", type=str, default=None, help="排序指标")
+    parser.add_argument("--dates", type=str, default=None, help="日期范围 start,end")
+    parser.add_argument("--regions", type=str, default=None, help="地区，逗号分隔")
     parser.add_argument("--token", type=str, default=None, help="AB API Token（不传则用环境变量 AB_API_TOKEN）")
     parser.add_argument("--json", action="store_true", help="输出 JSON")
     args = parser.parse_args()
 
     exp_ids = [int(x.strip()) for x in args.experiment_ids.split(",")]
     metrics = [m.strip() for m in args.metrics.split(",")] if args.metrics else None
+    regions = [r.strip() for r in args.regions.split(",") if r.strip()] if args.regions else None
+    dates = None
+    if args.dates:
+        parts = args.dates.split(",")
+        if len(parts) == 2:
+            dates = [{"time_start": parts[0].strip(), "time_end": parts[1].strip()}]
+
     if len(exp_ids) < 2:
         sys.stderr.write("错误: 需要至少 2 个实验 ID\n")
         sys.exit(1)
@@ -169,6 +241,8 @@ def main():
         project_id=args.project_id,
         metrics=metrics,
         sort_by=args.sort_by,
+        dates=dates,
+        regions=regions,
         token=args.token,
     )
     if "error" in result:
