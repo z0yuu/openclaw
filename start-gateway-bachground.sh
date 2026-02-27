@@ -105,8 +105,14 @@ case "${1:-start}" in
     echo "确认在跑: ps -ef | grep 18789  或  netstat -anp | grep $PORT（进程名多为 openclaw-gateway/node）"
     echo "停止: $0 stop（脚本会用 kill，必要时自动 kill -9）"
     ;;
+  restart)
+    echo "=== 重启 Gateway ==="
+    stop_gateway || true
+    sleep 2
+    exec "$0" start
+    ;;
   *)
-    echo "用法: $0 {start|stop}"
+    echo "用法: $0 {start|stop|restart}"
     exit 1
     ;;
 esac

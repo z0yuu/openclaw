@@ -185,23 +185,25 @@ python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --absolute
 
 **示例**：
 
-- 用户说「查03号桶和04号桶的数据」→ `bucket_id_03=31424`、`bucket_id_04=31425` 作为 treatment，对照组用默认 control → 运行：
+- 用户说「查03号桶和04号桶的数据」→ `bucket_id_03=31424`、`bucket_id_04=31425` 作为 treatment，**不传 `--control`**，脚本自动用默认双 control（31430+31438）→ 运行：
   ```bash
-  python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --treatments=31424,31425 --control=31430,31438
+  python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --treatments=31424,31425
   ```
-- 用户说「看看17号桶」→ `bucket_id_17=31438` 作为 treatment，对照组用默认 control → 运行：
+- 用户说「看看17号桶」→ `bucket_id_17=31438` 作为 treatment，**不传 `--control`** → 运行：
   ```bash
-  python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --treatments=31438 --control=31430,31438
+  python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --treatments=31438
   ```
-- 用户说「用09桶做对照看03桶」→ 明确指定了对照组，用 `bucket_id_09=31430` 做 control → 运行：
+- 用户说「用09桶做对照看03桶」→ 用户**明确指定了**对照组，此时才传 `--control` → 运行：
   ```bash
   python /root/agent/skills/ab-platform/scripts/fetch_metrics.py --treatments=31424 --control=31430
   ```
 
-**注意**：
+**对照组规则（重要）**：
 
-- 用户指定了特定桶时，将这些桶作为 `--treatments`，**对照组仍使用默认的两个 control 桶（31430, 31438）**，除非用户明确指定了其他对照组。
-- 未指定的参数（实验 ID、指标等）仍用默认值。
+- 脚本的 `--control` 参数**不传时**，自动从 `defaults.json` 读取默认值：**31430（bucket_id_09）+ 31438（bucket_id_17）两个桶合并作为对照组**。
+- **只有用户明确说了"用 XX 桶做对照"时**，才传 `--control=XX`，覆盖默认值。
+- 用户只提到 treatment 桶（如"查03桶04桶"）而没说对照组时，**一定不要传 `--control`**，让脚本走默认双 control 逻辑。
+- 未指定的参数（实验 ID、指标等）同样用默认值。
 
 ### 呈现结果时必须包含桶名
 
