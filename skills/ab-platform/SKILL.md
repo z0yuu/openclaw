@@ -54,18 +54,20 @@ export AB_PROJECT_ID="27"
 python /root/agent/skills/ab-platform/scripts/fetch_metrics.py <experiment_id> [project_id] [options]
 ```
 
-| 参数          | 说明                   | 示例                  |
-| ------------- | ---------------------- | --------------------- |
-| experiment_id | 实验 ID                | 15367                 |
-| project_id    | 项目 ID（可选）        | 27                    |
-| --metrics     | 指标列表，逗号分隔     | order_cnt,gmv         |
-| --control     | 对照组 ID              | 82930                 |
-| --treatments  | 实验组 ID，逗号分隔    | 82944,82945           |
-| --dates       | 日期范围 start,end     | 2026-02-01,2026-02-10 |
-| --regions     | 地区，逗号分隔         | TW,ID                 |
-| --json        | 输出 JSON              |                       |
-| --absolute    | 同时显示绝对值         |                       |
-| --cache       | 启用缓存（默认不缓存） |                       |
+| 参数          | 说明                         | 示例                  |
+| ------------- | ---------------------------- | --------------------- |
+| experiment_id | 实验 ID                      | 15367                 |
+| project_id    | 项目 ID（可选）              | 27                    |
+| --metrics     | 指标列表，逗号分隔           | order_cnt,gmv         |
+| --control     | 对照组 ID                    | 82930                 |
+| --treatments  | 实验组 ID，逗号分隔          | 82944,82945           |
+| --dates       | 日期范围 start,end           | 2026-02-01,2026-02-10 |
+| --regions     | 地区，逗号分隔               | TW,ID                 |
+| --json        | 输出 JSON                    |                       |
+| --absolute    | 同时显示绝对值               |                       |
+| --card-type   | 卡片类型过滤（默认 allcard） | allcard               |
+| --sort-type   | 排序类型过滤（默认 **ALL**） | **ALL**               |
+| --cache       | 启用缓存（默认不缓存）       |                       |
 
 示例：
 

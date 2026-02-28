@@ -19,8 +19,10 @@
       "order_per_uu",
       "gmv_per_uu_995"
     ],
-    "dims": ["abtest_group", "abtest_region", "abtest_date"],
-    "regions": ["ID"],
+    "dims": ["abtest_group", "abtest_region", "abtest_date", "card_type", "sort_type"],
+    "card_type": "allcard",
+    "sort_type": "__ALL__",
+    "regions": ["MY"],
     "control_groups": ["31430", "31438"],
     "treatment_groups": ["31421", "31425"],
     "show_absolute": false

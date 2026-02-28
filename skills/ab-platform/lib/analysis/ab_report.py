@@ -8,7 +8,7 @@ from __future__ import absolute_import, division, unicode_literals
 
 DIMENSION_COLUMNS = {
     "group_prefix", "group_name", "abtest_group",
-    "abtest_region", "abtest_date",
+    "abtest_region", "abtest_date", "card_type", "sort_type",
 }
 
 

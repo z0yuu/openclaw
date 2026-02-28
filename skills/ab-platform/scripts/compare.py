@@ -72,14 +72,14 @@ def _load_defaults():
 
 
 def _flatten_groups(groups):
-    """将 ['31430', '31438'] 扁平化为逗号分隔字符串"""
+    """将 ['31430', '31438'] 扁平化为分号分隔字符串（AB API 合并控制组格式）"""
     parts = []
     for x in (groups or []):
-        for p in str(x).split(","):
+        for p in str(x).replace(";", ",").split(","):
             p = p.strip()
             if p:
                 parts.append(p)
-    return ",".join(parts) if parts else ""
+    return ";".join(parts) if parts else ""
 
 
 def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None,
@@ -126,6 +126,23 @@ def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None,
         normalization=normalization,
         **kwargs
     )
+
+    card_type = defaults.get("card_type")
+    if result and card_type:
+        ct = card_type.strip().lower()
+        for key in ("body", "relative"):
+            rows = result.get(key)
+            if rows:
+                result[key] = [r for r in rows if str(r.get("card_type", "")).strip().lower() == ct]
+
+    sort_type = defaults.get("sort_type")
+    if result and sort_type:
+        st = sort_type.strip().lower()
+        for key in ("body", "relative"):
+            rows = result.get(key)
+            if rows:
+                result[key] = [r for r in rows if str(r.get("sort_type", "")).strip().lower() == st]
+
     if result:
         result["experiment_id"] = experiment_id
         result["project_id"] = project_id

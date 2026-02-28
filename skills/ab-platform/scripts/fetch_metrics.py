@@ -60,7 +60,7 @@ _load_env_file(os.path.join(SKILL_ROOT, ".env"))
 from ab_client import PlatformAPIClient, CacheManager, get_default_metrics
 from analysis import (
     format_ab_summary, format_lift_report, get_daily_lift_summary,
-    extract_metric_lifts, get_grouped_summary,
+    extract_metric_lifts, get_grouped_summary, DIMENSION_COLUMNS,
 )
 
 
@@ -109,6 +109,8 @@ def fetch_metrics(
     normalization=None,
     use_cache=True,
     token=None,
+    card_type=None,
+    sort_type=None,
 ):
     defaults = _load_defaults()
 
@@ -132,11 +134,11 @@ def fetch_metrics(
         if control_groups:
             parts = []
             for x in control_groups:
-                for p in str(x).split(","):
+                for p in str(x).replace(";", ",").split(","):
                     p = p.strip()
                     if p:
                         parts.append(p)
-            control = ",".join(parts) if parts else ""
+            control = ";".join(parts) if parts else ""
 
     if not treatments:
         treatment_groups = defaults.get("treatment_groups") or []
@@ -157,12 +159,17 @@ def fetch_metrics(
     if not normalization:
         normalization = defaults.get("normalization") or None
 
+    if not card_type:
+        card_type = defaults.get("card_type") or None
+
+    if not sort_type:
+        sort_type = defaults.get("sort_type") or None
+
     if not metrics:
         metrics = defaults.get("metrics") or get_default_metrics()
 
-    # 去掉 control/treatments 中可能的前后空格，避免 ClickHouse TYPE_MISMATCH
     if control:
-        control = ",".join(s.strip() for s in str(control).split(",") if s.strip())
+        control = ";".join(s.strip() for s in str(control).replace(",", ";").split(";") if s.strip())
     if treatments:
         treatments = [str(t).strip() for t in treatments if str(t).strip()]
 
@@ -187,6 +194,21 @@ def fetch_metrics(
     params.update(call_kwargs)
 
     result = client.get_ab_metrics(**params)
+
+    if result and card_type:
+        ct = card_type.strip().lower()
+        for key in ("body", "relative"):
+            rows = result.get(key)
+            if rows:
+                result[key] = [r for r in rows if str(r.get("card_type", "")).strip().lower() == ct]
+
+    if result and sort_type:
+        st = sort_type.strip().lower()
+        for key in ("body", "relative"):
+            rows = result.get(key)
+            if rows:
+                result[key] = [r for r in rows if str(r.get("sort_type", "")).strip().lower() == st]
+
     if result:
         result["experiment_id"] = experiment_id
         result["project_id"] = project_id
@@ -218,6 +240,8 @@ def main():
     parser.add_argument("--token", type=str, default=None, help="AB API Token（不传则用环境变量 AB_API_TOKEN）")
     parser.add_argument("--json", action="store_true", help="输出 JSON")
     parser.add_argument("--absolute", action="store_true", help="同时显示绝对值（默认只显示相对提升百分比）")
+    parser.add_argument("--card-type", type=str, default=None, help="卡片类型过滤（如 allcard, item 等，默认读 defaults.json）")
+    parser.add_argument("--sort-type", type=str, default=None, help="排序类型过滤（如 __ALL__, relevancy 等，默认读 defaults.json）")
     parser.add_argument("--cache", action="store_true", help="启用缓存（默认不缓存）")
     args = parser.parse_args()
 
@@ -244,6 +268,8 @@ def main():
         normalization=args.normalization,
         use_cache=args.cache,
         token=args.token,
+        card_type=args.card_type,
+        sort_type=args.sort_type,
     )
     if not result:
         sys.stderr.write("获取数据失败\n")
