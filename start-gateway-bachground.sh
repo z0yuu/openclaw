@@ -9,6 +9,9 @@ LOG_DIR="${OPENCLAW_LOG_DIR:-/root/.openclaw}"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/gateway.log"
 PID_FILE="$LOG_DIR/gateway.pid"
+MONITOR_SCRIPT="$(dirname "$0")/scripts/gateway-monitor.py"
+MONITOR_PID_FILE="$LOG_DIR/gateway-monitor.pid"
+READABLE_LOG="$LOG_DIR/gateway-readable.log"
 
 # 端口转十六进制（/proc/net/tcp 里端口是 hex）
 port_to_hex() { printf '%04X' "$1"; }
@@ -78,8 +81,32 @@ stop_gateway() {
   return 1
 }
 
+start_monitor() {
+  stop_monitor 2>/dev/null || true
+  if [ ! -f "$MONITOR_SCRIPT" ]; then
+    echo "  (monitor 脚本不存在: $MONITOR_SCRIPT，跳过可读日志)"
+    return
+  fi
+  nohup python3 "$MONITOR_SCRIPT" --daemon >> /dev/null 2>&1 &
+  echo "  可读日志 monitor 已启动 (PID $!)"
+  echo "  查看: tail -f $READABLE_LOG"
+}
+
+stop_monitor() {
+  if [ -f "$MONITOR_PID_FILE" ]; then
+    local mpid
+    mpid=$(cat "$MONITOR_PID_FILE")
+    if kill -0 "$mpid" 2>/dev/null; then
+      kill "$mpid" 2>/dev/null
+      echo "  monitor 已停止 (PID $mpid)"
+    fi
+    rm -f "$MONITOR_PID_FILE"
+  fi
+}
+
 case "${1:-start}" in
   stop)
+    stop_monitor
     stop_gateway
     ;;
   start)
@@ -101,12 +128,13 @@ case "${1:-start}" in
     nohup pnpm openclaw gateway --port "$PORT" --verbose >> "$LOG_FILE" 2>&1 &
     echo $! > "$PID_FILE"
     echo "Gateway 已在后台启动 (PID $(cat "$PID_FILE"))，端口 $PORT"
-    echo "日志: $LOG_FILE"
-    echo "确认在跑: ps -ef | grep 18789  或  netstat -anp | grep $PORT（进程名多为 openclaw-gateway/node）"
-    echo "停止: $0 stop（脚本会用 kill，必要时自动 kill -9）"
+    echo "原始日志: $LOG_FILE"
+    start_monitor
+    echo "停止: $0 stop"
     ;;
   restart)
     echo "=== 重启 Gateway ==="
+    stop_monitor
     stop_gateway || true
     sleep 2
     exec "$0" start
