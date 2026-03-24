@@ -92,3 +92,9 @@ tags: [ego, job, grafana, monitoring]
 - **GRAFANA_API_TOKEN not set**: Before step 2, tell the user to set it or prompt to set the variable and retry.
 - **Grafana request fails** (e.g. 401/403/500): Report the error and stop; do not fabricate data.
 - **Panel has no data or unexpected columns**: That panel may be omitted or marked “unparsed” in the structured summary; raw data is still kept in the output.
+
+## Python 版本
+
+- 此 skill 的 Python 脚本最低按 **Python 3.10+** 使用。
+- 依据：PEP 585 built-in generics without postponed annotations；PEP 604 union syntax (X | Y)。
+- 若系统默认 `python3` 低于该版本，请先切到对应版本后再执行，避免语法错误或直接运行失败。

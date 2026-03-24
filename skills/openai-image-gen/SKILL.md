@@ -87,3 +87,9 @@ Different models support different parameter values. The script automatically se
 - `*.png`, `*.jpeg`, or `*.webp` images (output format depends on model + `--output-format`)
 - `prompts.json` (prompt → file mapping)
 - `index.html` (thumbnail gallery)
+
+## Python 版本
+
+- 此 skill 的 Python 脚本最低按 **Python 3.9+** 使用。
+- 依据：PEP 585 built-in generics without postponed annotations。
+- 若系统默认 `python3` 低于该版本，请先切到对应版本后再执行，避免语法错误或直接运行失败。

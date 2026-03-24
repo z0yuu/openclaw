@@ -56,3 +56,9 @@ Notes
 - Use timestamps in filenames: `yyyy-mm-dd-hh-mm-ss-name.png`.
 - The script prints a `MEDIA:` line for OpenClaw to auto-attach on supported chat providers.
 - Do not read the image back; report the saved path only.
+
+## Python 版本
+
+- 此 skill 的 Python 脚本最低按 **Python 3.10+** 使用。
+- 依据：PEP 604 union syntax (X | Y)。
+- 若系统默认 `python3` 低于该版本，请先切到对应版本后再执行，避免语法错误或直接运行失败。

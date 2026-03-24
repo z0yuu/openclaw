@@ -118,3 +118,8 @@ skills/config-release-history/
 - 每次 API 调用最多返回 100 个版本，脚本会自动翻页。
 - 默认模式按桶级别分析 ABLayer 和 Predictor 的变更，使用 `--raw-diff` 可查看原始 unified diff。
 - DAG 变更和 Predictor 变更独立报告，任一有变化即为有变化。
+
+## Python 版本
+
+- 此 skill 的 Python 脚本按 **Python 3.8+** 使用。
+- 当前脚本静态扫描未发现要求 3.9+/3.10+ 的语法，可按 3.8 基线处理。

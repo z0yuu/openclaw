@@ -100,3 +100,9 @@ curl http://127.0.0.1:8000/places/{place_id}
 ```
 
 Use `next_page_token` as `page_token` in next request for more results.
+
+## Python 版本
+
+- 此 skill 的 Python 脚本最低按 **Python 3.10+** 使用。
+- 依据：PEP 585 built-in generics without postponed annotations；PEP 604 union syntax (X | Y)。
+- 若系统默认 `python3` 低于该版本，请先切到对应版本后再执行，避免语法错误或直接运行失败。

@@ -368,3 +368,9 @@ After testing the skill, users may request improvements. Often this happens righ
 2. Notice struggles or inefficiencies
 3. Identify how SKILL.md or bundled resources should be updated
 4. Implement changes and test again
+
+## Python 版本
+
+- 此 skill 的 Python 脚本最低按 **Python 3.10+** 使用。
+- 依据：match statement。
+- 若系统默认 `python3` 低于该版本，请先切到对应版本后再执行，避免语法错误或直接运行失败。

@@ -75,3 +75,8 @@ python skills/seatalk/scripts/send_message.py group "G_xxx" "请查收" --mentio
 
 - [SeaTalk 开放平台文档](https://open.seatalk.io/docs)
 - [发送消息 API](https://open.seatalk.io/docs/messaging_send-message-to-bot-subscriber_)
+
+## Python 版本
+
+- 此 skill 的 Python 脚本按 **Python 3.8+** 使用。
+- 当前脚本静态扫描未发现要求 3.9+/3.10+ 的语法，可按 3.8 基线处理。
