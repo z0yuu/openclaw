@@ -53,6 +53,15 @@ from .default_metrics import get_default_metrics
 DEFAULT_METRICS = get_default_metrics()
 
 
+def _normalize_space_text(value):
+    try:
+        if value is None:
+            return value
+        return " ".join((value or "").split())
+    except Exception:
+        return value
+
+
 class PlatformAPIClient(object):
     """Shopee AB Report Open API 客户端"""
 
@@ -351,23 +360,54 @@ class PlatformAPIClient(object):
         if self.use_mock or (not self.token):
             return self._mock_get_ab_metrics(experiment_id)
 
-        key_response = self.get_summary_key(
-            project_id=project_id,
-            experiment_id=experiment_id,
-            control=control,
-            treatments=treatments,
-            metrics=metrics,
-            dates=dates,
-            regions=kwargs.get("regions"),
-            dims=kwargs.get("dims"),
-            template_name=template_name,
-            template_group_name=template_group_name,
-            normalization=normalization,
-        )
-        if (not key_response) or key_response.get("retcode", -1) != 0:
-            return self._mock_get_ab_metrics(experiment_id)
-        key_info = key_response.get("key_info") or {}
-        if not key_info:
+        template_name_candidates = []
+        template_group_candidates = []
+
+        def _append_candidate(target, value):
+            if value is None:
+                return
+            if value not in target:
+                target.append(value)
+
+        _append_candidate(template_name_candidates, template_name)
+        _append_candidate(template_group_candidates, template_group_name)
+
+        normalized_template_name = _normalize_space_text(template_name)
+        normalized_template_group_name = _normalize_space_text(template_group_name)
+        _append_candidate(template_name_candidates, normalized_template_name)
+        _append_candidate(template_group_candidates, normalized_template_group_name)
+
+        last_key_response = None
+        chosen_template_name = template_name
+        chosen_template_group_name = template_group_name
+        key_info = {}
+
+        for tn in template_name_candidates:
+            for tg in template_group_candidates:
+                key_response = self.get_summary_key(
+                    project_id=project_id,
+                    experiment_id=experiment_id,
+                    control=control,
+                    treatments=treatments,
+                    metrics=metrics,
+                    dates=dates,
+                    regions=kwargs.get("regions"),
+                    dims=kwargs.get("dims"),
+                    template_name=tn,
+                    template_group_name=tg,
+                    normalization=normalization,
+                )
+                last_key_response = key_response
+                if key_response and key_response.get("retcode", -1) == 0:
+                    key_info = key_response.get("key_info") or {}
+                    if key_info:
+                        chosen_template_name = tn
+                        chosen_template_group_name = tg
+                        break
+            if key_info:
+                break
+
+        if (not last_key_response) or (not key_info):
             return self._mock_get_ab_metrics(experiment_id)
 
         result = self.poll_summary_result(
@@ -381,8 +421,8 @@ class PlatformAPIClient(object):
             metrics=metrics,
             dims=kwargs.get("dims"),
             normalization=normalization,
-            template_name=template_name,
-            template_group_name=template_group_name,
+            template_name=chosen_template_name,
+            template_group_name=chosen_template_group_name,
         )
         if (not result) or result.get("retcode", -1) != 0:
             return self._mock_get_ab_metrics(experiment_id)

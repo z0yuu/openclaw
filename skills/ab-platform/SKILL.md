@@ -111,11 +111,13 @@ python /root/agent/skills/ab-platform/scripts/compare.py 15367,15368,15369 --met
 | treatment_groups    | **31421, 31425**                                                                                                                                    |
 | normalization       | **control**                                                                                                                                         |
 | template_name       | One Page - Search Core Metric                                                                                                                       |
-| template_group_name | (org+ads) by card                                                                                                                                   |
+| template_group_name | (org+ads) by card（注意：以 defaults.json 为准；skill 代码已兼容多余空格并自动回退到规范空格写法）                                                  |
 | dims                | abtest_group, abtest_region, abtest_date                                                                                                            |
 | show_absolute       | **false**（默认只显示相对提升百分比）                                                                                                               |
 
 ### 调用规则
+
+补充说明：如果 `defaults.json` 里的 `template_group_name` 因历史原因带了多余空格（如 `(org+ads)  by card`），skill 内的客户端会自动尝试规范化为空格版本 `(org+ads) by card` 再重试，避免因为模板组名空格不一致而回退到 mock 数据。
 
 1. 用户说"帮我看看实验数据"→ **直接运行** `python /root/agent/skills/ab-platform/scripts/fetch_metrics.py`，不需要传任何参数，脚本自动使用上表默认值。
 2. 用户说"看看前天的数据"→ 只需加 `--dates=2026-02-23,2026-02-23`，其余用默认值。

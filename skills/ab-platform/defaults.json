@@ -7,7 +7,7 @@
       "name": "vector in coarse ranking"
     },
     "template_name": "One Page - Search Core Metric",
-    "template_group_name": "(org+ads)  by card",
+    "template_group_name": "(org+ads) by card",
     "template_group_type": 1,
     "normalization": "control",
     "metrics": [
