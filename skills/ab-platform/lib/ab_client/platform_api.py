@@ -369,13 +369,12 @@ class PlatformAPIClient(object):
             if value not in target:
                 target.append(value)
 
-        _append_candidate(template_name_candidates, template_name)
-        _append_candidate(template_group_candidates, template_group_name)
-
         normalized_template_name = _normalize_space_text(template_name)
         normalized_template_group_name = _normalize_space_text(template_group_name)
         _append_candidate(template_name_candidates, normalized_template_name)
         _append_candidate(template_group_candidates, normalized_template_group_name)
+        _append_candidate(template_name_candidates, template_name)
+        _append_candidate(template_group_candidates, template_group_name)
 
         last_key_response = None
         chosen_template_name = template_name
