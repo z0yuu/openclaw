@@ -1,0 +1,187 @@
+{
+  "timestamp": 1771257285.2096498,
+  "data": {
+    "columns": [
+      "group_prefix",
+      "group_name",
+      "abtest_group",
+      "abtest_region",
+      "abtest_date",
+      "gmv"
+    ],
+    "body": [
+      {
+        "group_prefix": "Control Group",
+        "group_name": "control",
+        "abtest_group": "31430;31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-15",
+        "gmv": "2464120.637916"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_00",
+        "abtest_group": "31421",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-15",
+        "gmv": "2415764.326684"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_04",
+        "abtest_group": "31425",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-15",
+        "gmv": "2478661.015205"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_09",
+        "abtest_group": "31430",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-15",
+        "gmv": "2463790.061472"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_17",
+        "abtest_group": "31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-15",
+        "gmv": "2464451.214360"
+      }
+    ],
+    "relative": [
+      {
+        "group_prefix": "Control Group",
+        "group_name": "control",
+        "abtest_group": "31430;31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-15",
+        "gmv": "0.000000"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_00",
+        "abtest_group": "31421",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-15",
+        "gmv": "-0.019624"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_04",
+        "abtest_group": "31425",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-15",
+        "gmv": "0.005901"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_09",
+        "abtest_group": "31430",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-15",
+        "gmv": "-0.000134"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_17",
+        "abtest_group": "31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-15",
+        "gmv": "0.000134"
+      }
+    ],
+    "control_group_indexes": [0],
+    "raw": {
+      "body": [
+        "Control Group||control||31430;31438||ID||2026-02-15||2464120.637916",
+        "Treatment Group||bucket_id_00||31421||ID||2026-02-15||2415764.326684",
+        "Treatment Group||bucket_id_04||31425||ID||2026-02-15||2478661.015205",
+        "Treatment Group||bucket_id_09||31430||ID||2026-02-15||2463790.061472",
+        "Treatment Group||bucket_id_17||31438||ID||2026-02-15||2464451.214360"
+      ],
+      "control_group_indexes": [0],
+      "header": "group_prefix||group_name||abtest_group||abtest_region||abtest_date||gmv",
+      "relative": [
+        "Control Group||control||31430;31438||ID||2026-02-15||0.000000",
+        "Treatment Group||bucket_id_00||31421||ID||2026-02-15||-0.019624",
+        "Treatment Group||bucket_id_04||31425||ID||2026-02-15||0.005901",
+        "Treatment Group||bucket_id_09||31430||ID||2026-02-15||-0.000134",
+        "Treatment Group||bucket_id_17||31438||ID||2026-02-15||0.000134"
+      ]
+    },
+    "experiment_id": 6850,
+    "project_id": 27,
+    "formatted_text": "实验 6850 指标概览\n==================================================\n\n【按实验组】\n\n  31430;31438（汇总）:\n    gmv: 2464120.64\n  明细（按日期/地区）:\n    Control Group | ID | 2026-02-15\n      gmv: 2464120.637916\n\n  Treatment (31438)（汇总）:\n    gmv: 2464451.21\n    相对 Control:\n      gmv: +0.01%\n  明细（按日期/地区）:\n    Treatment Group | ID | 2026-02-15\n      gmv: 2464451.214360\n\n  Treatment (31430)（汇总）:\n    gmv: 2463790.06\n    相对 Control:\n      gmv: -0.01%\n  明细（按日期/地区）:\n    Treatment Group | ID | 2026-02-15\n      gmv: 2463790.061472\n\n  Treatment (31425)（汇总）:\n    gmv: 2478661.02\n    相对 Control:\n      gmv: +0.59%\n  明细（按日期/地区）:\n    Treatment Group | ID | 2026-02-15\n      gmv: 2478661.015205\n\n  Treatment (31421)（汇总）:\n    gmv: 2415764.33\n    相对 Control:\n      gmv: -1.96%\n  明细（按日期/地区）:\n    Treatment Group | ID | 2026-02-15\n      gmv: 2415764.326684\n\n【总体 Treatment（所有实验组汇总）】\n  汇总指标:\n    gmv: 9822666.62\n  相对 Control 提升:\n    gmv: +298.63%",
+    "lifts": {
+      "Treatment Group": {
+        "gmv": 0.000134
+      }
+    },
+    "by_group": [
+      {
+        "group_key": "31430;31438",
+        "abtest_group": "31430;31438",
+        "is_control": true,
+        "agg": {
+          "gmv": 2464120.637916
+        },
+        "lift_vs_control": null
+      },
+      {
+        "group_key": "Treatment (31438)",
+        "abtest_group": "31438",
+        "is_control": false,
+        "agg": {
+          "gmv": 2464451.21436
+        },
+        "lift_vs_control": {
+          "gmv": 0.00013415594955593841
+        }
+      },
+      {
+        "group_key": "Treatment (31430)",
+        "abtest_group": "31430",
+        "is_control": false,
+        "agg": {
+          "gmv": 2463790.061472
+        },
+        "lift_vs_control": {
+          "gmv": -0.00013415594955593841
+        }
+      },
+      {
+        "group_key": "Treatment (31425)",
+        "abtest_group": "31425",
+        "is_control": false,
+        "agg": {
+          "gmv": 2478661.015205
+        },
+        "lift_vs_control": {
+          "gmv": 0.005900838240329546
+        }
+      },
+      {
+        "group_key": "Treatment (31421)",
+        "abtest_group": "31421",
+        "is_control": false,
+        "agg": {
+          "gmv": 2415764.326684
+        },
+        "lift_vs_control": {
+          "gmv": -0.01962416550875402
+        }
+      }
+    ],
+    "overall_treatment": {
+      "agg": {
+        "gmv": 9822666.617721
+      },
+      "lift_vs_control": {
+        "gmv": 2.9862766727315755
+      }
+    }
+  }
+}

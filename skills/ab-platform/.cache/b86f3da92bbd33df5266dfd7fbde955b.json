@@ -1,0 +1,81 @@
+{
+  "timestamp": 1772193719.630905, 
+  "data": {
+    "body": [
+      {
+        "gmv_995": "2524828.09118", 
+        "ads_revenue_usd": "173560.386461", 
+        "order_cnt": "531119.925107", 
+        "gmv_per_uu": "1.5290096740615187", 
+        "group_name": "control", 
+        "card_type": "allcard", 
+        "order_per_uu": "0.26991847106483213", 
+        "abtest_group": "31430;31438", 
+        "abtest_region": "ID", 
+        "gmv_per_uu_995": "1.2927149610971065", 
+        "group_prefix": "Control Group", 
+        "gmv": "3008639.9807", 
+        "abtest_date": "2026-02-26"
+      }, 
+      {
+        "gmv_995": "2485483.52761", 
+        "ads_revenue_usd": "168322.915307", 
+        "order_cnt": "521959.055596", 
+        "gmv_per_uu": "1.5122263236143134", 
+        "group_name": "bucket_id_00", 
+        "card_type": "allcard", 
+        "order_per_uu": "0.26581659232888244", 
+        "abtest_group": "31421", 
+        "abtest_region": "ID", 
+        "gmv_per_uu_995": "1.275262880144381", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "2969416.68241", 
+        "abtest_date": "2026-02-26"
+      }, 
+      {
+        "gmv_995": "2489511.60634", 
+        "ads_revenue_usd": "169434.932318", 
+        "order_cnt": "521234.734778", 
+        "gmv_per_uu": "1.4908108373047066", 
+        "group_name": "bucket_id_04", 
+        "card_type": "allcard", 
+        "order_per_uu": "0.26502553714828975", 
+        "abtest_group": "31425", 
+        "abtest_region": "ID", 
+        "gmv_per_uu_995": "1.2750621170990886", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "2932028.3613", 
+        "abtest_date": "2026-02-26"
+      }, 
+      {
+        "gmv_995": "2509049.24953", 
+        "ads_revenue_usd": "172900.186310", 
+        "order_cnt": "529999.315888", 
+        "gmv_per_uu": "1.5163657513737918", 
+        "group_name": "bucket_id_09", 
+        "card_type": "allcard", 
+        "order_per_uu": "0.26949387250880075", 
+        "abtest_group": "31430", 
+        "abtest_region": "ID", 
+        "gmv_per_uu_995": "1.285394662990177", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "2982156.15584", 
+        "abtest_date": "2026-02-26"
+      }, 
+      {
+        "gmv_995": "2540606.93282", 
+        "ads_revenue_usd": "174220.586613", 
+        "order_cnt": "532240.534326", 
+        "gmv_per_uu": "1.5416400072311536", 
+        "group_name": "bucket_id_17", 
+        "card_type": "allcard", 
+        "order_per_uu": "0.2703426132680448", 
+        "abtest_group": "31438", 
+        "abtest_region": "ID", 
+        "gmv_per_uu_995": "1.3000266251559085", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "3035123.80556", 
+        "abtest_date": "2026-02-26"
+      }
+    ], 
+    "formatted_text": 

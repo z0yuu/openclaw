@@ -1,0 +1,16 @@
+{
+  "timestamp": 1772003470.242996, 
+  "data": {
+    "body": [
+      {
+        "metric": "ctr", 
+        "value": "0.045", 
+        "group_name": "Control Group"
+      }, 
+      {
+        "metric": "ctr", 
+        "value": "0.051", 
+        "group_name": "Treatment Group"
+      }
+    ], 
+    "formatted_text": 

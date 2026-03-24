@@ -1,0 +1,6 @@
+max_runtime_seconds: 300
+
+resources:
+  memory: "128g"
+  cpu: "30"
+  gpu: 0

@@ -1,0 +1,56 @@
+{
+  "timestamp": 1772014558.321564, 
+  "data": {
+    "body": [
+      {
+        "ads_revenue_usd": "170662.395557", 
+        "order_cnt": "504008.990598", 
+        "group_name": "control", 
+        "abtest_group": "31430;31438", 
+        "abtest_region": "ID", 
+        "group_prefix": "Control Group", 
+        "gmv": "2794661.832705", 
+        "abtest_date": "2026-02-24"
+      }, 
+      {
+        "ads_revenue_usd": "165165.472833", 
+        "order_cnt": "494037.004484", 
+        "group_name": "bucket_id_00", 
+        "abtest_group": "31421", 
+        "abtest_region": "ID", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "2698149.324776", 
+        "abtest_date": "2026-02-24"
+      }, 
+      {
+        "ads_revenue_usd": "166878.175811", 
+        "order_cnt": "498858.026550", 
+        "group_name": "bucket_id_03", 
+        "abtest_group": "31424", 
+        "abtest_region": "ID", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "2739912.165226", 
+        "abtest_date": "2026-02-24"
+      }, 
+      {
+        "ads_revenue_usd": "170777.276986", 
+        "order_cnt": "504031.370995", 
+        "group_name": "bucket_id_09", 
+        "abtest_group": "31430", 
+        "abtest_region": "ID", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "2780692.338125", 
+        "abtest_date": "2026-02-24"
+      }, 
+      {
+        "ads_revenue_usd": "170547.514127", 
+        "order_cnt": "503986.610200", 
+        "group_name": "bucket_id_17", 
+        "abtest_group": "31438", 
+        "abtest_region": "ID", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "2808631.327285", 
+        "abtest_date": "2026-02-24"
+      }
+    ], 
+    "formatted_text": 

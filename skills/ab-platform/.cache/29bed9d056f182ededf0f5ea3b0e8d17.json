@@ -1,0 +1,39 @@
+{
+  "timestamp": 1771254854.363328,
+  "data": {
+    "columns": ["group_name", "metric", "value"],
+    "body": [
+      {
+        "group_name": "Control Group",
+        "metric": "ctr",
+        "value": "0.045"
+      },
+      {
+        "group_name": "Treatment Group",
+        "metric": "ctr",
+        "value": "0.051"
+      }
+    ],
+    "relative": [
+      {
+        "group_name": "Control Group",
+        "metric": "ctr",
+        "value": "0.000000"
+      },
+      {
+        "group_name": "Treatment Group",
+        "metric": "ctr",
+        "value": "0.133333"
+      }
+    ],
+    "control_group_indexes": [0],
+    "experiment_id": 15367,
+    "project_id": 27,
+    "formatted_text": "实验 15367 指标概览\n==================================================\n\n【各组指标值】\n\n  Control Group:\n    metric: ctr\n    value: 0.045\n\n  Treatment Group:\n    metric: ctr\n    value: 0.051\n\n【相对提升（vs Control）】\n\n  Treatment Group:\n    metric: ctr\n    value: +13.33%",
+    "lifts": {
+      "Treatment Group": {
+        "value": 0.133333
+      }
+    }
+  }
+}

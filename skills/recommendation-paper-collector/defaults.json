@@ -1,0 +1,57 @@
+{
+  "search_categories": ["cs.IR", "cs.LG", "cs.AI"],
+  "days_back": 7,
+  "max_papers": 20,
+  "keywords": [
+    "recommendation",
+    "recommender",
+    "pretrain",
+    "pretraining",
+    "multimodal",
+    "federated",
+    "sequential",
+    "retrieval",
+    "collaborative filtering",
+    "personalization"
+  ],
+  "fields": [
+    "序号",
+    "论文标题",
+    "作者",
+    "发表时间",
+    "arXiv ID",
+    "内容概括",
+    "亮点做法",
+    "代表性图片",
+    "图片说明",
+    "论文链接",
+    "分类"
+  ],
+  "default_sheet_url": "https://docs.google.com/spreadsheets/d/1TW-NubPwQCrhVvV1maV4KQRYfjoJ39e1V_L_Tx6oPrQ",
+  "sheet_name": "推荐系统热点论文",
+  "google_credentials": {
+    "token_path": "/root/agent/token.json",
+    "client_secret_path": "/root/agent/google.json"
+  },
+  "translation": {
+    "enabled": true,
+    "target_language": "zh"
+  },
+  "format_options": {
+    "date_format": "YYYY-MM-DD",
+    "truncate_summary": true,
+    "max_summary_length": 500,
+    "include_images": true,
+    "image_column": "H",
+    "image_width": 300,
+    "image_height": 200
+  },
+  "pdf_extraction": {
+    "enabled": true,
+    "min_width": 100,
+    "min_height": 100,
+    "max_images": 3,
+    "output_dir": "/tmp/arxiv_images",
+    "timeout": 30
+  }
+}

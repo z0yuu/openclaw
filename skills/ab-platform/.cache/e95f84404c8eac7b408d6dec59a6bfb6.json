@@ -1,0 +1,343 @@
+{
+  "timestamp": 1772015456.344725,
+  "data": {
+    "columns": [
+      "group_prefix",
+      "group_name",
+      "abtest_group",
+      "abtest_region",
+      "abtest_date",
+      "order_cnt",
+      "gmv",
+      "ads_revenue_usd"
+    ],
+    "body": [
+      {
+        "group_prefix": "Control Group",
+        "group_name": "control",
+        "abtest_group": "31430;31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-23",
+        "order_cnt": "501895.899011",
+        "gmv": "2814201.642614",
+        "ads_revenue_usd": "163767.382840"
+      },
+      {
+        "group_prefix": "Control Group",
+        "group_name": "control",
+        "abtest_group": "31430;31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-24",
+        "order_cnt": "504008.990598",
+        "gmv": "2794661.832705",
+        "ads_revenue_usd": "170662.395557"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_00",
+        "abtest_group": "31421",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-24",
+        "order_cnt": "494037.004484",
+        "gmv": "2698149.324776",
+        "ads_revenue_usd": "165165.472833"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_00",
+        "abtest_group": "31421",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-23",
+        "order_cnt": "493344.616650",
+        "gmv": "2728149.049998",
+        "ads_revenue_usd": "157774.568496"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_03",
+        "abtest_group": "31424",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-24",
+        "order_cnt": "498858.026550",
+        "gmv": "2739912.165226",
+        "ads_revenue_usd": "166878.175811"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_03",
+        "abtest_group": "31424",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-23",
+        "order_cnt": "495742.385285",
+        "gmv": "2782656.633827",
+        "ads_revenue_usd": "160353.996064"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_09",
+        "abtest_group": "31430",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-24",
+        "order_cnt": "504031.370995",
+        "gmv": "2780692.338125",
+        "ads_revenue_usd": "170777.276986"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_09",
+        "abtest_group": "31430",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-23",
+        "order_cnt": "501192.773571",
+        "gmv": "2811894.490758",
+        "ads_revenue_usd": "163790.859367"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_17",
+        "abtest_group": "31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-24",
+        "order_cnt": "503986.610200",
+        "gmv": "2808631.327285",
+        "ads_revenue_usd": "170547.514127"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_17",
+        "abtest_group": "31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-23",
+        "order_cnt": "502599.024450",
+        "gmv": "2816508.794470",
+        "ads_revenue_usd": "163743.906314"
+      }
+    ],
+    "relative": [
+      {
+        "group_prefix": "Control Group",
+        "group_name": "control",
+        "abtest_group": "31430;31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-23",
+        "order_cnt": "0.000000",
+        "gmv": "0.000000",
+        "ads_revenue_usd": "0.000000"
+      },
+      {
+        "group_prefix": "Control Group",
+        "group_name": "control",
+        "abtest_group": "31430;31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-24",
+        "order_cnt": "0.000000",
+        "gmv": "0.000000",
+        "ads_revenue_usd": "0.000000"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_00",
+        "abtest_group": "31421",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-24",
+        "order_cnt": "-0.019785",
+        "gmv": "-0.034535",
+        "ads_revenue_usd": "-0.032209"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_00",
+        "abtest_group": "31421",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-23",
+        "order_cnt": "-0.017038",
+        "gmv": "-0.030578",
+        "ads_revenue_usd": "-0.036593"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_03",
+        "abtest_group": "31424",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-24",
+        "order_cnt": "-0.010220",
+        "gmv": "-0.019591",
+        "ads_revenue_usd": "-0.022174"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_03",
+        "abtest_group": "31424",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-23",
+        "order_cnt": "-0.012261",
+        "gmv": "-0.011209",
+        "ads_revenue_usd": "-0.020843"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_09",
+        "abtest_group": "31430",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-24",
+        "order_cnt": "0.000044",
+        "gmv": "-0.004999",
+        "ads_revenue_usd": "0.000673"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_09",
+        "abtest_group": "31430",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-23",
+        "order_cnt": "-0.001401",
+        "gmv": "-0.000820",
+        "ads_revenue_usd": "0.000143"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_17",
+        "abtest_group": "31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-24",
+        "order_cnt": "-0.000044",
+        "gmv": "0.004999",
+        "ads_revenue_usd": "-0.000673"
+      },
+      {
+        "group_prefix": "Treatment Group",
+        "group_name": "bucket_id_17",
+        "abtest_group": "31438",
+        "abtest_region": "ID",
+        "abtest_date": "2026-02-23",
+        "order_cnt": "0.001401",
+        "gmv": "0.000820",
+        "ads_revenue_usd": "-0.000143"
+      }
+    ],
+    "control_group_indexes": [0, 1],
+    "raw": {
+      "body": [
+        "Control Group||control||31430;31438||ID||2026-02-23||501895.899011||2814201.642614||163767.382840",
+        "Control Group||control||31430;31438||ID||2026-02-24||504008.990598||2794661.832705||170662.395557",
+        "Treatment Group||bucket_id_00||31421||ID||2026-02-24||494037.004484||2698149.324776||165165.472833",
+        "Treatment Group||bucket_id_00||31421||ID||2026-02-23||493344.616650||2728149.049998||157774.568496",
+        "Treatment Group||bucket_id_03||31424||ID||2026-02-24||498858.026550||2739912.165226||166878.175811",
+        "Treatment Group||bucket_id_03||31424||ID||2026-02-23||495742.385285||2782656.633827||160353.996064",
+        "Treatment Group||bucket_id_09||31430||ID||2026-02-24||504031.370995||2780692.338125||170777.276986",
+        "Treatment Group||bucket_id_09||31430||ID||2026-02-23||501192.773571||2811894.490758||163790.859367",
+        "Treatment Group||bucket_id_17||31438||ID||2026-02-24||503986.610200||2808631.327285||170547.514127",
+        "Treatment Group||bucket_id_17||31438||ID||2026-02-23||502599.024450||2816508.794470||163743.906314"
+      ],
+      "control_group_indexes": [0, 1],
+      "header": "group_prefix||group_name||abtest_group||abtest_region||abtest_date||order_cnt||gmv||ads_revenue_usd",
+      "relative": [
+        "Control Group||control||31430;31438||ID||2026-02-23||0.000000||0.000000||0.000000",
+        "Control Group||control||31430;31438||ID||2026-02-24||0.000000||0.000000||0.000000",
+        "Treatment Group||bucket_id_00||31421||ID||2026-02-24||-0.019785||-0.034535||-0.032209",
+        "Treatment Group||bucket_id_00||31421||ID||2026-02-23||-0.017038||-0.030578||-0.036593",
+        "Treatment Group||bucket_id_03||31424||ID||2026-02-24||-0.010220||-0.019591||-0.022174",
+        "Treatment Group||bucket_id_03||31424||ID||2026-02-23||-0.012261||-0.011209||-0.020843",
+        "Treatment Group||bucket_id_09||31430||ID||2026-02-24||0.000044||-0.004999||0.000673",
+        "Treatment Group||bucket_id_09||31430||ID||2026-02-23||-0.001401||-0.000820||0.000143",
+        "Treatment Group||bucket_id_17||31438||ID||2026-02-24||-0.000044||0.004999||-0.000673",
+        "Treatment Group||bucket_id_17||31438||ID||2026-02-23||0.001401||0.000820||-0.000143"
+      ]
+    },
+    "experiment_id": 6850,
+    "project_id": 27,
+    "formatted_text": "实验 6850 指标概览\n==================================================\n\n【按实验组】\n\n  31430;31438（汇总）:\n    order_cnt: 1005904.89\n    gmv: 5608863.48\n    ads_revenue_usd: 334429.78\n  明细（按日期/地区）:\n    Control Group | ID | 2026-02-23\n      order_cnt: 501895.899011\n      gmv: 2814201.642614\n      ads_revenue_usd: 163767.382840\n    Control Group | ID | 2026-02-24\n      order_cnt: 504008.990598\n      gmv: 2794661.832705\n      ads_revenue_usd: 170662.395557\n\n  Treatment (31438)（汇总）:\n    order_cnt: 1006585.63\n    gmv: 5625140.12\n    ads_revenue_usd: 334291.42\n    相对 Control:\n      order_cnt: +0.07%\n      gmv: +0.29%\n      ads_revenue_usd: -0.04%\n  明细（按日期/地区）:\n    Treatment Group | ID | 2026-02-24\n      order_cnt: 503986.610200\n      gmv: 2808631.327285\n      ads_revenue_usd: 170547.514127\n    Treatment Group | ID | 2026-02-23\n      order_cnt: 502599.024450\n      gmv: 2816508.794470\n      ads_revenue_usd: 163743.906314\n\n  Treatment (31430)（汇总）:\n    order_cnt: 1005224.14\n    gmv: 5592586.83\n    ads_revenue_usd: 334568.14\n    相对 Control:\n      order_cnt: -0.07%\n      gmv: -0.29%\n      ads_revenue_usd: +0.04%\n  明细（按日期/地区）:\n    Treatment Group | ID | 2026-02-24\n      order_cnt: 504031.370995\n      gmv: 2780692.338125\n      ads_revenue_usd: 170777.276986\n    Treatment Group | ID | 2026-02-23\n      order_cnt: 501192.773571\n      gmv: 2811894.490758\n      ads_revenue_usd: 163790.859367\n\n  Treatment (31424)（汇总）:\n    order_cnt: 994600.41\n    gmv: 5522568.80\n    ads_revenue_usd: 327232.17\n    相对 Control:\n      order_cnt: -1.12%\n      gmv: -1.54%\n      ads_revenue_usd: -2.15%\n  明细（按日期/地区）:\n    Treatment Group | ID | 2026-02-24\n      order_cnt: 498858.026550\n      gmv: 2739912.165226\n      ads_revenue_usd: 166878.175811\n    Treatment Group | ID | 2026-02-23\n      order_cnt: 495742.385285\n      gmv: 2782656.633827\n      ads_revenue_usd: 160353.996064\n\n  Treatment (31421)（汇总）:\n    order_cnt: 987381.62\n    gmv: 5426298.37\n    ads_revenue_usd: 322940.04\n    相对 Control:\n      order_cnt: -1.84%\n      gmv: -3.25%\n      ads_revenue_usd: -3.44%\n  明细（按日期/地区）:\n    Treatment Group | ID | 2026-02-24\n      order_cnt: 494037.004484\n      gmv: 2698149.324776\n      ads_revenue_usd: 165165.472833\n    Treatment Group | ID | 2026-02-23\n      order_cnt: 493344.616650\n      gmv: 2728149.049998\n      ads_revenue_usd: 157774.568496\n\n【总体 Treatment（所有实验组汇总）】\n  汇总指标:\n    order_cnt: 3993791.81\n    gmv: 22166594.12\n    ads_revenue_usd: 1319031.77\n  相对 Control 提升:\n    order_cnt: +297.03%\n    gmv: +295.21%\n    ads_revenue_usd: +294.41%",
+    "lifts": {
+      "Treatment Group": {
+        "order_cnt": 0.001401,
+        "gmv": 0.00082,
+        "ads_revenue_usd": -0.000143
+      }
+    },
+    "by_group": [
+      {
+        "group_key": "31430;31438",
+        "abtest_group": "31430;31438",
+        "is_control": true,
+        "agg": {
+          "order_cnt": 1005904.889609,
+          "gmv": 5608863.475319,
+          "ads_revenue_usd": 334429.77839700005
+        },
+        "lift_vs_control": null
+      },
+      {
+        "group_key": "Treatment (31438)",
+        "abtest_group": "31438",
+        "is_control": false,
+        "agg": {
+          "order_cnt": 1006585.63465,
+          "gmv": 5625140.121755,
+          "ads_revenue_usd": 334291.420441
+        },
+        "lift_vs_control": {
+          "order_cnt": 0.0006767489133735929,
+          "gmv": 0.002901950904603632,
+          "ads_revenue_usd": -0.000413713027180784
+        }
+      },
+      {
+        "group_key": "Treatment (31430)",
+        "abtest_group": "31430",
+        "is_control": false,
+        "agg": {
+          "order_cnt": 1005224.144566,
+          "gmv": 5592586.828883,
+          "ads_revenue_usd": 334568.136353
+        },
+        "lift_vs_control": {
+          "order_cnt": -0.0006767489153617519,
+          "gmv": -0.002901950904603632,
+          "ads_revenue_usd": 0.00041371302718061
+        }
+      },
+      {
+        "group_key": "Treatment (31424)",
+        "abtest_group": "31424",
+        "is_control": false,
+        "agg": {
+          "order_cnt": 994600.411835,
+          "gmv": 5522568.799053,
+          "ads_revenue_usd": 327232.171875
+        },
+        "lift_vs_control": {
+          "order_cnt": -0.011238117928220845,
+          "gmv": -0.015385412150915606,
+          "ads_revenue_usd": -0.02152202640715744
+        }
+      },
+      {
+        "group_key": "Treatment (31421)",
+        "abtest_group": "31421",
+        "is_control": false,
+        "agg": {
+          "order_cnt": 987381.6211339999,
+          "gmv": 5426298.374774,
+          "ads_revenue_usd": 322940.041329
+        },
+        "lift_vs_control": {
+          "order_cnt": -0.018414532692250987,
+          "gmv": -0.03254939282233412,
+          "ads_revenue_usd": -0.03435620213927422
+        }
+      }
+    ],
+    "overall_treatment": {
+      "agg": {
+        "order_cnt": 3993791.8121849997,
+        "gmv": 22166594.124465,
+        "ads_revenue_usd": 1319031.769998
+      },
+      "lift_vs_control": {
+        "order_cnt": 2.97034734937754,
+        "gmv": 2.9520651950267505,
+        "ads_revenue_usd": 2.944121771453568
+      }
+    }
+  }
+}

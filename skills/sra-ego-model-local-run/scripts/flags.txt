@@ -1,0 +1,14 @@
+--ps_client=mock
+--ss_naming_host_file=/etc/volcano/ss.host
+--wc_naming_host_file=/etc/volcano/wc.host
+--worker_naming_host_file=/etc/volcano/worker.host
+--redis_host=10.129.113.4
+--redis_port=6379
+--redis_password=""
+--redis_cluster_mode=false
+--ss_port=23334
+--wc_port=23333
+--worker_port=23335
+--wc_prometheus_web_port=23336
+--ss_prometheus_web_port=23337
+--worker_prometheus_web_port=23338

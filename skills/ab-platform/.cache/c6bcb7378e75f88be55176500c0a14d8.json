@@ -1,0 +1,21 @@
+{
+  "timestamp": 1771259241.5148075,
+  "data": {
+    "columns": [],
+    "body": [],
+    "relative": [],
+    "control_group_indexes": [],
+    "raw": {
+      "body": null,
+      "control_group_indexes": null,
+      "header": "",
+      "relative": null
+    },
+    "experiment_id": 6850,
+    "project_id": 27,
+    "formatted_text": "实验 6850 指标概览\n==================================================\n\n【按实验组】",
+    "lifts": {},
+    "by_group": [],
+    "overall_treatment": null
+  }
+}

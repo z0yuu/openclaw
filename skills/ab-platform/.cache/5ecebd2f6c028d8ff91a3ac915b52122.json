@@ -1,0 +1,86 @@
+{
+  "timestamp": 1772016288.269681, 
+  "data": {
+    "body": [
+      {
+        "ads_revenue_usd": "81895.429683", 
+        "order_cnt": "250596.386786", 
+        "group_name": "bucket_id_09", 
+        "abtest_group": "31430", 
+        "abtest_region": "ID", 
+        "group_prefix": "Control Group", 
+        "gmv": "1405947.245379", 
+        "abtest_date": "2026-02-23"
+      }, 
+      {
+        "ads_revenue_usd": "85388.638493", 
+        "order_cnt": "252015.685498", 
+        "group_name": "bucket_id_09", 
+        "abtest_group": "31430", 
+        "abtest_region": "ID", 
+        "group_prefix": "Control Group", 
+        "gmv": "1390346.169063", 
+        "abtest_date": "2026-02-24"
+      }, 
+      {
+        "ads_revenue_usd": "82582.736416", 
+        "order_cnt": "247018.502242", 
+        "group_name": "bucket_id_00", 
+        "abtest_group": "31421", 
+        "abtest_region": "ID", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "1349074.662388", 
+        "abtest_date": "2026-02-24"
+      }, 
+      {
+        "ads_revenue_usd": "78887.284248", 
+        "order_cnt": "246672.308325", 
+        "group_name": "bucket_id_00", 
+        "abtest_group": "31421", 
+        "abtest_region": "ID", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "1364074.524999", 
+        "abtest_date": "2026-02-23"
+      }, 
+      {
+        "ads_revenue_usd": "83439.087905", 
+        "order_cnt": "249429.013275", 
+        "group_name": "bucket_id_03", 
+        "abtest_group": "31424", 
+        "abtest_region": "ID", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "1369956.082613", 
+        "abtest_date": "2026-02-24"
+      }, 
+      {
+        "ads_revenue_usd": "80176.998032", 
+        "order_cnt": "247871.192643", 
+        "group_name": "bucket_id_03", 
+        "abtest_group": "31424", 
+        "abtest_region": "ID", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "1391328.316913", 
+        "abtest_date": "2026-02-23"
+      }, 
+      {
+        "ads_revenue_usd": "85273.757064", 
+        "order_cnt": "251993.305100", 
+        "group_name": "bucket_id_17", 
+        "abtest_group": "31438", 
+        "abtest_region": "ID", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "1404315.663642", 
+        "abtest_date": "2026-02-24"
+      }, 
+      {
+        "ads_revenue_usd": "81871.953157", 
+        "order_cnt": "251299.512225", 
+        "group_name": "bucket_id_17", 
+        "abtest_group": "31438", 
+        "abtest_region": "ID", 
+        "group_prefix": "Treatment Group", 
+        "gmv": "1408254.397235", 
+        "abtest_date": "2026-02-23"
+      }
+    ], 
+    "formatted_text": 

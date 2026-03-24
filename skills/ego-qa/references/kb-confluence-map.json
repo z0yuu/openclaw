@@ -1,0 +1,5282 @@
+[
+  {
+    "filename": "(Old)EgoTrain_User_Manual.md",
+    "page_id": "803233540",
+    "title": "(Old)EgoTrain User Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=803233540"
+  },
+  {
+    "filename": "(Old)Ego_Design.md",
+    "page_id": "621646854",
+    "title": "(Old)Ego Design",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=621646854"
+  },
+  {
+    "filename": "0.4.2 updates.md",
+    "page_id": "1029509135",
+    "title": "0.4.2 updates",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1029509135"
+  },
+  {
+    "filename": "0.4.3 updates.md",
+    "page_id": "1029509035",
+    "title": "0.4.3 updates",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1029509035"
+  },
+  {
+    "filename": "0.4.4 updates.md",
+    "page_id": "1088662359",
+    "title": "0.4.4 updates",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1088662359"
+  },
+  {
+    "filename": "0.4.6 updates.md",
+    "page_id": "1226664328",
+    "title": "0.4.6 updates",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1226664328"
+  },
+  {
+    "filename": "0.4.7 updates.md",
+    "page_id": "1375971975",
+    "title": "0.4.7 updates",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1375971975"
+  },
+  {
+    "filename": "01-basic-concept.md.md",
+    "page_id": "2434817553",
+    "title": "01-basic-concept.md",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817553"
+  },
+  {
+    "filename": "01-sparse-feature-multi-embedding.md",
+    "page_id": "2434817861",
+    "title": "01-sparse-feature-multi-embedding",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817861"
+  },
+  {
+    "filename": "02-begin-with-deepctr.ipynb.md",
+    "page_id": "2434817607",
+    "title": "02-begin-with-deepctr.ipynb",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817607"
+  },
+  {
+    "filename": "02-share-embedding.md.md",
+    "page_id": "2434817872",
+    "title": "02-share-embedding.md",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817872"
+  },
+  {
+    "filename": "03-customize-metric_md.md",
+    "page_id": "2434817896",
+    "title": "03-customize-metric.md",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817896"
+  },
+  {
+    "filename": "03-training-in-cluster.md",
+    "page_id": "2434817773",
+    "title": "03-training-in-cluster",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817773"
+  },
+  {
+    "filename": "06-customize-backward_md.md",
+    "page_id": "2434817921",
+    "title": "06-customize-backward.md",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817921"
+  },
+  {
+    "filename": "07-customize-optimizer_md.md",
+    "page_id": "2434817945",
+    "title": "07-customize-optimizer.md",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817945"
+  },
+  {
+    "filename": "09-feature-admission-evict_md.md",
+    "page_id": "2434817970",
+    "title": "09-feature-admission-evict.md",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817970"
+  },
+  {
+    "filename": "09-how-to-get-sequence-embedding_md.md",
+    "page_id": "2434817986",
+    "title": "09-how-to-get-sequence-embedding.md",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817986"
+  },
+  {
+    "filename": "1_6_0 GPU pooling _ dense allreduce与worker pooling性能对比测试.md",
+    "page_id": "2194174969",
+    "title": "1.6.0 GPU pooling + dense allreduce与worker pooling性能对比测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2194174969"
+  },
+  {
+    "filename": "20220117_egotf v0_4.md",
+    "page_id": "907724357",
+    "title": "20220117.egotf v0.4",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=907724357"
+  },
+  {
+    "filename": "20220127_egotf v0_4_1.md",
+    "page_id": "927438396",
+    "title": "20220127.egotf v0.4.1",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=927438396"
+  },
+  {
+    "filename": "20220214_egotf v0_4_2.md",
+    "page_id": "948311267",
+    "title": "20220214.egotf v0.4.2",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=948311267"
+  },
+  {
+    "filename": "20220316_egotf v0_4_3.md",
+    "page_id": "1005636826",
+    "title": "20220316.egotf v0.4.3",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1005636826"
+  },
+  {
+    "filename": "20220316_egotf v0_4_4.md",
+    "page_id": "1095633745",
+    "title": "20220316.egotf v0.4.4",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1095633745"
+  },
+  {
+    "filename": "20220606_egotf v0_4_5.md",
+    "page_id": "1161110181",
+    "title": "20220606.egotf v0.4.5",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1161110181"
+  },
+  {
+    "filename": "20220709-egotf 0_4_6 _not with zmap optimisation and nsc development_.md",
+    "page_id": "1237204621",
+    "title": "20220709-egotf 0.4.6 (not with zmap optimisation and nsc development)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1237204621"
+  },
+  {
+    "filename": "20220714_egotf v0_4_6.md",
+    "page_id": "1248483186",
+    "title": "20220714.egotf v0.4.6",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1248483186"
+  },
+  {
+    "filename": "2022_09_01 - v0_1_0.md",
+    "page_id": "1359481452",
+    "title": "2022/09/01 - v0.1.0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1359481452"
+  },
+  {
+    "filename": "2025 NPS survey.md",
+    "page_id": "3073426880",
+    "title": "2025 NPS survey",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3073426880"
+  },
+  {
+    "filename": "2025年Q1 C3机器A30置换收益统计.md",
+    "page_id": "2721420416",
+    "title": "2025年Q1 C3机器A30置换收益统计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2721420416"
+  },
+  {
+    "filename": "A100上worker-ps性能分析.md",
+    "page_id": "2767446335",
+    "title": "A100上worker-ps性能分析",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2767446335"
+  },
+  {
+    "filename": "A100上worker-ps性能分析_单机版测试_.md",
+    "page_id": "2781074110",
+    "title": "A100上worker-ps性能分析（单机版测试）",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2781074110"
+  },
+  {
+    "filename": "A30 _ L4 性能测试.md",
+    "page_id": "2710964652",
+    "title": "A30 & L4 性能测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2710964652"
+  },
+  {
+    "filename": "A30 _ L40S性能测试.md",
+    "page_id": "2775910789",
+    "title": "A30 & L40S性能测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2775910789"
+  },
+  {
+    "filename": "A30机器网卡带宽测试.md",
+    "page_id": "2949134460",
+    "title": "A30机器网卡带宽测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2949134460"
+  },
+  {
+    "filename": "AI-search 改写迁ego.md",
+    "page_id": "2953144860",
+    "title": "AI-search 改写迁ego",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2953144860"
+  },
+  {
+    "filename": "AUC Monitor.md",
+    "page_id": "2685798521",
+    "title": "AUC Monitor",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2685798521"
+  },
+  {
+    "filename": "AUC monitor introduction.md",
+    "page_id": "1758346962",
+    "title": "AUC monitor introduction",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1758346962"
+  },
+  {
+    "filename": "About Inferencing (Release models to EGO predictor).md",
+    "page_id": "1967741147",
+    "title": "About Inferencing (Release models to EGO predictor)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1967741147"
+  },
+  {
+    "filename": "About Management.md",
+    "page_id": "1967741313",
+    "title": "About Management",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1967741313"
+  },
+  {
+    "filename": "About Model and Version.md",
+    "page_id": "1967739942",
+    "title": "About Model and Version",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1967739942"
+  },
+  {
+    "filename": "About Notebook.md",
+    "page_id": "2121024178",
+    "title": "About Notebook",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2121024178"
+  },
+  {
+    "filename": "About Training Job.md",
+    "page_id": "1967740302",
+    "title": "About Training Job",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1967740302"
+  },
+  {
+    "filename": "Access Process.md",
+    "page_id": "1363306302",
+    "title": "Access Process",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1363306302"
+  },
+  {
+    "filename": "AdaGrad vs DefaultSparse.md",
+    "page_id": "1780287241",
+    "title": "AdaGrad vs DefaultSparse",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1780287241"
+  },
+  {
+    "filename": "AdaGradDecayOptimizer.md",
+    "page_id": "1647646911",
+    "title": "AdaGradDecayOptimizer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1647646911"
+  },
+  {
+    "filename": "AdaGradOptimizer.md",
+    "page_id": "1403824574",
+    "title": "AdaGradOptimizer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403824574"
+  },
+  {
+    "filename": "AdaMomOptimizer.md",
+    "page_id": "1403824690",
+    "title": "AdaMomOptimizer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403824690"
+  },
+  {
+    "filename": "AdamWOptimizer.md",
+    "page_id": "1403824797",
+    "title": "AdamWOptimizer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403824797"
+  },
+  {
+    "filename": "Ads Models Inference Optimization.md",
+    "page_id": "2899526301",
+    "title": "Ads Models Inference Optimization",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2899526301"
+  },
+  {
+    "filename": "Adsunicr GPU机器压测.md",
+    "page_id": "2846458156",
+    "title": "Adsunicr GPU机器压测",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2846458156"
+  },
+  {
+    "filename": "Appendix.md",
+    "page_id": "1390065433",
+    "title": "Appendix",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1390065433"
+  },
+  {
+    "filename": "Articles.md",
+    "page_id": "1700173464",
+    "title": "Articles",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1700173464"
+  },
+  {
+    "filename": "Auc Monitor 数据库优化方案.md",
+    "page_id": "2337506400",
+    "title": "Auc Monitor 数据库优化方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2337506400"
+  },
+  {
+    "filename": "Auc unexpectedly dropped to 0_5.md",
+    "page_id": "1267156537",
+    "title": "Auc unexpectedly dropped to 0.5",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1267156537"
+  },
+  {
+    "filename": "Auto Dwongrade.md",
+    "page_id": "1988564425",
+    "title": "Auto Dwongrade",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1988564425"
+  },
+  {
+    "filename": "Backup.md",
+    "page_id": "1652129750",
+    "title": "Backup",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1652129750"
+  },
+  {
+    "filename": "Basic Introduction.md",
+    "page_id": "1363304393",
+    "title": "Basic Introduction",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1363304393"
+  },
+  {
+    "filename": "BatchNormalization.md",
+    "page_id": "1409654129",
+    "title": "BatchNormalization",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1409654129"
+  },
+  {
+    "filename": "Batch交替消费实现方案.md",
+    "page_id": "2296916220",
+    "title": "Batch交替消费实现方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2296916220"
+  },
+  {
+    "filename": "Benchmark CPU vs GPU_主要是精排模型_.md",
+    "page_id": "1113036563",
+    "title": "Benchmark CPU vs GPU[主要是精排模型]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1113036563"
+  },
+  {
+    "filename": "Benchmark For sse4recall_TF vs_ ONNX_.md",
+    "page_id": "1799348174",
+    "title": "Benchmark For sse4recall(TF vs. ONNX)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1799348174"
+  },
+  {
+    "filename": "Benchmark custom dedup client VS custom.md",
+    "page_id": "1623484619",
+    "title": "Benchmark custom dedup client VS custom",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1623484619"
+  },
+  {
+    "filename": "Benchmark for brpc compress.md",
+    "page_id": "1685176823",
+    "title": "Benchmark for brpc compress",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1685176823"
+  },
+  {
+    "filename": "Benchmark of zmap.md",
+    "page_id": "1194563090",
+    "title": "Benchmark of zmap",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1194563090"
+  },
+  {
+    "filename": "Benchmark online ps.md",
+    "page_id": "1267165834",
+    "title": "Benchmark online ps",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1267165834"
+  },
+  {
+    "filename": "Benchmark tool.md",
+    "page_id": "1647664445",
+    "title": "Benchmark tool",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1647664445"
+  },
+  {
+    "filename": "Benchmarks.md",
+    "page_id": "1294670476",
+    "title": "Benchmarks",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1294670476"
+  },
+  {
+    "filename": "Bisuness enroll.md",
+    "page_id": "1261080331",
+    "title": "Bisuness enroll",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1261080331"
+  },
+  {
+    "filename": "Business stress test.md",
+    "page_id": "1280080869",
+    "title": "Business stress test",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1280080869"
+  },
+  {
+    "filename": "CHECK_char_buffer_size___ fail.md",
+    "page_id": "3032065891",
+    "title": "CHECK(char_buffer.size()) fail",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3032065891"
+  },
+  {
+    "filename": "CPU_GPU_非AIBOX__本地多线程共享nn参数方案.md",
+    "page_id": "2376797214",
+    "title": "CPU/GPU(非AIBOX)，本地多线程共享nn参数方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2376797214"
+  },
+  {
+    "filename": "CPU集群.md",
+    "page_id": "2349294473",
+    "title": "CPU集群",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2349294473"
+  },
+  {
+    "filename": "Cache tensor value in emb look-up table_ assign-slot.md",
+    "page_id": "1562417319",
+    "title": "Cache tensor value in emb look-up table: assign-slot",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1562417319"
+  },
+  {
+    "filename": "Cascaded Model.md",
+    "page_id": "1883185820",
+    "title": "Cascaded Model",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1883185820"
+  },
+  {
+    "filename": "Check failed_ GetCreators___contains_class_name__有类未被定义.md",
+    "page_id": "2668260871",
+    "title": "Check failed: GetCreators().contains(class_name)，有类未被定义",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2668260871"
+  },
+  {
+    "filename": "Check failed_ feature_config-_dim__ __ slot_config_dim__ _140 vs 12__ 3001_ 65535_ 844759398158406894_ 2970_0.md",
+    "page_id": "2792984124",
+    "title": "Check failed: feature_config->dim() == slot_config.dim() (140 vs 12). 3001, 65535, 844759398158406894, 2970_0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2792984124"
+  },
+  {
+    "filename": "Check failed_ gpu_context-_IsGpuTensor_sparse_data-_device_data__d_unique_embed_sizes__.md",
+    "page_id": "2820721728",
+    "title": "Check failed: gpu_context->IsGpuTensor(sparse_data->device_data_.d_unique_embed_sizes).",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2820721728"
+  },
+  {
+    "filename": "Common Functions.md",
+    "page_id": "1390056465",
+    "title": "Common Functions",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1390056465"
+  },
+  {
+    "filename": "Compile srec_proto for golang.md",
+    "page_id": "1736619471",
+    "title": "Compile srec_proto for golang",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1736619471"
+  },
+  {
+    "filename": "Concept Introduction.md",
+    "page_id": "1388428478",
+    "title": "Concept Introduction",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1388428478"
+  },
+  {
+    "filename": "Config feature admission and evict strategy_deprecated_.md",
+    "page_id": "1531298611",
+    "title": "Config feature admission and evict strategy(deprecated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1531298611"
+  },
+  {
+    "filename": "Copy of EGO Portal V0.5.3 PRD（draft）.md",
+    "page_id": "2332585673",
+    "title": "Copy of EGO Portal V0.5.3 PRD（draft）",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2332585673"
+  },
+  {
+    "filename": "Copy of EGOPortal V0.3.0 PRD（original）.md",
+    "page_id": "1801248986",
+    "title": "Copy of EGOPortal V0.3.0 PRD（original）",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1801248986"
+  },
+  {
+    "filename": "Copy of EGOPortal V0.3.1 PRD.md",
+    "page_id": "1801247879",
+    "title": "Copy of EGOPortal V0.3.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1801247879"
+  },
+  {
+    "filename": "Copy of Implementation of cel-plugin_Draft_.md",
+    "page_id": "1663548609",
+    "title": "Copy of Implementation of cel-plugin(Draft)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1663548609"
+  },
+  {
+    "filename": "Copy of trt_backend vs xla_backend vs tf_backend 性能对比.md",
+    "page_id": "2648485598",
+    "title": "Copy of trt_backend vs xla_backend vs tf_backend 性能对比",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2648485598"
+  },
+  {
+    "filename": "Copy of 开启Auto Mixed Precision并没有带来性能提升.md",
+    "page_id": "2175045543",
+    "title": "Copy of 开启Auto Mixed Precision并没有带来性能提升",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2175045543"
+  },
+  {
+    "filename": "Correctness BenchMarks.md",
+    "page_id": "2427589500",
+    "title": "Correctness BenchMarks",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2427589500"
+  },
+  {
+    "filename": "Correctness BenchMarks_ 1_8_2.md",
+    "page_id": "2742675593",
+    "title": "Correctness BenchMarks: 1.8.2",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2742675593"
+  },
+  {
+    "filename": "Correctness BenchMarks_ 1_8_3.md",
+    "page_id": "2927970054",
+    "title": "Correctness BenchMarks: 1.8.3",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2927970054"
+  },
+  {
+    "filename": "Correctness BenchMarks_ 1_8_4.md",
+    "page_id": "2981644928",
+    "title": "Correctness BenchMarks: 1.8.4",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2981644928"
+  },
+  {
+    "filename": "Correctness BenchMarks_ 1_8_4临时镜像.md",
+    "page_id": "3087799352",
+    "title": "Correctness BenchMarks: 1.8.4临时镜像",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3087799352"
+  },
+  {
+    "filename": "Cpp Converter Optimisation report.md",
+    "page_id": "2801994148",
+    "title": "Cpp Converter Optimisation report",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2801994148"
+  },
+  {
+    "filename": "Customise optimisers on each segment of a sparse embedding.md",
+    "page_id": "1550290698",
+    "title": "Customise optimisers on each segment of a sparse embedding",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1550290698"
+  },
+  {
+    "filename": "DNN module.md",
+    "page_id": "1543347515",
+    "title": "DNN module",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1543347515"
+  },
+  {
+    "filename": "DPDK survey.md",
+    "page_id": "1698088928",
+    "title": "DPDK survey",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1698088928"
+  },
+  {
+    "filename": "DR 2025.md",
+    "page_id": "2664607262",
+    "title": "DR 2025",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2664607262"
+  },
+  {
+    "filename": "Data To Disk function _ego v0_4_7_.md",
+    "page_id": "1365120868",
+    "title": "Data To Disk function (ego v0.4.7)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1365120868"
+  },
+  {
+    "filename": "Declare slots_info and then use it.md",
+    "page_id": "1033895598",
+    "title": "Declare slots'info and then use it",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1033895598"
+  },
+  {
+    "filename": "Deep neural network.md",
+    "page_id": "1543355164",
+    "title": "Deep neural network",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1543355164"
+  },
+  {
+    "filename": "DeepCtr Demo.md",
+    "page_id": "1521331348",
+    "title": "DeepCtr Demo",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1521331348"
+  },
+  {
+    "filename": "DefaultDenseOptimizer.md",
+    "page_id": "1403826301",
+    "title": "DefaultDenseOptimizer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403826301"
+  },
+  {
+    "filename": "DefaultSparseOptimizer.md",
+    "page_id": "1403824866",
+    "title": "DefaultSparseOptimizer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403824866"
+  },
+  {
+    "filename": "Definitions for target and round _egotf 0_4_3 and above_.md",
+    "page_id": "1000816697",
+    "title": "Definitions for target and round (egotf 0.4.3 and above)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1000816697"
+  },
+  {
+    "filename": "Dense feature input.md",
+    "page_id": "1403824533",
+    "title": "Dense feature input",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403824533"
+  },
+  {
+    "filename": "Dense input module.md",
+    "page_id": "1547766503",
+    "title": "Dense input module",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1547766503"
+  },
+  {
+    "filename": "DenseTower.md",
+    "page_id": "1398272344",
+    "title": "DenseTower",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1398272344"
+  },
+  {
+    "filename": "Doing consistent check with validate samples.md",
+    "page_id": "1633363874",
+    "title": "Doing consistent check with validate samples",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1633363874"
+  },
+  {
+    "filename": "Doing feature importance analysis with only specified emb parts.md",
+    "page_id": "1377778639",
+    "title": "Doing feature importance analysis with only specified emb parts",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1377778639"
+  },
+  {
+    "filename": "Doing offline feature statistic in ego 1_0.md",
+    "page_id": "1403826590",
+    "title": "Doing offline feature statistic in ego 1.0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403826590"
+  },
+  {
+    "filename": "Downgrade strategy.md",
+    "page_id": "694977217",
+    "title": "Downgrade strategy",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=694977217"
+  },
+  {
+    "filename": "EGO Biweekly Report.md",
+    "page_id": "2155692116",
+    "title": "EGO Biweekly Report",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2155692116"
+  },
+  {
+    "filename": "EGO Common Machine Resources and Conversion Relationships.md",
+    "page_id": "2531802822",
+    "title": "EGO Common Machine Resources and Conversion Relationships",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2531802822"
+  },
+  {
+    "filename": "EGO Controller Portal 2_0 框架概述.md",
+    "page_id": "2410856913",
+    "title": "EGO Controller Portal 2.0 框架概述",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2410856913"
+  },
+  {
+    "filename": "EGO Controller适配PS2_0.md",
+    "page_id": "2491770355",
+    "title": "EGO Controller适配PS2.0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2491770355"
+  },
+  {
+    "filename": "EGO Core Metrics.md",
+    "page_id": "1871875496",
+    "title": "EGO Core Metrics",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1871875496"
+  },
+  {
+    "filename": "EGO FAQ Manual.md",
+    "page_id": "2570025882",
+    "title": "EGO FAQ Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2570025882"
+  },
+  {
+    "filename": "EGO Half-Precision Introduction.md",
+    "page_id": "1844467568",
+    "title": "EGO Half-Precision Introduction",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1844467568"
+  },
+  {
+    "filename": "EGO Monitor适配PS2.md",
+    "page_id": "2549910347",
+    "title": "EGO Monitor适配PS2",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2549910347"
+  },
+  {
+    "filename": "EGO NPS survey.md",
+    "page_id": "2612926248",
+    "title": "EGO NPS survey",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2612926248"
+  },
+  {
+    "filename": "EGO Online Model Operation Log Record on Shopee Eagle Eye.md",
+    "page_id": "2555255286",
+    "title": "EGO Online Model Operation Log Record on Shopee Eagle Eye",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2555255286"
+  },
+  {
+    "filename": "EGO PS CLI USER GUIDE.md",
+    "page_id": "3069446270",
+    "title": "EGO PS CLI USER GUIDE",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3069446270"
+  },
+  {
+    "filename": "EGO PS Client metrics report.md",
+    "page_id": "2549912971",
+    "title": "EGO PS Client metrics report",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2549912971"
+  },
+  {
+    "filename": "EGO Portal PS Management PRD (Archived).md",
+    "page_id": "2106439900",
+    "title": "EGO Portal PS Management PRD (Archived)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2106439900"
+  },
+  {
+    "filename": "EGO Portal Release Notes.md",
+    "page_id": "1754248451",
+    "title": "EGO Portal Release Notes",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1754248451"
+  },
+  {
+    "filename": "EGO Portal User Manual.md",
+    "page_id": "1867028188",
+    "title": "EGO Portal User Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1867028188"
+  },
+  {
+    "filename": "EGO Portal V0.4.0 PRD.md",
+    "page_id": "1752177002",
+    "title": "EGO Portal V0.4.0 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1752177002"
+  },
+  {
+    "filename": "EGO Portal V0.4.1 PRD.md",
+    "page_id": "2097786377",
+    "title": "EGO Portal V0.4.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2097786377"
+  },
+  {
+    "filename": "EGO Portal V0.4.2 PRD.md",
+    "page_id": "2199638736",
+    "title": "EGO Portal V0.4.2 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2199638736"
+  },
+  {
+    "filename": "EGO Portal V0.4.3 PRD.md",
+    "page_id": "2199638715",
+    "title": "EGO Portal V0.4.3 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2199638715"
+  },
+  {
+    "filename": "EGO Portal V0.4.4 PRD.md",
+    "page_id": "2215368509",
+    "title": "EGO Portal V0.4.4 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2215368509"
+  },
+  {
+    "filename": "EGO Portal V0.5.0 PRD.md",
+    "page_id": "1983305949",
+    "title": "EGO Portal V0.5.0 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1983305949"
+  },
+  {
+    "filename": "EGO Portal V0.5.1 PRD.md",
+    "page_id": "2208507149",
+    "title": "EGO Portal V0.5.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2208507149"
+  },
+  {
+    "filename": "EGO Portal V0.5.1.1 PRD.md",
+    "page_id": "2293775563",
+    "title": "EGO Portal V0.5.1.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2293775563"
+  },
+  {
+    "filename": "EGO Portal V0.5.2 PRD.md",
+    "page_id": "2253623260",
+    "title": "EGO Portal V0.5.2 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2253623260"
+  },
+  {
+    "filename": "EGO Portal V0.5.3 PRD.md",
+    "page_id": "2355763106",
+    "title": "EGO Portal V0.5.3 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2355763106"
+  },
+  {
+    "filename": "EGO Portal V0.5.4 PRD.md",
+    "page_id": "2369351688",
+    "title": "EGO Portal V0.5.4 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2369351688"
+  },
+  {
+    "filename": "EGO Portal V0.5.4.1.md",
+    "page_id": "2408229547",
+    "title": "EGO Portal V0.5.4.1",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2408229547"
+  },
+  {
+    "filename": "EGO Portal V0.6.0 PRD.md",
+    "page_id": "2405448121",
+    "title": "EGO Portal V0.6.0 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2405448121"
+  },
+  {
+    "filename": "EGO Portal V0.6.0.1 PRD.md",
+    "page_id": "2457133265",
+    "title": "EGO Portal V0.6.0.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2457133265"
+  },
+  {
+    "filename": "EGO Portal V0.6.1 PRD.md",
+    "page_id": "2491753255",
+    "title": "EGO Portal V0.6.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2491753255"
+  },
+  {
+    "filename": "EGO Portal V0.6.1.1 PRD.md",
+    "page_id": "2491754636",
+    "title": "EGO Portal V0.6.1.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2491754636"
+  },
+  {
+    "filename": "EGO Portal V0.6.2 PRD.md",
+    "page_id": "2434795859",
+    "title": "EGO Portal V0.6.2 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434795859"
+  },
+  {
+    "filename": "EGO Portal V0.6.3 PRD.md",
+    "page_id": "2495013227",
+    "title": "EGO Portal V0.6.3 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2495013227"
+  },
+  {
+    "filename": "EGO Portal V0.6.3.1 PRD.md",
+    "page_id": "2508801312",
+    "title": "EGO Portal V0.6.3.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2508801312"
+  },
+  {
+    "filename": "EGO Portal V0.7.0 PRD.md",
+    "page_id": "2537946184",
+    "title": "EGO Portal V0.7.0 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2537946184"
+  },
+  {
+    "filename": "EGO Portal V0.7.0.1 PRD.md",
+    "page_id": "2650721600",
+    "title": "EGO Portal V0.7.0.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2650721600"
+  },
+  {
+    "filename": "EGO Portal V0.7.1 PRD.md",
+    "page_id": "2576619638",
+    "title": "EGO Portal V0.7.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2576619638"
+  },
+  {
+    "filename": "EGO Portal V0.7.2 PRD.md",
+    "page_id": "2586449123",
+    "title": "EGO Portal V0.7.2 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2586449123"
+  },
+  {
+    "filename": "EGO Portal V0.7.3 PRD.md",
+    "page_id": "2676509547",
+    "title": "EGO Portal V0.7.3 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2676509547"
+  },
+  {
+    "filename": "EGO Portal V0.7.5 PRD.md",
+    "page_id": "2745487864",
+    "title": "EGO Portal V0.7.5 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2745487864"
+  },
+  {
+    "filename": "EGO Portal V0.7.6 PRD.md",
+    "page_id": "2778236206",
+    "title": "EGO Portal V0.7.6 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2778236206"
+  },
+  {
+    "filename": "EGO Portal V0.7.7.1 PRD.md",
+    "page_id": "2757986550",
+    "title": "EGO Portal V0.7.7.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2757986550"
+  },
+  {
+    "filename": "EGO Portal V0.7.7PRD.md",
+    "page_id": "2805514608",
+    "title": "EGO Portal V0.7.7PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2805514608"
+  },
+  {
+    "filename": "EGO Portal V0.8.0 PRD.md",
+    "page_id": "2648501558",
+    "title": "EGO Portal V0.8.0 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2648501558"
+  },
+  {
+    "filename": "EGO Portal V0.8.1 PRD.md",
+    "page_id": "2759739399",
+    "title": "EGO Portal V0.8.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2759739399"
+  },
+  {
+    "filename": "EGO Portal V0.8.2 PRD-智能机器人项目调研与demo设计.md",
+    "page_id": "2815387695",
+    "title": "EGO Portal V0.8.2 PRD-智能机器人项目调研与demo设计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2815387695"
+  },
+  {
+    "filename": "EGO Portal V0.9.0 PRD(备份）.md",
+    "page_id": "2870170518",
+    "title": "EGO Portal V0.9.0 PRD(备份）",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2870170518"
+  },
+  {
+    "filename": "EGO Portal V0.9.0 PRD.md",
+    "page_id": "2850443404",
+    "title": "EGO Portal V0.9.0 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2850443404"
+  },
+  {
+    "filename": "EGO Portal V0.9.1 PRD.md",
+    "page_id": "2895963345",
+    "title": "EGO Portal V0.9.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2895963345"
+  },
+  {
+    "filename": "EGO Portal V0.9.2 PRD.md",
+    "page_id": "2914726014",
+    "title": "EGO Portal V0.9.2 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2914726014"
+  },
+  {
+    "filename": "EGO Portal V0.9.3 PRD-GOP.md",
+    "page_id": "2947423138",
+    "title": "EGO Portal V0.9.3 PRD-GOP",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2947423138"
+  },
+  {
+    "filename": "EGO Portal V1.0.0 PRD （draft）.md",
+    "page_id": "2326611561",
+    "title": "EGO Portal V1.0.0 PRD （draft）",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2326611561"
+  },
+  {
+    "filename": "EGO Python API.md",
+    "page_id": "1398267601",
+    "title": "EGO Python API",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1398267601"
+  },
+  {
+    "filename": "EGO SLA_QoS_HA.md",
+    "page_id": "1687295256",
+    "title": "EGO SLA&QoS&HA",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1687295256"
+  },
+  {
+    "filename": "EGO Team Introduction.md",
+    "page_id": "2597686707",
+    "title": "EGO Team Introduction",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2597686707"
+  },
+  {
+    "filename": "EGO Tech Sharing.md",
+    "page_id": "2149574634",
+    "title": "EGO Tech Sharing",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2149574634"
+  },
+  {
+    "filename": "EGO User Onboarding Manual.md",
+    "page_id": "1390073974",
+    "title": "EGO User Onboarding Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1390073974"
+  },
+  {
+    "filename": "EGO V0.3.2(GPU train & Colocate train&GNN).md",
+    "page_id": "1914695365",
+    "title": "EGO V0.3.2(GPU train & Colocate train&GNN)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1914695365"
+  },
+  {
+    "filename": "EGO V0_4 API Manual.md",
+    "page_id": "795449966",
+    "title": "EGO V0.4 API Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=795449966"
+  },
+  {
+    "filename": "EGO V1.0 Docs.md",
+    "page_id": "1398267517",
+    "title": "EGO V1.0 Docs",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1398267517"
+  },
+  {
+    "filename": "EGO V1.0 Onboarding Process.md",
+    "page_id": "1464782167",
+    "title": "EGO V1.0 Onboarding Process",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1464782167"
+  },
+  {
+    "filename": "EGO V1.0 online serving alert & monitor.md",
+    "page_id": "1523607958",
+    "title": "EGO V1.0 online serving alert & monitor",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1523607958"
+  },
+  {
+    "filename": "EGO V1_0 FAQ.md",
+    "page_id": "1573834934",
+    "title": "EGO V1.0 FAQ",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1573834934"
+  },
+  {
+    "filename": "EGO controller scheduler review.md",
+    "page_id": "2581515783",
+    "title": "EGO controller scheduler review",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2581515783"
+  },
+  {
+    "filename": "EGO portal V0.7.4 PRD.md",
+    "page_id": "2717566873",
+    "title": "EGO portal V0.7.4 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2717566873"
+  },
+  {
+    "filename": "EGO 性能追查流程.md",
+    "page_id": "2822082410",
+    "title": "EGO 性能追查流程",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2822082410"
+  },
+  {
+    "filename": "EGO 智能问答机器人项目v1.md",
+    "page_id": "2820724308",
+    "title": "EGO 智能问答机器人项目v1",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2820724308"
+  },
+  {
+    "filename": "EGO..md",
+    "page_id": "1079221126",
+    "title": "EGO.",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1079221126"
+  },
+  {
+    "filename": "EGO1_0 NSC_Negative Sample Center_ user manual.md",
+    "page_id": "1550302427",
+    "title": "EGO1.0 NSC(Negative Sample Center) user manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1550302427"
+  },
+  {
+    "filename": "EGOPortal V0.1.0 Overview Design.md",
+    "page_id": "1155878038",
+    "title": "EGOPortal V0.1.0 Overview Design",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1155878038"
+  },
+  {
+    "filename": "EGOPortal V0.1.0 PRD.md",
+    "page_id": "1175358108",
+    "title": "EGOPortal V0.1.0 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1175358108"
+  },
+  {
+    "filename": "EGOPortal V0.1.0 Requirements List.md",
+    "page_id": "1133213817",
+    "title": "EGOPortal V0.1.0 Requirements List",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1133213817"
+  },
+  {
+    "filename": "EGOPortal V0.1.1 问题记录.md",
+    "page_id": "1436424507",
+    "title": "EGOPortal V0.1.1 问题记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1436424507"
+  },
+  {
+    "filename": "EGOPortal V0.1.2 问题记录.md",
+    "page_id": "1436421736",
+    "title": "EGOPortal V0.1.2 问题记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1436421736"
+  },
+  {
+    "filename": "EGOPortal V0.1.3 PRD.md",
+    "page_id": "1472285898",
+    "title": "EGOPortal V0.1.3 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1472285898"
+  },
+  {
+    "filename": "EGOPortal V0.1.4 问题记录.md",
+    "page_id": "1508700561",
+    "title": "EGOPortal V0.1.4 问题记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1508700561"
+  },
+  {
+    "filename": "EGOPortal V0.2.0 PRD.md",
+    "page_id": "1498734226",
+    "title": "EGOPortal V0.2.0 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1498734226"
+  },
+  {
+    "filename": "EGOPortal V0.2.1 PRD.md",
+    "page_id": "1608633034",
+    "title": "EGOPortal V0.2.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1608633034"
+  },
+  {
+    "filename": "EGOPortal V0.2.2 PRD.md",
+    "page_id": "1720180468",
+    "title": "EGOPortal V0.2.2 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1720180468"
+  },
+  {
+    "filename": "EGOPortal V0.3.0 PRD(Backup).md",
+    "page_id": "1559562332",
+    "title": "EGOPortal V0.3.0 PRD(Backup)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1559562332"
+  },
+  {
+    "filename": "EGOPortal V0.3.0 PRD.md",
+    "page_id": "1676226686",
+    "title": "EGOPortal V0.3.0 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1676226686"
+  },
+  {
+    "filename": "EGOPortal V0.3.1 PRD.md",
+    "page_id": "1842306447",
+    "title": "EGOPortal V0.3.1 PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1842306447"
+  },
+  {
+    "filename": "EGO优化项使用盘点清单.md",
+    "page_id": "2373248598",
+    "title": "EGO优化项使用盘点清单",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2373248598"
+  },
+  {
+    "filename": "EGO性能参数汇总.md",
+    "page_id": "2763343772",
+    "title": "EGO性能参数汇总",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2763343772"
+  },
+  {
+    "filename": "Ego 1_0 Performance Comparison.md",
+    "page_id": "1506358642",
+    "title": "Ego 1.0 Performance Comparison",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1506358642"
+  },
+  {
+    "filename": "Ego 1_0 and 0_4 AUC Comparison.md",
+    "page_id": "1404787352",
+    "title": "Ego 1.0 and 0.4 AUC Comparison",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1404787352"
+  },
+  {
+    "filename": "Ego 1_0 with_without nsc code AUC Comparison.md",
+    "page_id": "1426479958",
+    "title": "Ego 1.0 with/without nsc code AUC Comparison",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1426479958"
+  },
+  {
+    "filename": "Ego C__ Code Style.md",
+    "page_id": "1052238067",
+    "title": "Ego C++ Code Style",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1052238067"
+  },
+  {
+    "filename": "Ego Controller 1_0 使用文档.md",
+    "page_id": "1377787578",
+    "title": "Ego Controller 1.0 使用文档",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1377787578"
+  },
+  {
+    "filename": "Ego Controller 2.0 API Design.md",
+    "page_id": "2727653202",
+    "title": "Ego Controller 2.0 API Design",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2727653202"
+  },
+  {
+    "filename": "Ego DataPlugin_Depreciated_.md",
+    "page_id": "1557697981",
+    "title": "Ego DataPlugin(Depreciated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1557697981"
+  },
+  {
+    "filename": "Ego Design Doc v0_1.md",
+    "page_id": "652881615",
+    "title": "Ego Design Doc v0.1",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=652881615"
+  },
+  {
+    "filename": "Ego Design V1_0.md",
+    "page_id": "1014253738",
+    "title": "Ego Design V1.0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1014253738"
+  },
+  {
+    "filename": "Ego Design.md",
+    "page_id": "1014253693",
+    "title": "Ego Design",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1014253693"
+  },
+  {
+    "filename": "Ego FAQ.md",
+    "page_id": "834605511",
+    "title": "Ego FAQ",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=834605511"
+  },
+  {
+    "filename": "Ego Full Configuration Preview.md",
+    "page_id": "756714448",
+    "title": "Ego Full Configuration Preview",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=756714448"
+  },
+  {
+    "filename": "Ego OnlinePS User Manual.md",
+    "page_id": "1304509064",
+    "title": "Ego OnlinePS User Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1304509064"
+  },
+  {
+    "filename": "Ego PS Plugins User Manual.md",
+    "page_id": "1407259222",
+    "title": "Ego PS Plugins User Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1407259222"
+  },
+  {
+    "filename": "Ego Predictor Daily Operation Manual.md",
+    "page_id": "3045071617",
+    "title": "Ego Predictor Daily Operation Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3045071617"
+  },
+  {
+    "filename": "Ego Predictor Guardian.md",
+    "page_id": "1649983748",
+    "title": "Ego Predictor Guardian",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1649983748"
+  },
+  {
+    "filename": "Ego Python API Extensions.md",
+    "page_id": "1545593021",
+    "title": "Ego Python API Extensions",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1545593021"
+  },
+  {
+    "filename": "Ego Release Notes.md",
+    "page_id": "832421728",
+    "title": "Ego Release Notes",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=832421728"
+  },
+  {
+    "filename": "Ego Sample.md",
+    "page_id": "758774479",
+    "title": "Ego Sample",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=758774479"
+  },
+  {
+    "filename": "Ego Support Serving's Multiple Versions Online At the Same Time.md",
+    "page_id": "2054260750",
+    "title": "Ego Support Serving's Multiple Versions Online At the Same Time",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2054260750"
+  },
+  {
+    "filename": "Ego Validator.md",
+    "page_id": "1166535060",
+    "title": "Ego Validator",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1166535060"
+  },
+  {
+    "filename": "Ego Weekly Reports.md",
+    "page_id": "627333144",
+    "title": "Ego Weekly Reports",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=627333144"
+  },
+  {
+    "filename": "Ego 支持业务获取Serving列表及Serving Conf.md",
+    "page_id": "2056531223",
+    "title": "Ego 支持业务获取Serving列表及Serving Conf",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2056531223"
+  },
+  {
+    "filename": "Ego.md",
+    "page_id": "621646772",
+    "title": "Ego",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=621646772"
+  },
+  {
+    "filename": "EgoBox_gpu pull优化_性能测试.md",
+    "page_id": "2911474366",
+    "title": "EgoBox(gpu pull优化)性能测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2911474366"
+  },
+  {
+    "filename": "EgoBox性能测试.md",
+    "page_id": "2710992232",
+    "title": "EgoBox性能测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2710992232"
+  },
+  {
+    "filename": "EgoBox设计与优化点摸排.md",
+    "page_id": "2807861976",
+    "title": "EgoBox设计与优化点摸排",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2807861976"
+  },
+  {
+    "filename": "EgoController.md",
+    "page_id": "983604237",
+    "title": "EgoController",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=983604237"
+  },
+  {
+    "filename": "EgoLearner Publish.md",
+    "page_id": "621647014",
+    "title": "EgoLearner Publish",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=621647014"
+  },
+  {
+    "filename": "EgoMP api方案第一版.md",
+    "page_id": "2641247009",
+    "title": "EgoMP api方案第一版",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2641247009"
+  },
+  {
+    "filename": "EgoMP api方案第三版.md",
+    "page_id": "2654886031",
+    "title": "EgoMP api方案第三版",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2654886031"
+  },
+  {
+    "filename": "EgoMP api方案第二版.md",
+    "page_id": "2650704182",
+    "title": "EgoMP api方案第二版",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2650704182"
+  },
+  {
+    "filename": "EgoMP c__方案讨论.md",
+    "page_id": "2682243025",
+    "title": "EgoMP c++方案讨论",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2682243025"
+  },
+  {
+    "filename": "EgoMP效果对齐记录.md",
+    "page_id": "2933690753",
+    "title": "EgoMP效果对齐记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2933690753"
+  },
+  {
+    "filename": "EgoMiniRanker.md",
+    "page_id": "1982372839",
+    "title": "EgoMiniRanker",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1982372839"
+  },
+  {
+    "filename": "EgoMp初版性能评估测试.md",
+    "page_id": "2783740165",
+    "title": "EgoMp初版性能评估测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2783740165"
+  },
+  {
+    "filename": "EgoPS Design Docs Summary.md",
+    "page_id": "1695977931",
+    "title": "EgoPS Design Docs Summary",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1695977931"
+  },
+  {
+    "filename": "EgoPS.md",
+    "page_id": "983604226",
+    "title": "EgoPS",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=983604226"
+  },
+  {
+    "filename": "EgoPS限流规则_功能上线后会将文档翻译成英文_.md",
+    "page_id": "1261103361",
+    "title": "EgoPS限流规则（功能上线后会将文档翻译成英文）",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1261103361"
+  },
+  {
+    "filename": "EgoPerf.md",
+    "page_id": "2522938491",
+    "title": "EgoPerf",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2522938491"
+  },
+  {
+    "filename": "EgoPlugin slot does not map_duplicate.md",
+    "page_id": "3036421990",
+    "title": "EgoPlugin slot does not map/duplicate",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3036421990"
+  },
+  {
+    "filename": "EgoPlugin_实现自定义指标指导.md",
+    "page_id": "3030945937",
+    "title": "EgoPlugin:实现自定义指标指导",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3030945937"
+  },
+  {
+    "filename": "EgoPortal Release Notes.md",
+    "page_id": "1758355493",
+    "title": "EgoPortal Release Notes",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1758355493"
+  },
+  {
+    "filename": "EgoPredictor User Manual.md",
+    "page_id": "791023201",
+    "title": "EgoPredictor User Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=791023201"
+  },
+  {
+    "filename": "EgoPredictor X Qir.md",
+    "page_id": "3093095732",
+    "title": "EgoPredictor X Qir",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3093095732"
+  },
+  {
+    "filename": "EgoPredictor brpc Client_for Recommendation_.md",
+    "page_id": "1019026907",
+    "title": "EgoPredictor brpc Client(for Recommendation)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1019026907"
+  },
+  {
+    "filename": "EgoPredictor.md",
+    "page_id": "671296533",
+    "title": "EgoPredictor",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=671296533"
+  },
+  {
+    "filename": "EgoTF Alpha Version.md",
+    "page_id": "714553344",
+    "title": "EgoTF Alpha Version",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=714553344"
+  },
+  {
+    "filename": "EgoTF Beta Version.md",
+    "page_id": "784409550",
+    "title": "EgoTF Beta Version",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=784409550"
+  },
+  {
+    "filename": "EgoTech.md",
+    "page_id": "1052237987",
+    "title": "EgoTech",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1052237987"
+  },
+  {
+    "filename": "EgoTrain Extensions.md",
+    "page_id": "1545589939",
+    "title": "EgoTrain Extensions",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1545589939"
+  },
+  {
+    "filename": "EgoTrain Image Release Notes.md",
+    "page_id": "1491548480",
+    "title": "EgoTrain Image Release Notes",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1491548480"
+  },
+  {
+    "filename": "EgoTrain V0_4 User Manual.md",
+    "page_id": "1123532982",
+    "title": "EgoTrain V0.4 User Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1123532982"
+  },
+  {
+    "filename": "EgoTrain XLA GPU backend.md",
+    "page_id": "2414794325",
+    "title": "EgoTrain XLA GPU backend",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2414794325"
+  },
+  {
+    "filename": "EgoTrain metrics.md",
+    "page_id": "865078353",
+    "title": "EgoTrain metrics",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=865078353"
+  },
+  {
+    "filename": "EgoTrain scripts with openapi.md",
+    "page_id": "877419102",
+    "title": "EgoTrain scripts with openapi",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=877419102"
+  },
+  {
+    "filename": "EgoTrain.md",
+    "page_id": "621646832",
+    "title": "EgoTrain",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=621646832"
+  },
+  {
+    "filename": "EgoTrainV1 Disk Management_Depreicated_.md",
+    "page_id": "2279276377",
+    "title": "EgoTrainV1 Disk Management(Depreicated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2279276377"
+  },
+  {
+    "filename": "EgoTrainV1 IO module update.md",
+    "page_id": "1988573192",
+    "title": "EgoTrainV1 IO module update",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1988573192"
+  },
+  {
+    "filename": "Egotf local run introduction.md",
+    "page_id": "1016697530",
+    "title": "Egotf local run introduction",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1016697530"
+  },
+  {
+    "filename": "Enabling cpplint checks in Visual Studio Code _VSCode_.md",
+    "page_id": "2249340070",
+    "title": "Enabling cpplint checks in Visual Studio Code (VSCode)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2249340070"
+  },
+  {
+    "filename": "Error code.md",
+    "page_id": "1585301573",
+    "title": "Error code",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1585301573"
+  },
+  {
+    "filename": "FAQ.md",
+    "page_id": "1390062420",
+    "title": "FAQ",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1390062420"
+  },
+  {
+    "filename": "FE Tech Design.md",
+    "page_id": "1257522170",
+    "title": "FE Tech Design",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1257522170"
+  },
+  {
+    "filename": "Feature Dump.md",
+    "page_id": "1941851383",
+    "title": "Feature Dump",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1941851383"
+  },
+  {
+    "filename": "Feature Importance Evaluation.md",
+    "page_id": "1562417298",
+    "title": "Feature Importance Evaluation",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1562417298"
+  },
+  {
+    "filename": "Feature admission and evict module.md",
+    "page_id": "1535885849",
+    "title": "Feature admission and evict module",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1535885849"
+  },
+  {
+    "filename": "Feature slot module.md",
+    "page_id": "1535885839",
+    "title": "Feature slot module",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1535885839"
+  },
+  {
+    "filename": "GNN.md",
+    "page_id": "1790874689",
+    "title": "GNN",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1790874689"
+  },
+  {
+    "filename": "GOP文档.md",
+    "page_id": "3083959952",
+    "title": "GOP文档",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3083959952"
+  },
+  {
+    "filename": "GOP跑模型优化的结果解析.md",
+    "page_id": "3083959966",
+    "title": "GOP跑模型优化的结果解析",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3083959966"
+  },
+  {
+    "filename": "GPU benchmark 1_6_0.md",
+    "page_id": "2149554012",
+    "title": "GPU benchmark 1.6.0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2149554012"
+  },
+  {
+    "filename": "GPU benchmark 1_7_0.md",
+    "page_id": "2271418392",
+    "title": "GPU benchmark 1.7.0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2271418392"
+  },
+  {
+    "filename": "GPU benchmark.md",
+    "page_id": "2110655266",
+    "title": "GPU benchmark",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2110655266"
+  },
+  {
+    "filename": "GPU hang的问题.md",
+    "page_id": "3032084283",
+    "title": "GPU hang的问题",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3032084283"
+  },
+  {
+    "filename": "GPU pooling _ dense allreduce与worker pooling性能对比测试_deprecated_.md",
+    "page_id": "2052244203",
+    "title": "GPU pooling + dense allreduce与worker pooling性能对比测试（deprecated）",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2052244203"
+  },
+  {
+    "filename": "GPU ss pooling与CPU worker pooling性能对比测试.md",
+    "page_id": "1961496548",
+    "title": "GPU ss pooling与CPU worker pooling性能对比测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1961496548"
+  },
+  {
+    "filename": "GPU_ TVM vs TF2-XLA.md",
+    "page_id": "2206142471",
+    "title": "GPU: TVM vs TF2-XLA",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2206142471"
+  },
+  {
+    "filename": "GPU任务调优指南.md",
+    "page_id": "2664613148",
+    "title": "GPU任务调优指南",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2664613148"
+  },
+  {
+    "filename": "GPU优化.md",
+    "page_id": "2374860097",
+    "title": "GPU优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2374860097"
+  },
+  {
+    "filename": "GPU利用率低.md",
+    "page_id": "3032062500",
+    "title": "GPU利用率低",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3032062500"
+  },
+  {
+    "filename": "GPU显存不足.md",
+    "page_id": "2674585349",
+    "title": "GPU显存不足",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2674585349"
+  },
+  {
+    "filename": "GR模型Debug sparse input.md",
+    "page_id": "3025374335",
+    "title": "GR模型Debug sparse input",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3025374335"
+  },
+  {
+    "filename": "General Backgrounds.md",
+    "page_id": "1403824361",
+    "title": "General Backgrounds",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403824361"
+  },
+  {
+    "filename": "Get DNN Params from Checkpoint.md",
+    "page_id": "2649915668",
+    "title": "Get DNN Params from Checkpoint",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2649915668"
+  },
+  {
+    "filename": "Go client.md",
+    "page_id": "2459671029",
+    "title": "Go client",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2459671029"
+  },
+  {
+    "filename": "Guardian User Manual.md",
+    "page_id": "1935451470",
+    "title": "Guardian User Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1935451470"
+  },
+  {
+    "filename": "Guardian分享.md",
+    "page_id": "2060728322",
+    "title": "Guardian分享",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2060728322"
+  },
+  {
+    "filename": "Guideline_ measure model training speed among different backends in local.md",
+    "page_id": "2680634908",
+    "title": "Guideline: measure model training speed among different backends in local",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2680634908"
+  },
+  {
+    "filename": "Guidelines of applying half precision optimization.md",
+    "page_id": "1989233626",
+    "title": "Guidelines of applying half precision optimization",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1989233626"
+  },
+  {
+    "filename": "Guidelines of using EGO Plugin V1.md",
+    "page_id": "1957193556",
+    "title": "Guidelines of using EGO Plugin V1",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1957193556"
+  },
+  {
+    "filename": "Guidelines of using Ego Plugin_Depreciated_.md",
+    "page_id": "1670006882",
+    "title": "Guidelines of using Ego Plugin(Depreciated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1670006882"
+  },
+  {
+    "filename": "H100 worker _ ps混布性能测试草稿.md",
+    "page_id": "2451947865",
+    "title": "H100 worker & ps混布性能测试草稿",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2451947865"
+  },
+  {
+    "filename": "H100多卡 _ worker_ps混布性能测试.md",
+    "page_id": "2466357992",
+    "title": "H100多卡 & worker/ps混布性能测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2466357992"
+  },
+  {
+    "filename": "Handover.md",
+    "page_id": "1715899731",
+    "title": "Handover",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1715899731"
+  },
+  {
+    "filename": "How to Change_Add_Remove Optimizers During Loading Checkpoint.md",
+    "page_id": "1867037800",
+    "title": "How to Change/Add/Remove Optimizers During Loading Checkpoint",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1867037800"
+  },
+  {
+    "filename": "How to Eval Tensor.md",
+    "page_id": "2149568548",
+    "title": "How to Eval Tensor",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2149568548"
+  },
+  {
+    "filename": "How to Evaluate Feature Importance.md",
+    "page_id": "1562416054",
+    "title": "How to Evaluate Feature Importance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1562416054"
+  },
+  {
+    "filename": "How to Freeze Graph to compare diff.md",
+    "page_id": "2870172622",
+    "title": "How to Freeze Graph to compare diff",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2870172622"
+  },
+  {
+    "filename": "How to clip or map nn parameters.md",
+    "page_id": "1550294599",
+    "title": "How to clip or map nn parameters",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1550294599"
+  },
+  {
+    "filename": "How to compile model manually.md",
+    "page_id": "1585290947",
+    "title": "How to compile model manually",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1585290947"
+  },
+  {
+    "filename": "How to config online-export task_generate validate samples_.md",
+    "page_id": "1633372280",
+    "title": "How to config online-export task/generate validate samples?",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1633372280"
+  },
+  {
+    "filename": "How to create a model & version_.md",
+    "page_id": "1533642777",
+    "title": "How to create a model & version?",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1533642777"
+  },
+  {
+    "filename": "How to customise sparse embeddings_ _depreciated_.md",
+    "page_id": "1403824364",
+    "title": "How to customise sparse embeddings? (depreciated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403824364"
+  },
+  {
+    "filename": "How to declare sparse inputs and dense inputs_deprecated_.md",
+    "page_id": "1411519383",
+    "title": "How to declare sparse inputs and dense inputs(deprecated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1411519383"
+  },
+  {
+    "filename": "How to define a list wise model.md",
+    "page_id": "1508688334",
+    "title": "How to define a list wise model",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1508688334"
+  },
+  {
+    "filename": "How to define multi-targets_ loss fusion function _v0_4_2_.md",
+    "page_id": "957741276",
+    "title": "How to define multi-targets' loss fusion function (v0.4.2)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=957741276"
+  },
+  {
+    "filename": "How to enable auto mixed precision training.md",
+    "page_id": "2272720936",
+    "title": "How to enable auto mixed precision training",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2272720936"
+  },
+  {
+    "filename": "How to feed src_ids.md",
+    "page_id": "1890311872",
+    "title": "How to feed src_ids",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1890311872"
+  },
+  {
+    "filename": "How to integrate with graph relations_EgoGraph_.md",
+    "page_id": "1797103128",
+    "title": "How to integrate with graph relations(EgoGraph)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1797103128"
+  },
+  {
+    "filename": "How to modify the serving graph.md",
+    "page_id": "2289894344",
+    "title": "How to modify the serving graph",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2289894344"
+  },
+  {
+    "filename": "How to publish models to ego-predictor.md",
+    "page_id": "1417808585",
+    "title": "How to publish models to ego-predictor",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1417808585"
+  },
+  {
+    "filename": "How to release models to ego-predictor_.md",
+    "page_id": "1533658811",
+    "title": "How to release models to ego-predictor?",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1533658811"
+  },
+  {
+    "filename": "How to share embeddings_.md",
+    "page_id": "1407284965",
+    "title": "How to share embeddings?",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1407284965"
+  },
+  {
+    "filename": "How to skip samples when updating EgoGraph.md",
+    "page_id": "1890310354",
+    "title": "How to skip samples when updating EgoGraph",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1890310354"
+  },
+  {
+    "filename": "How to submit a training job.md",
+    "page_id": "1417816190",
+    "title": "How to submit a training job",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1417816190"
+  },
+  {
+    "filename": "How to submit a training job_.md",
+    "page_id": "1533643228",
+    "title": "How to submit a training job?",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1533643228"
+  },
+  {
+    "filename": "How to trace tensor to hdfs or log in ego-api _v0_4_2_.md",
+    "page_id": "957741244",
+    "title": "How to trace tensor to hdfs or log in ego-api (v0.4.2)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=957741244"
+  },
+  {
+    "filename": "How to upgrade your model to tf2.md",
+    "page_id": "2349282667",
+    "title": "How to upgrade your model to tf2",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2349282667"
+  },
+  {
+    "filename": "How to use Tensorboard in egotf _v0_4_2_.md",
+    "page_id": "952768276",
+    "title": "How to use Tensorboard in egotf (v0.4.2)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=952768276"
+  },
+  {
+    "filename": "How to use cpp converter.md",
+    "page_id": "1661460157",
+    "title": "How to use cpp converter",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1661460157"
+  },
+  {
+    "filename": "How to use i-Razor for feature selection and slot dimension search.md",
+    "page_id": "2357654503",
+    "title": "How to use i-Razor for feature selection and slot dimension search",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2357654503"
+  },
+  {
+    "filename": "How to use streaming vq.md",
+    "page_id": "2879992866",
+    "title": "How to use streaming vq",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2879992866"
+  },
+  {
+    "filename": "Hyperparameter Tuning in EGO with NNI.md",
+    "page_id": "2314268066",
+    "title": "Hyperparameter Tuning in EGO with NNI",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2314268066"
+  },
+  {
+    "filename": "Implementation of cel-plugin_Draft_.md",
+    "page_id": "1652125315",
+    "title": "Implementation of cel-plugin(Draft)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1652125315"
+  },
+  {
+    "filename": "Inexplicable symptoms.md",
+    "page_id": "1267155829",
+    "title": "Inexplicable symptoms",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1267155829"
+  },
+  {
+    "filename": "Jemalloc vs Mimalloc.md",
+    "page_id": "2905206698",
+    "title": "Jemalloc vs Mimalloc",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2905206698"
+  },
+  {
+    "filename": "L4 V100 T4 A30卡代表模型吞吐性能对比.md",
+    "page_id": "2275541986",
+    "title": "L4 V100 T4 A30卡代表模型吞吐性能对比",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2275541986"
+  },
+  {
+    "filename": "L4 在线服务测试.md",
+    "page_id": "2767432751",
+    "title": "L4 在线服务测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2767432751"
+  },
+  {
+    "filename": "Load parts of dnn_params and dnn_summary_params by prefix name _egotf 0_4_3 and above_.md",
+    "page_id": "1027711974",
+    "title": "Load parts of dnn_params and dnn_summary_params by prefix name (egotf 0.4.3 and above)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1027711974"
+  },
+  {
+    "filename": "Local Debug.md",
+    "page_id": "1567633669",
+    "title": "Local Debug",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1567633669"
+  },
+  {
+    "filename": "MPS or not.md",
+    "page_id": "2434815104",
+    "title": "MPS or not",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434815104"
+  },
+  {
+    "filename": "Manual Downgrade.md",
+    "page_id": "1988564975",
+    "title": "Manual Downgrade",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1988564975"
+  },
+  {
+    "filename": "Metric sub groups.md",
+    "page_id": "1825343571",
+    "title": "Metric sub groups",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1825343571"
+  },
+  {
+    "filename": "MetricControl改造方案.md",
+    "page_id": "3034113867",
+    "title": "MetricControl改造方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3034113867"
+  },
+  {
+    "filename": "MetricControl模块现状梳理和未来优化讨论.md",
+    "page_id": "2332570425",
+    "title": "MetricControl模块现状梳理和未来优化讨论",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2332570425"
+  },
+  {
+    "filename": "Metrics Introduction.md",
+    "page_id": "2666401805",
+    "title": "Metrics Introduction",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2666401805"
+  },
+  {
+    "filename": "Migrating from Python to Cpp Converter.md",
+    "page_id": "2708830475",
+    "title": "Migrating from Python to Cpp Converter",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2708830475"
+  },
+  {
+    "filename": "Migration from CPU to GPU Training.md",
+    "page_id": "2188487755",
+    "title": "Migration from CPU to GPU Training",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2188487755"
+  },
+  {
+    "filename": "MiniRanker切换AFP.md",
+    "page_id": "2011546372",
+    "title": "MiniRanker切换AFP",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2011546372"
+  },
+  {
+    "filename": "Model && Version.md",
+    "page_id": "2727653228",
+    "title": "Model && Version",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2727653228"
+  },
+  {
+    "filename": "Model Performance Metrics.md",
+    "page_id": "2678492095",
+    "title": "Model Performance Metrics",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2678492095"
+  },
+  {
+    "filename": "Model migration from ego 0_4_X to ego 1_0.md",
+    "page_id": "1398267550",
+    "title": "Model migration from ego 0.4.X to ego 1.0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1398267550"
+  },
+  {
+    "filename": "Monitor Cleanup.md",
+    "page_id": "2767443836",
+    "title": "Monitor Cleanup",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2767443836"
+  },
+  {
+    "filename": "Monitor Guide.md",
+    "page_id": "2678491980",
+    "title": "Monitor Guide",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2678491980"
+  },
+  {
+    "filename": "Multi-hop sampling.md",
+    "page_id": "1890310563",
+    "title": "Multi-hop sampling",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1890310563"
+  },
+  {
+    "filename": "Multihash_Q-R_ and Binary code based hash experiment.md",
+    "page_id": "1849133898",
+    "title": "Multihash(Q-R) and Binary code based hash experiment",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1849133898"
+  },
+  {
+    "filename": "My workspace详细设计.md",
+    "page_id": "2882267134",
+    "title": "My workspace详细设计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2882267134"
+  },
+  {
+    "filename": "NN Online Learning Results.md",
+    "page_id": "2909027071",
+    "title": "NN Online Learning Results",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2909027071"
+  },
+  {
+    "filename": "NN_SLICE_VALUE报错.md",
+    "page_id": "2668260336",
+    "title": "NN_SLICE_VALUE报错",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2668260336"
+  },
+  {
+    "filename": "NSC_Negative Sample Center_ user manual.md",
+    "page_id": "1226664418",
+    "title": "NSC(Negative Sample Center) user manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1226664418"
+  },
+  {
+    "filename": "New EGO User Manual Index.md",
+    "page_id": "1876023384",
+    "title": "New EGO User Manual Index",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1876023384"
+  },
+  {
+    "filename": "News_ mpich2-yarn-4_0-SNAPSHOT_jar.md",
+    "page_id": "621649905",
+    "title": "News: mpich2-yarn-4.0-SNAPSHOT.jar",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=621649905"
+  },
+  {
+    "filename": "News_ openmpi-4_1_0_tgz-1_0_2-202107261530.md",
+    "page_id": "597245507",
+    "title": "News: openmpi-4.1.0.tgz-1.0.2-202107261530",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=597245507"
+  },
+  {
+    "filename": "News_ openmpi-4_1_0_tgz-1_0_3-202108031400.md",
+    "page_id": "629320524",
+    "title": "News: openmpi-4.1.0.tgz-1.0.3-202108031400",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=629320524"
+  },
+  {
+    "filename": "No registered __MklLayerNorm_ OpKernel for _GPU_ devices compatible with node.md",
+    "page_id": "3032058820",
+    "title": "No registered '_MklLayerNorm' OpKernel for 'GPU' devices compatible with node",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3032058820"
+  },
+  {
+    "filename": "Normal Error when using openapi scripts_.md",
+    "page_id": "917282869",
+    "title": "Normal Error when using openapi scripts.",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=917282869"
+  },
+  {
+    "filename": "Normalization.md",
+    "page_id": "1409653113",
+    "title": "Normalization",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1409653113"
+  },
+  {
+    "filename": "ONNXRuntime_ default backend vs tvm backend.md",
+    "page_id": "2121011862",
+    "title": "ONNXRuntime: default backend vs tvm backend",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2121011862"
+  },
+  {
+    "filename": "Offline Training.md",
+    "page_id": "2727653237",
+    "title": "Offline Training",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2727653237"
+  },
+  {
+    "filename": "OfflineRound.md",
+    "page_id": "1398273413",
+    "title": "OfflineRound",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1398273413"
+  },
+  {
+    "filename": "OfflineRound允许停止更新部分nn参数或sparse输入.md",
+    "page_id": "2761328997",
+    "title": "OfflineRound允许停止更新部分nn参数或sparse输入",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2761328997"
+  },
+  {
+    "filename": "Offloading Push Quantization to the PS Client.md",
+    "page_id": "2570010111",
+    "title": "Offloading Push Quantization to the PS Client",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2570010111"
+  },
+  {
+    "filename": "Online Learning NN参数更新加速.md",
+    "page_id": "2666398934",
+    "title": "Online Learning NN参数更新加速",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2666398934"
+  },
+  {
+    "filename": "Online Learning.md",
+    "page_id": "2727653884",
+    "title": "Online Learning",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2727653884"
+  },
+  {
+    "filename": "Online Learning优化设计.md",
+    "page_id": "2628197972",
+    "title": "Online Learning优化设计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2628197972"
+  },
+  {
+    "filename": "Online Learning测试.md",
+    "page_id": "2700111040",
+    "title": "Online Learning测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2700111040"
+  },
+  {
+    "filename": "Online Model _ Serving.md",
+    "page_id": "2727653897",
+    "title": "Online Model / Serving",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2727653897"
+  },
+  {
+    "filename": "Online PS SG10 _ SG9 服务混部.md",
+    "page_id": "2629827947",
+    "title": "Online PS SG10 & SG9 服务混部",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2629827947"
+  },
+  {
+    "filename": "Online issues.md",
+    "page_id": "942918639",
+    "title": "Online issues",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=942918639"
+  },
+  {
+    "filename": "Online learning rebase peroid training.md",
+    "page_id": "2817805307",
+    "title": "Online learning rebase peroid training",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2817805307"
+  },
+  {
+    "filename": "OnlinePS 容灾和降级.md",
+    "page_id": "1765028565",
+    "title": "OnlinePS 容灾和降级",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1765028565"
+  },
+  {
+    "filename": "OnlineRound.md",
+    "page_id": "1398275662",
+    "title": "OnlineRound",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1398275662"
+  },
+  {
+    "filename": "Only Update Assign Slots in a Round.md",
+    "page_id": "1374414795",
+    "title": "Only Update Assign Slots in a Round",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1374414795"
+  },
+  {
+    "filename": "Optimize embedding.md",
+    "page_id": "816917677",
+    "title": "Optimize embedding",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=816917677"
+  },
+  {
+    "filename": "Optimizer Modification Guide.md",
+    "page_id": "2862969260",
+    "title": "Optimizer Modification Guide",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2862969260"
+  },
+  {
+    "filename": "Optimizer.md",
+    "page_id": "1403824572",
+    "title": "Optimizer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403824572"
+  },
+  {
+    "filename": "Optimizing Model Graph to Improve TensorRT Model Inference Speed_ Practical Tips and Techniques.md",
+    "page_id": "2522938807",
+    "title": "Optimizing Model Graph to Improve TensorRT Model Inference Speed: Practical Tips and Techniques",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2522938807"
+  },
+  {
+    "filename": "Overview Design.md",
+    "page_id": "1155877955",
+    "title": "Overview Design",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1155877955"
+  },
+  {
+    "filename": "PRD.md",
+    "page_id": "1155877985",
+    "title": "PRD",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1155877985"
+  },
+  {
+    "filename": "PS Client load balancer.md",
+    "page_id": "2644755720",
+    "title": "PS Client load balancer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2644755720"
+  },
+  {
+    "filename": "PS Model Load User Manual.md",
+    "page_id": "1493949532",
+    "title": "PS Model Load User Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1493949532"
+  },
+  {
+    "filename": "PS client cache.md",
+    "page_id": "1294671004",
+    "title": "PS client cache",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1294671004"
+  },
+  {
+    "filename": "Perf SS Benchmark.md",
+    "page_id": "2555258010",
+    "title": "Perf SS Benchmark",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2555258010"
+  },
+  {
+    "filename": "Period Rule.md",
+    "page_id": "2727653775",
+    "title": "Period Rule",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2727653775"
+  },
+  {
+    "filename": "Period Training_Online Learning融合设计方案.md",
+    "page_id": "2742658824",
+    "title": "Period Training+Online Learning融合设计方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2742658824"
+  },
+  {
+    "filename": "Precision settings guideline.md",
+    "page_id": "2440261124",
+    "title": "Precision settings guideline",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2440261124"
+  },
+  {
+    "filename": "PredictV3 for no fg request.md",
+    "page_id": "889534770",
+    "title": "PredictV3 for no fg request",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=889534770"
+  },
+  {
+    "filename": "Predictor management详细设计.md",
+    "page_id": "2425096968",
+    "title": "Predictor management详细设计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2425096968"
+  },
+  {
+    "filename": "Profiling Tensorflow in EGO.md",
+    "page_id": "2120744976",
+    "title": "Profiling Tensorflow in EGO",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2120744976"
+  },
+  {
+    "filename": "Pytorch Activation Checkpointing.md",
+    "page_id": "3054898800",
+    "title": "Pytorch Activation Checkpointing",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3054898800"
+  },
+  {
+    "filename": "Pytorch Metirc计算设计文档.md",
+    "page_id": "2740029882",
+    "title": "Pytorch Metirc计算设计文档",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2740029882"
+  },
+  {
+    "filename": "RDMA performance survey.md",
+    "page_id": "1538669647",
+    "title": "RDMA performance survey",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1538669647"
+  },
+  {
+    "filename": "RTX PRO 6000 Blackwell Server Edition.md",
+    "page_id": "3091240423",
+    "title": "RTX PRO 6000 Blackwell Server Edition",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3091240423"
+  },
+  {
+    "filename": "Real Time Tensorboard.md",
+    "page_id": "1252660490",
+    "title": "Real Time Tensorboard",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1252660490"
+  },
+  {
+    "filename": "RefreshFeatureSlot函数中报错_Check failed_ feature_config-_dim__ __ slot_config_dim__ _65 vs 385__ 8003_ 65535_ 2252874407705320002_ 28800_0_.md",
+    "page_id": "2685822015",
+    "title": "RefreshFeatureSlot函数中报错(Check failed: feature_config->dim() == slot_config.dim() (65 vs 385). 8003, 65535, 2252874407705320002, 28800_0)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2685822015"
+  },
+  {
+    "filename": "Regression Test for EgoTrain update.md",
+    "page_id": "907724320",
+    "title": "Regression Test for EgoTrain update",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=907724320"
+  },
+  {
+    "filename": "Releasing Models.md",
+    "page_id": "1602379056",
+    "title": "Releasing Models",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1602379056"
+  },
+  {
+    "filename": "RemoteIO 的 prefetch 在当天仍有样本时提前结束并进入下一天。.md",
+    "page_id": "3122873528",
+    "title": "RemoteIO 的 prefetch 在当天仍有样本时提前结束并进入下一天。",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3122873528"
+  },
+  {
+    "filename": "Resource Monitor Summary.md",
+    "page_id": "1016266999",
+    "title": "Resource Monitor Summary",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1016266999"
+  },
+  {
+    "filename": "Resource Usage Metrics.md",
+    "page_id": "2690392121",
+    "title": "Resource Usage Metrics",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2690392121"
+  },
+  {
+    "filename": "Round.md",
+    "page_id": "1543354481",
+    "title": "Round",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1543354481"
+  },
+  {
+    "filename": "S1V2与C3机器置换比测试.md",
+    "page_id": "2787497860",
+    "title": "S1V2与C3机器置换比测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2787497860"
+  },
+  {
+    "filename": "S1V2与C3机器置换比测试_depreciated_.md",
+    "page_id": "2785050425",
+    "title": "S1V2与C3机器置换比测试(depreciated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2785050425"
+  },
+  {
+    "filename": "S2V6 __ C3V3.md",
+    "page_id": "2559755357",
+    "title": "S2V6 && C3V3",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2559755357"
+  },
+  {
+    "filename": "SS pooling cpu perf comparison.md",
+    "page_id": "1526366805",
+    "title": "SS pooling cpu perf comparison",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1526366805"
+  },
+  {
+    "filename": "SS优化_Search CTR_收益统计.md",
+    "page_id": "2710963394",
+    "title": "SS优化，Search CTR:收益统计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2710963394"
+  },
+  {
+    "filename": "SS优化_Search CVR收益统计.md",
+    "page_id": "2725365082",
+    "title": "SS优化，Search CVR收益统计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2725365082"
+  },
+  {
+    "filename": "SS优化_推荐CTR_CR_收益统计.md",
+    "page_id": "2719034297",
+    "title": "SS优化，推荐CTR，CR：收益统计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2719034297"
+  },
+  {
+    "filename": "SS优化_推荐混排_收益统计.md",
+    "page_id": "2737810688",
+    "title": "SS优化，推荐混排：收益统计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2737810688"
+  },
+  {
+    "filename": "SS优化_收益统计 Ads.md",
+    "page_id": "2710979910",
+    "title": "SS优化，收益统计 Ads",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2710979910"
+  },
+  {
+    "filename": "SS优化_收益统计 Recommendation Recall_ Rank.md",
+    "page_id": "2723819983",
+    "title": "SS优化，收益统计 Recommendation Recall, Rank",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2723819983"
+  },
+  {
+    "filename": "SS优化_收益统计 Search粗排.md",
+    "page_id": "2729775856",
+    "title": "SS优化，收益统计 Search粗排",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2729775856"
+  },
+  {
+    "filename": "SS性能优化 debug_info_map.md",
+    "page_id": "3096741330",
+    "title": "SS性能优化 debug_info_map",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3096741330"
+  },
+  {
+    "filename": "Sample Server Metrics.md",
+    "page_id": "2687694283",
+    "title": "Sample Server Metrics",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2687694283"
+  },
+  {
+    "filename": "SampleServer中_数据文件解析报错_如何定位具体文件 _Check failed_ file_reader-_num_row_groups__ _ 0_.md",
+    "page_id": "2668250345",
+    "title": "SampleServer中，数据文件解析报错，如何定位具体文件 (Check failed: file_reader->num_row_groups() > 0)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2668250345"
+  },
+  {
+    "filename": "SampleServer内存波动追查.md",
+    "page_id": "2761347457",
+    "title": "SampleServer内存波动追查",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2761347457"
+  },
+  {
+    "filename": "Scheduler[deprecated].md",
+    "page_id": "1988565192",
+    "title": "Scheduler[deprecated]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1988565192"
+  },
+  {
+    "filename": "Score Discrepancy Debugging Guide.md",
+    "page_id": "2781081265",
+    "title": "Score Discrepancy Debugging Guide",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2781081265"
+  },
+  {
+    "filename": "Scripts for using EgoPortal API.md",
+    "page_id": "1409656523",
+    "title": "Scripts for using EgoPortal API",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1409656523"
+  },
+  {
+    "filename": "Search GPU图优化一期.md",
+    "page_id": "2685824549",
+    "title": "Search GPU图优化一期",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2685824549"
+  },
+  {
+    "filename": "Search gpusse 优化.md",
+    "page_id": "2442079284",
+    "title": "Search gpusse 优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2442079284"
+  },
+  {
+    "filename": "Seastar vs brpc.md",
+    "page_id": "1654371396",
+    "title": "Seastar vs brpc",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1654371396"
+  },
+  {
+    "filename": "Sparse Feature Memory Optimization.md",
+    "page_id": "1238570180",
+    "title": "Sparse Feature Memory Optimization",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1238570180"
+  },
+  {
+    "filename": "Sparse embedding module.md",
+    "page_id": "1403824518",
+    "title": "Sparse embedding module",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403824518"
+  },
+  {
+    "filename": "Sparse embedding.md",
+    "page_id": "1543355367",
+    "title": "Sparse embedding",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1543355367"
+  },
+  {
+    "filename": "Sparse input module.md",
+    "page_id": "1535885820",
+    "title": "Sparse input module",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1535885820"
+  },
+  {
+    "filename": "Speed  BenchMarks.md",
+    "page_id": "2740497283",
+    "title": "Speed  BenchMarks",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2740497283"
+  },
+  {
+    "filename": "Speed  BenchMarks_ 1_8_3.md",
+    "page_id": "2927974985",
+    "title": "Speed  BenchMarks: 1.8.3",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2927974985"
+  },
+  {
+    "filename": "Speed  BenchMarks_ 1_8_4.md",
+    "page_id": "2983235526",
+    "title": "Speed  BenchMarks: 1.8.4",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2983235526"
+  },
+  {
+    "filename": "Speed BenchMarks.md",
+    "page_id": "2427595908",
+    "title": "Speed BenchMarks",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2427595908"
+  },
+  {
+    "filename": "Speed up Online Inference.md",
+    "page_id": "1403826598",
+    "title": "Speed up Online Inference",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403826598"
+  },
+  {
+    "filename": "Submit K8S Job.md",
+    "page_id": "784422379",
+    "title": "Submit K8S Job",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=784422379"
+  },
+  {
+    "filename": "Support Txt and Pb files as input.md",
+    "page_id": "758754301",
+    "title": "Support Txt and Pb files as input",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=758754301"
+  },
+  {
+    "filename": "Support customized dataset for eval rounds.md",
+    "page_id": "1793008336",
+    "title": "Support customized dataset for eval rounds",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1793008336"
+  },
+  {
+    "filename": "Support native parquet format.md",
+    "page_id": "1618343778",
+    "title": "Support native parquet format",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1618343778"
+  },
+  {
+    "filename": "Sync-up.md",
+    "page_id": "1359481392",
+    "title": "Sync-up",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1359481392"
+  },
+  {
+    "filename": "TF VS DirectXLA.md",
+    "page_id": "2314269679",
+    "title": "TF VS DirectXLA",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2314269679"
+  },
+  {
+    "filename": "TF fp16离线测试结果.md",
+    "page_id": "2121010919",
+    "title": "TF fp16离线测试结果",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2121010919"
+  },
+  {
+    "filename": "TF fp16跑图.md",
+    "page_id": "2119045913",
+    "title": "TF fp16跑图",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2119045913"
+  },
+  {
+    "filename": "Target and MetricType.md",
+    "page_id": "1400154569",
+    "title": "Target and MetricType",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1400154569"
+  },
+  {
+    "filename": "Teacher-Student 模型联合训练 - PS.md",
+    "page_id": "2721434751",
+    "title": "Teacher-Student 模型联合训练 - PS",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2721434751"
+  },
+  {
+    "filename": "Teacher-Student模型联合训练方案初版.md",
+    "page_id": "2693316732",
+    "title": "Teacher-Student模型联合训练方案初版",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2693316732"
+  },
+  {
+    "filename": "Teacher-Student模型联合训练方案最终版.md",
+    "page_id": "2698180000",
+    "title": "Teacher-Student模型联合训练方案最终版",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2698180000"
+  },
+  {
+    "filename": "Team Members.md",
+    "page_id": "823247899",
+    "title": "Team Members",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=823247899"
+  },
+  {
+    "filename": "Tech Docs.md",
+    "page_id": "1294670680",
+    "title": "Tech Docs",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1294670680"
+  },
+  {
+    "filename": "Tensor Evaluation 方案.md",
+    "page_id": "2933703879",
+    "title": "Tensor Evaluation 方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2933703879"
+  },
+  {
+    "filename": "Test model locally.md",
+    "page_id": "1108982958",
+    "title": "Test model locally",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1108982958"
+  },
+  {
+    "filename": "The file structure of model materials.md",
+    "page_id": "1477712776",
+    "title": "The file structure of model materials",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1477712776"
+  },
+  {
+    "filename": "The model pipeline in egotf 0_3.md",
+    "page_id": "841761649",
+    "title": "The model pipeline in egotf 0.3",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=841761649"
+  },
+  {
+    "filename": "The model pipeline in egotf 0_4_3.md",
+    "page_id": "1029511292",
+    "title": "The model pipeline in egotf 0.4.3",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1029511292"
+  },
+  {
+    "filename": "The usage of resources when GPU pooling and Dense allreduce.md",
+    "page_id": "1963367418",
+    "title": "The usage of resources when GPU pooling and Dense allreduce",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1963367418"
+  },
+  {
+    "filename": "Three different modes for reading data in a logic day from multiple data folders.md",
+    "page_id": "1855475480",
+    "title": "Three different modes for reading data in a logic day from multiple data folders",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1855475480"
+  },
+  {
+    "filename": "Three different ways to cache data in Worker.md",
+    "page_id": "2151760457",
+    "title": "Three different ways to cache data in Worker",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2151760457"
+  },
+  {
+    "filename": "Time and resource consumption analysis between parquet and plain text.md",
+    "page_id": "1270947506",
+    "title": "Time and resource consumption analysis between parquet and plain text",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1270947506"
+  },
+  {
+    "filename": "Torch Correctness Benchmark.md",
+    "page_id": "2953136471",
+    "title": "Torch Correctness Benchmark",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2953136471"
+  },
+  {
+    "filename": "Torch deepctr_ddp打平记录.md",
+    "page_id": "2930779890",
+    "title": "Torch deepctr_ddp打平记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2930779890"
+  },
+  {
+    "filename": "Train job卡点追踪技术方案.md",
+    "page_id": "2994810303",
+    "title": "Train job卡点追踪技术方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2994810303"
+  },
+  {
+    "filename": "Training Models.md",
+    "page_id": "1543342847",
+    "title": "Training Models",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1543342847"
+  },
+  {
+    "filename": "Training process module.md",
+    "page_id": "1543351860",
+    "title": "Training process module",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1543351860"
+  },
+  {
+    "filename": "Training process.md",
+    "page_id": "1543354680",
+    "title": "Training process",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1543354680"
+  },
+  {
+    "filename": "Tutorial of EGO V1_0.md",
+    "page_id": "1409656429",
+    "title": "Tutorial of EGO V1.0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1409656429"
+  },
+  {
+    "filename": "Tutorial.md",
+    "page_id": "1541048938",
+    "title": "Tutorial",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1541048938"
+  },
+  {
+    "filename": "Two phases training.md",
+    "page_id": "1585303674",
+    "title": "Two phases training",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1585303674"
+  },
+  {
+    "filename": "US A100机器性能测试.md",
+    "page_id": "1972535373",
+    "title": "US A100机器性能测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1972535373"
+  },
+  {
+    "filename": "Update_ Time and resource consumption analysis between parquet and plain text _using C__ parquet-parser tool_.md",
+    "page_id": "1292579241",
+    "title": "Update: Time and resource consumption analysis between parquet and plain text (using C++ parquet-parser tool)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1292579241"
+  },
+  {
+    "filename": "Upgrade TF-1 to TF-2.md",
+    "page_id": "2222142214",
+    "title": "Upgrade TF-1 to TF-2",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2222142214"
+  },
+  {
+    "filename": "Usage of SlotReassignConverter.md",
+    "page_id": "1670006409",
+    "title": "Usage of SlotReassignConverter",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1670006409"
+  },
+  {
+    "filename": "Use Manual.md",
+    "page_id": "788293100",
+    "title": "Use Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=788293100"
+  },
+  {
+    "filename": "User Debug Manual.md",
+    "page_id": "1456382199",
+    "title": "User Debug Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1456382199"
+  },
+  {
+    "filename": "User Manual.md",
+    "page_id": "2778237634",
+    "title": "User Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2778237634"
+  },
+  {
+    "filename": "User Self-Definition LR Scheduler.md",
+    "page_id": "1749585410",
+    "title": "User Self-Definition LR Scheduler",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1749585410"
+  },
+  {
+    "filename": "Using multiple sparse inputs and folded-mode _egotf 0_4_3 and above_.md",
+    "page_id": "1026355129",
+    "title": "Using multiple sparse inputs and folded-mode (egotf 0.4.3 and above)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1026355129"
+  },
+  {
+    "filename": "Using specified dataset to eval.md",
+    "page_id": "1377776864",
+    "title": "Using specified dataset to eval",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1377776864"
+  },
+  {
+    "filename": "V1.3.3 benchmark model performance.md",
+    "page_id": "1950319690",
+    "title": "V1.3.3 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1950319690"
+  },
+  {
+    "filename": "V1_3_2 benchmark model performance.md",
+    "page_id": "1922907807",
+    "title": "V1.3.2 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1922907807"
+  },
+  {
+    "filename": "V1_3_3_rc1 benchmark model performance.md",
+    "page_id": "1941841139",
+    "title": "V1.3.3.rc1 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1941841139"
+  },
+  {
+    "filename": "V1_3_3_rc2 benchmark model performance.md",
+    "page_id": "1944064702",
+    "title": "V1.3.3.rc2 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1944064702"
+  },
+  {
+    "filename": "V1_3_3_rc3 benchmark model performance.md",
+    "page_id": "1948389852",
+    "title": "V1.3.3.rc3 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1948389852"
+  },
+  {
+    "filename": "V1_4_0 benchmark model performance.md",
+    "page_id": "1961511741",
+    "title": "V1.4.0 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1961511741"
+  },
+  {
+    "filename": "V1_4_0_1 benchmark model performance.md",
+    "page_id": "1973271045",
+    "title": "V1.4.0.1 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1973271045"
+  },
+  {
+    "filename": "V1_4_0_2-zjz benchmark model performance _Merge feature_ego-plugin-dev-bak_.md",
+    "page_id": "1985222924",
+    "title": "V1.4.0.2-zjz benchmark model performance (Merge feature/ego-plugin-dev-bak)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1985222924"
+  },
+  {
+    "filename": "V1_5_0 benchmark model performance.md",
+    "page_id": "2052244181",
+    "title": "V1.5.0 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2052244181"
+  },
+  {
+    "filename": "V1_5_1 benchmark model performance.md",
+    "page_id": "2108738615",
+    "title": "V1.5.1 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2108738615"
+  },
+  {
+    "filename": "V1_6_0 benchmark model performance.md",
+    "page_id": "2148871911",
+    "title": "V1.6.0 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2148871911"
+  },
+  {
+    "filename": "V1_7_0 benchmark model performance.md",
+    "page_id": "2246906655",
+    "title": "V1.7.0 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2246906655"
+  },
+  {
+    "filename": "V1_8_0 benchmark model performance.md",
+    "page_id": "2427589305",
+    "title": "V1.8.0 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2427589305"
+  },
+  {
+    "filename": "V1_8_2 benchmark model performance.md",
+    "page_id": "2740497245",
+    "title": "V1.8.2 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2740497245"
+  },
+  {
+    "filename": "V1_8_3 benchmark model performance.md",
+    "page_id": "2927970049",
+    "title": "V1.8.3 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2927970049"
+  },
+  {
+    "filename": "V1_8_4 benchmark model performance.md",
+    "page_id": "2981644925",
+    "title": "V1.8.4 benchmark model performance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2981644925"
+  },
+  {
+    "filename": "Variable embedding length survey.md",
+    "page_id": "1946423025",
+    "title": "Variable embedding length survey",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1946423025"
+  },
+  {
+    "filename": "Video Ads Models Inference Optimization.md",
+    "page_id": "2899531595",
+    "title": "Video Ads Models Inference Optimization",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2899531595"
+  },
+  {
+    "filename": "View and operate model & version.md",
+    "page_id": "1533666322",
+    "title": "View and operate model & version",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1533666322"
+  },
+  {
+    "filename": "View and operate online model.md",
+    "page_id": "1538667176",
+    "title": "View and operate online model",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1538667176"
+  },
+  {
+    "filename": "View and operate training job.md",
+    "page_id": "1538659319",
+    "title": "View and operate training job",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1538659319"
+  },
+  {
+    "filename": "What is _round_ and _target__.md",
+    "page_id": "1403826621",
+    "title": "What is \"round\" and \"target\"?",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403826621"
+  },
+  {
+    "filename": "Worker Eval One Pass 方案.md",
+    "page_id": "2790481288",
+    "title": "Worker Eval One Pass 方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2790481288"
+  },
+  {
+    "filename": "Worker Metrics.md",
+    "page_id": "2680644462",
+    "title": "Worker Metrics",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2680644462"
+  },
+  {
+    "filename": "Yarn Job Publish.md",
+    "page_id": "621646866",
+    "title": "Yarn Job Publish",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=621646866"
+  },
+  {
+    "filename": "Yarn Job.md",
+    "page_id": "621646794",
+    "title": "Yarn Job",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=621646794"
+  },
+  {
+    "filename": "ZK __ Redis Migration Guidance.md",
+    "page_id": "3054912271",
+    "title": "ZK && Redis Migration Guidance",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3054912271"
+  },
+  {
+    "filename": "[2025]DR.md",
+    "page_id": "2629827938",
+    "title": "[2025]DR",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2629827938"
+  },
+  {
+    "filename": "[A]Ego New Member Guide(used by EGO members internally).md",
+    "page_id": "1147294285",
+    "title": "[A]Ego New Member Guide(used by EGO members internally)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1147294285"
+  },
+  {
+    "filename": "[Algorithm Experiment Rollout - Search - Ranking] EGO train use XLA & fp16.md",
+    "page_id": "2471852067",
+    "title": "[Algorithm Experiment Rollout - Search - Ranking] EGO train use XLA & fp16",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2471852067"
+  },
+  {
+    "filename": "[Biweekly Report] 2024-12-06~2024-12-19.md",
+    "page_id": "2581508544",
+    "title": "[Biweekly Report] 2024-12-06~2024-12-19",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2581508544"
+  },
+  {
+    "filename": "[Biweekly Report] 2025-1-3~2025-1-16.md",
+    "page_id": "2612944672",
+    "title": "[Biweekly Report] 2025-1-3~2025-1-16",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2612944672"
+  },
+  {
+    "filename": "[Biweekly Report]2024-07-19~2024-08-01.md",
+    "page_id": "2397441176",
+    "title": "[Biweekly Report]2024-07-19~2024-08-01",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2397441176"
+  },
+  {
+    "filename": "[Biweekly Report]2024-1-18~2024-2-1.md",
+    "page_id": "2155692129",
+    "title": "[Biweekly Report]2024-1-18~2024-2-1",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2155692129"
+  },
+  {
+    "filename": "[Biweekly Report]2024-10-11~2024-10-24.md",
+    "page_id": "2504886117",
+    "title": "[Biweekly Report]2024-10-11~2024-10-24",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2504886117"
+  },
+  {
+    "filename": "[Biweekly Report]2024-10-25~2024-11-07.md",
+    "page_id": "2524193938",
+    "title": "[Biweekly Report]2024-10-25~2024-11-07",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2524193938"
+  },
+  {
+    "filename": "[Biweekly Report]2024-11-22~2024-12-5.md",
+    "page_id": "2561339494",
+    "title": "[Biweekly Report]2024-11-22~2024-12-5",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2561339494"
+  },
+  {
+    "filename": "[Biweekly Report]2024-11-8~2024-11-21.md",
+    "page_id": "2543716502",
+    "title": "[Biweekly Report]2024-11-8~2024-11-21",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2543716502"
+  },
+  {
+    "filename": "[Biweekly Report]2024-12-20~2025-1-2.md",
+    "page_id": "2596640264",
+    "title": "[Biweekly Report]2024-12-20~2025-1-2",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2596640264"
+  },
+  {
+    "filename": "[Biweekly Report]2024-2-2～2024-2-29.md",
+    "page_id": "2155697121",
+    "title": "[Biweekly Report]2024-2-2～2024-2-29",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2155697121"
+  },
+  {
+    "filename": "[Biweekly Report]2024-3-15～2024-3-28.md",
+    "page_id": "2234978220",
+    "title": "[Biweekly Report]2024-3-15～2024-3-28",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2234978220"
+  },
+  {
+    "filename": "[Biweekly Report]2024-3-1～2024-3-14.md",
+    "page_id": "2210776917",
+    "title": "[Biweekly Report]2024-3-1～2024-3-14",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2210776917"
+  },
+  {
+    "filename": "[Biweekly Report]2024-3-29～2024-4-11.md",
+    "page_id": "2255488844",
+    "title": "[Biweekly Report]2024-3-29～2024-4-11",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2255488844"
+  },
+  {
+    "filename": "[Biweekly Report]2024-4-12～2024-4-25.md",
+    "page_id": "2255502376",
+    "title": "[Biweekly Report]2024-4-12～2024-4-25",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2255502376"
+  },
+  {
+    "filename": "[Biweekly Report]2024-4-26～2024-5-9.md",
+    "page_id": "2288483235",
+    "title": "[Biweekly Report]2024-4-26～2024-5-9",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2288483235"
+  },
+  {
+    "filename": "[Biweekly Report]2024-5-24~2024-6-5.md",
+    "page_id": "2324712557",
+    "title": "[Biweekly Report]2024-5-24~2024-6-5",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2324712557"
+  },
+  {
+    "filename": "[Biweekly Report]2024-5-9~2024-5-22.md",
+    "page_id": "2274097881",
+    "title": "[Biweekly Report]2024-5-9~2024-5-22",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2274097881"
+  },
+  {
+    "filename": "[Biweekly Report]2024-6-21~2024-7-4.md",
+    "page_id": "2359460383",
+    "title": "[Biweekly Report]2024-6-21~2024-7-4",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2359460383"
+  },
+  {
+    "filename": "[Biweekly Report]2024-6-6~2024-6-20.md",
+    "page_id": "2341499648",
+    "title": "[Biweekly Report]2024-6-6~2024-6-20",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2341499648"
+  },
+  {
+    "filename": "[Biweekly Report]2024-7-4~2024-7-18.md",
+    "page_id": "2376813157",
+    "title": "[Biweekly Report]2024-7-4~2024-7-18",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2376813157"
+  },
+  {
+    "filename": "[Biweekly Report]2024-8-16~2024-8-29.md",
+    "page_id": "2436651788",
+    "title": "[Biweekly Report]2024-8-16~2024-8-29",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2436651788"
+  },
+  {
+    "filename": "[Biweekly Report]2024-8-2~2024-8-15.md",
+    "page_id": "2414801502",
+    "title": "[Biweekly Report]2024-8-2~2024-8-15",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2414801502"
+  },
+  {
+    "filename": "[Biweekly Report]2024-8-30~2024-9-12.md",
+    "page_id": "2455289105",
+    "title": "[Biweekly Report]2024-8-30~2024-9-12",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2455289105"
+  },
+  {
+    "filename": "[Biweekly Report]2024-9-13~2024-9-26.md",
+    "page_id": "2471824193",
+    "title": "[Biweekly Report]2024-9-13~2024-9-26",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2471824193"
+  },
+  {
+    "filename": "[Biweekly Report]2025-1-17~2025-2-13.md",
+    "page_id": "2639378113",
+    "title": "[Biweekly Report]2025-1-17~2025-2-13",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2639378113"
+  },
+  {
+    "filename": "[Biweekly Report]2025-10-10~2025-10-23.md",
+    "page_id": "2949140931",
+    "title": "[Biweekly Report]2025-10-10~2025-10-23",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2949140931"
+  },
+  {
+    "filename": "[Biweekly Report]2025-10-24~2025-11-6.md",
+    "page_id": "2970230986",
+    "title": "[Biweekly Report]2025-10-24~2025-11-6",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2970230986"
+  },
+  {
+    "filename": "[Biweekly Report]2025-11-21~2025-12-4.md",
+    "page_id": "3006900912",
+    "title": "[Biweekly Report]2025-11-21~2025-12-4",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3006900912"
+  },
+  {
+    "filename": "[Biweekly Report]2025-11-7~2025-11-20.md",
+    "page_id": "2987325809",
+    "title": "[Biweekly Report]2025-11-7~2025-11-20",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2987325809"
+  },
+  {
+    "filename": "[Biweekly Report]2025-12-19~2025-12-31.md",
+    "page_id": "3038776891",
+    "title": "[Biweekly Report]2025-12-19~2025-12-31",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3038776891"
+  },
+  {
+    "filename": "[Biweekly Report]2025-12-5~2025-12-18.md",
+    "page_id": "3023238508",
+    "title": "[Biweekly Report]2025-12-5~2025-12-18",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3023238508"
+  },
+  {
+    "filename": "[Biweekly Report]2025-2-14~2025-2-27.md",
+    "page_id": "2658119609",
+    "title": "[Biweekly Report]2025-2-14~2025-2-27",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2658119609"
+  },
+  {
+    "filename": "[Biweekly Report]2025-2-28~2025-3-13.md",
+    "page_id": "2674584222",
+    "title": "[Biweekly Report]2025-2-28~2025-3-13",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2674584222"
+  },
+  {
+    "filename": "[Biweekly Report]2025-3-14~2025-3-27.md",
+    "page_id": "2693315138",
+    "title": "[Biweekly Report]2025-3-14~2025-3-27",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2693315138"
+  },
+  {
+    "filename": "[Biweekly Report]2025-3-28~2025-4-10.md",
+    "page_id": "2707385226",
+    "title": "[Biweekly Report]2025-3-28~2025-4-10",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2707385226"
+  },
+  {
+    "filename": "[Biweekly Report]2025-4-11~2025-4-24.md",
+    "page_id": "2725377882",
+    "title": "[Biweekly Report]2025-4-11~2025-4-24",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2725377882"
+  },
+  {
+    "filename": "[Biweekly Report]2025-4-25~2025-5-8.md",
+    "page_id": "2740514391",
+    "title": "[Biweekly Report]2025-4-25~2025-5-8",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2740514391"
+  },
+  {
+    "filename": "[Biweekly Report]2025-5-23~2025-6-5.md",
+    "page_id": "2775931735",
+    "title": "[Biweekly Report]2025-5-23~2025-6-5",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2775931735"
+  },
+  {
+    "filename": "[Biweekly Report]2025-5-9~2025-5-22.md",
+    "page_id": "2759727757",
+    "title": "[Biweekly Report]2025-5-9~2025-5-22",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2759727757"
+  },
+  {
+    "filename": "[Biweekly Report]2025-6-20~2025-7-3.md",
+    "page_id": "2813406758",
+    "title": "[Biweekly Report]2025-6-20~2025-7-3",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2813406758"
+  },
+  {
+    "filename": "[Biweekly Report]2025-6-6~2025-6-19.md",
+    "page_id": "2795998719",
+    "title": "[Biweekly Report]2025-6-6~2025-6-19",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2795998719"
+  },
+  {
+    "filename": "[Biweekly Report]2025-7-18~2025-7-31.md",
+    "page_id": "2850428169",
+    "title": "[Biweekly Report]2025-7-18~2025-7-31",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2850428169"
+  },
+  {
+    "filename": "[Biweekly Report]2025-7-4~2025-7-17.md",
+    "page_id": "2831293749",
+    "title": "[Biweekly Report]2025-7-4~2025-7-17",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2831293749"
+  },
+  {
+    "filename": "[Biweekly Report]2025-8-15~2025-8-28.md",
+    "page_id": "2886443657",
+    "title": "[Biweekly Report]2025-8-15~2025-8-28",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2886443657"
+  },
+  {
+    "filename": "[Biweekly Report]2025-8-1~2025-8-14.md",
+    "page_id": "2868405289",
+    "title": "[Biweekly Report]2025-8-1~2025-8-14",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2868405289"
+  },
+  {
+    "filename": "[Biweekly Report]2025-8-29~2025-9-11.md",
+    "page_id": "2905193471",
+    "title": "[Biweekly Report]2025-8-29~2025-9-11",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2905193471"
+  },
+  {
+    "filename": "[Biweekly Report]2025-9-12~2025-9-25.md",
+    "page_id": "2921736597",
+    "title": "[Biweekly Report]2025-9-12~2025-9-25",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2921736597"
+  },
+  {
+    "filename": "[Biweekly Report]2025-9-26~2025-10-9.md",
+    "page_id": "2930795150",
+    "title": "[Biweekly Report]2025-9-26~2025-10-9",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2930795150"
+  },
+  {
+    "filename": "[Biweekly Report]2026-1-16~2026-1-29.md",
+    "page_id": "3075139548",
+    "title": "[Biweekly Report]2026-1-16~2026-1-29",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3075139548"
+  },
+  {
+    "filename": "[Biweekly Report]2026-1-1~2026-1-15.md",
+    "page_id": "3056498314",
+    "title": "[Biweekly Report]2026-1-1~2026-1-15",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3056498314"
+  },
+  {
+    "filename": "[Biweekly Report]2026-1-30~2026-2-12.md",
+    "page_id": "3093098323",
+    "title": "[Biweekly Report]2026-1-30~2026-2-12",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3093098323"
+  },
+  {
+    "filename": "[Biweekly Report]Format_ 2026-1-1~2026-1-15.md",
+    "page_id": "2155697219",
+    "title": "[Biweekly Report]Format: 2026-1-1~2026-1-15",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2155697219"
+  },
+  {
+    "filename": "[Dev]How_to_compose_update_the_worker's_docker_image.md",
+    "page_id": "803224385",
+    "title": "[Dev]How to compose/update the worker's docker image",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=803224385"
+  },
+  {
+    "filename": "[Dev]How_to_debug_a_k8s_job.md",
+    "page_id": "809737360",
+    "title": "[Dev]How to debug a k8s job",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=809737360"
+  },
+  {
+    "filename": "[EGO] Competitive product analysis.md",
+    "page_id": "1114940140",
+    "title": "[EGO] Competitive product analysis",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1114940140"
+  },
+  {
+    "filename": "[EGO] PM Design.md",
+    "page_id": "1133209474",
+    "title": "[EGO] PM Design",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1133209474"
+  },
+  {
+    "filename": "[EGO] Portal User Manual.md",
+    "page_id": "1967739910",
+    "title": "[EGO] Portal User Manual",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1967739910"
+  },
+  {
+    "filename": "[EGO] Product Planning.md",
+    "page_id": "1133209436",
+    "title": "[EGO] Product Planning",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1133209436"
+  },
+  {
+    "filename": "[EGO] Wiki.md",
+    "page_id": "1363304101",
+    "title": "[EGO] Wiki",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1363304101"
+  },
+  {
+    "filename": "[EGO]Central Control Management Competitors.md",
+    "page_id": "1128821764",
+    "title": "[EGO]Central Control Management Competitors",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1128821764"
+  },
+  {
+    "filename": "[EGO]Overall Service Competitors.md",
+    "page_id": "1114940583",
+    "title": "[EGO]Overall Service Competitors",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1114940583"
+  },
+  {
+    "filename": "[EGO]Supervisor Competitors.md",
+    "page_id": "1130758447",
+    "title": "[EGO]Supervisor Competitors",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1130758447"
+  },
+  {
+    "filename": "[Ego]Front End.md",
+    "page_id": "1257521553",
+    "title": "[Ego]Front End",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1257521553"
+  },
+  {
+    "filename": "[Internal]Ego Documents.md",
+    "page_id": "1057318656",
+    "title": "[Internal]Ego Documents",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1057318656"
+  },
+  {
+    "filename": "[Obsolete]Ego Docs.md",
+    "page_id": "832414116",
+    "title": "[Obsolete]Ego Docs",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=832414116"
+  },
+  {
+    "filename": "[Public]Ego Documents.md",
+    "page_id": "832413860",
+    "title": "[Public]Ego Documents",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=832413860"
+  },
+  {
+    "filename": "[Tencent] The distributed machine learning platform -- Wuliang.md",
+    "page_id": "1114940807",
+    "title": "[Tencent] The distributed machine learning platform -- Wuliang",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1114940807"
+  },
+  {
+    "filename": "[User Manual] online learning nn update.md",
+    "page_id": "2778237670",
+    "title": "[User Manual] online learning nn update",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2778237670"
+  },
+  {
+    "filename": "[V1.2_L40S]2025-10-14.md",
+    "page_id": "2938874579",
+    "title": "[V1.2 L40S]2025-10-14",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2938874579"
+  },
+  {
+    "filename": "[V1.3_A30]2025-10-15.md",
+    "page_id": "2940276145",
+    "title": "[V1.3 A30]2025-10-15",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2940276145"
+  },
+  {
+    "filename": "[Volcengine] Machine Learning Platform.md",
+    "page_id": "1128207080",
+    "title": "[Volcengine] Machine Learning Platform",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1128207080"
+  },
+  {
+    "filename": "[WIP]C++ client.md",
+    "page_id": "2459671042",
+    "title": "[WIP]C++ client",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2459671042"
+  },
+  {
+    "filename": "[WIP][UserGuide]RPC replay.md",
+    "page_id": "2459672112",
+    "title": "[WIP][UserGuide]RPC replay",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2459672112"
+  },
+  {
+    "filename": "[hstu]v1.6.md",
+    "page_id": "3065944459",
+    "title": "[hstu]v1.6",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3065944459"
+  },
+  {
+    "filename": "[接入]ego-predictor-client.md",
+    "page_id": "2459671021",
+    "title": "[接入]ego-predictor-client",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2459671021"
+  },
+  {
+    "filename": "_06_06_大促期间失败率上升.md",
+    "page_id": "1805825483",
+    "title": "[06/06]大促期间失败率上升",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1805825483"
+  },
+  {
+    "filename": "_06_22_UP GPU PDP路由失败导致ranker error上升.md",
+    "page_id": "1822628146",
+    "title": "[06/22]UP GPU PDP路由失败导致ranker error上升",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1822628146"
+  },
+  {
+    "filename": "_2024-10-28_30__ads_upshop__core in psclient_.md",
+    "page_id": "2528090995",
+    "title": "[2024-10-28/30][ads/upshop][core in psclient]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2528090995"
+  },
+  {
+    "filename": "_20240627_oneDNN_disable JIT.md",
+    "page_id": "2349294490",
+    "title": "[20240627]oneDNN+disable JIT",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2349294490"
+  },
+  {
+    "filename": "_20240705_机器资源余量统计.md",
+    "page_id": "2361367110",
+    "title": "[20240705]机器资源余量统计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2361367110"
+  },
+  {
+    "filename": "_20250402_gpuvideo emb部分重构_v1__手动绑定numa上线.md",
+    "page_id": "2700093664",
+    "title": "[20250402]gpuvideo emb部分重构(v1)+手动绑定numa上线",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2700093664"
+  },
+  {
+    "filename": "_20250606_dynamic_shape优化.md",
+    "page_id": "2785041614",
+    "title": "[20250606]dynamic_shape优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2785041614"
+  },
+  {
+    "filename": "_A_Database dev__live.md",
+    "page_id": "1147294303",
+    "title": "[A]Database dev&&live",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1147294303"
+  },
+  {
+    "filename": "_A_Dev _ Test environment.md",
+    "page_id": "1147294300",
+    "title": "[A]Dev & Test environment",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1147294300"
+  },
+  {
+    "filename": "_A_Engineer Basis.md",
+    "page_id": "1147294299",
+    "title": "[A]Engineer Basis",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1147294299"
+  },
+  {
+    "filename": "_A_How to import go code on git_garena_com.md",
+    "page_id": "1147294304",
+    "title": "[A]How to import go code on git.garena.com",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1147294304"
+  },
+  {
+    "filename": "_A__How To_ Access HTTP service on IP_http___10___.md",
+    "page_id": "1147294309",
+    "title": "[A][How To] Access HTTP service on IP(http://10.*)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1147294309"
+  },
+  {
+    "filename": "_A__How To_ Compile srec Basis.md",
+    "page_id": "1029513780",
+    "title": "[A][How To] Compile srec Basis",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1029513780"
+  },
+  {
+    "filename": "_A_apply for ego ssh account.md",
+    "page_id": "1343586992",
+    "title": "[A]apply for ego ssh account",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1343586992"
+  },
+  {
+    "filename": "_Case Study__2022-04-29__up2my-dd_.md",
+    "page_id": "1098045905",
+    "title": "[Case Study][2022-04-29][up2my-dd]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1098045905"
+  },
+  {
+    "filename": "_Case Study__2022-11-01__up-mpi_.md",
+    "page_id": "1466765213",
+    "title": "[Case Study][2022-11-01][up-mpi]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1466765213"
+  },
+  {
+    "filename": "_Case Study__2023-04-21__egopredictor-map_.md",
+    "page_id": "1731213077",
+    "title": "[Case Study][2023-04-21][egopredictor-map]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1731213077"
+  },
+  {
+    "filename": "_Case Study__2023-08-18__egopredictor-map_.md",
+    "page_id": "1912254100",
+    "title": "[Case Study][2023-08-18][egopredictor-map]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1912254100"
+  },
+  {
+    "filename": "_Case Study__2023-08-18__gpuupdd_.md",
+    "page_id": "1918847896",
+    "title": "[Case Study][2023-08-18][gpuupdd]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1918847896"
+  },
+  {
+    "filename": "_Case Study__2023-11-02__guardian_.md",
+    "page_id": "2022254540",
+    "title": "[Case Study][2023-11-02][guardian]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2022254540"
+  },
+  {
+    "filename": "_Case Study__2024-7-20__gpudd-dynamic_.md",
+    "page_id": "2380810882",
+    "title": "[Case Study][2024-7-20][gpudd-dynamic]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2380810882"
+  },
+  {
+    "filename": "_Case Study__2025-2-7__search-gpusse-dynamic_.md",
+    "page_id": "2644763809",
+    "title": "[Case Study][2025-2-7][search-gpusse-dynamic]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2644763809"
+  },
+  {
+    "filename": "_Case Study__2026-12-29_ChatBot错误调用导致ZooKeeper 集群高负载.md",
+    "page_id": "3048780561",
+    "title": "[Case Study][2026-12-29]ChatBot错误调用导致ZooKeeper 集群高负载",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3048780561"
+  },
+  {
+    "filename": "_Client_Traffic router for EgoPredictor Client.md",
+    "page_id": "1003384441",
+    "title": "[Client]Traffic router for EgoPredictor Client",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1003384441"
+  },
+  {
+    "filename": "_Dev_how to use user-defined ego-learner.md",
+    "page_id": "797705794",
+    "title": "[Dev]how to use user-defined ego-learner",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=797705794"
+  },
+  {
+    "filename": "_EgoPredictor Client_zk naming _ client redis config.md",
+    "page_id": "2233053891",
+    "title": "[EgoPredictor Client]zk naming & client redis config",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2233053891"
+  },
+  {
+    "filename": "_EgoV4_pure C__ Custom protocol.md",
+    "page_id": "1278103240",
+    "title": "[EgoV4]pure C++ Custom protocol",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1278103240"
+  },
+  {
+    "filename": "_EgoV5_pure C__ Custom protocol_Todo_.md",
+    "page_id": "2551894752",
+    "title": "[EgoV5]pure C++ Custom protocol[Todo]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2551894752"
+  },
+  {
+    "filename": "_L40S_主要业务压测.md",
+    "page_id": "2947441604",
+    "title": "[L40S]主要业务压测",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2947441604"
+  },
+  {
+    "filename": "_MPI_S1V2 VS C3_C3V3 __ C3V3_.md",
+    "page_id": "2499299534",
+    "title": "[MPI]S1V2 VS C3(C3V3 && C3V3)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2499299534"
+  },
+  {
+    "filename": "_MPI_marketplace-mpi-gpu-featuredvideo混部集群优化.md",
+    "page_id": "2761347537",
+    "title": "[MPI]marketplace-mpi-gpu-featuredvideo混部集群优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2761347537"
+  },
+  {
+    "filename": "_TD_ Ego Generative Sample Format.md",
+    "page_id": "2949141601",
+    "title": "[TD] Ego Generative Sample Format",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2949141601"
+  },
+  {
+    "filename": "_TD_强化学习.md",
+    "page_id": "2945160129",
+    "title": "[TD]强化学习",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2945160129"
+  },
+  {
+    "filename": "_TechDocs_Refactor of embeddings.md",
+    "page_id": "2668238427",
+    "title": "[TechDocs]Refactor of embeddings",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2668238427"
+  },
+  {
+    "filename": "_V1_2 MPS_2025-11-12.md",
+    "page_id": "2978035994",
+    "title": "[V1.2 MPS]2025-11-12",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2978035994"
+  },
+  {
+    "filename": "_deprecate_DSSM model version consistency.md",
+    "page_id": "703039169",
+    "title": "[deprecate]DSSM model version consistency",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=703039169"
+  },
+  {
+    "filename": "_deprecate_Model Publish to USS for 0_4.md",
+    "page_id": "680546849",
+    "title": "[deprecate]Model Publish to USS for 0.4",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=680546849"
+  },
+  {
+    "filename": "_deprecated_GPU test.md",
+    "page_id": "1023602677",
+    "title": "[deprecated]GPU test",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1023602677"
+  },
+  {
+    "filename": "_deprecated_Lyra平台使用.md",
+    "page_id": "1771421454",
+    "title": "[deprecated]Lyra平台使用",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1771421454"
+  },
+  {
+    "filename": "_deprecated_Use as lib.md",
+    "page_id": "791023253",
+    "title": "[deprecated]Use as lib",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=791023253"
+  },
+  {
+    "filename": "_emb only_2025-10-16.md",
+    "page_id": "2941428966",
+    "title": "[emb only]2025-10-16",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2941428966"
+  },
+  {
+    "filename": "_fp16 accuracy debug_半精度损失追查.md",
+    "page_id": "2119046967",
+    "title": "[fp16 accuracy debug]半精度损失追查",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2119046967"
+  },
+  {
+    "filename": "_hstu_gpu pooling.md",
+    "page_id": "2903602421",
+    "title": "[hstu]gpu pooling",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2903602421"
+  },
+  {
+    "filename": "_hstu_l40s __ l4 __ A30压测.md",
+    "page_id": "2919917380",
+    "title": "[hstu]l40s && l4 && A30压测",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2919917380"
+  },
+  {
+    "filename": "_hstu_v1_5_1压测.md",
+    "page_id": "3065957042",
+    "title": "[hstu]v1.5.1压测",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3065957042"
+  },
+  {
+    "filename": "_score dump_Ego dump score to file.md",
+    "page_id": "1693986041",
+    "title": "[score dump]Ego dump score to file",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1693986041"
+  },
+  {
+    "filename": "_test_ push quantization offload.md",
+    "page_id": "2594300065",
+    "title": "[test] push quantization offload",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2594300065"
+  },
+  {
+    "filename": "_v1_2 nocat_2025-10-30正式上线.md",
+    "page_id": "2958838555",
+    "title": "[v1.2 nocat]2025-10-30正式上线",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2958838555"
+  },
+  {
+    "filename": "_v1_2 noconcat_2025-10-16.md",
+    "page_id": "2942800249",
+    "title": "[v1.2 noconcat]2025-10-16",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2942800249"
+  },
+  {
+    "filename": "_v1_2_optimize pooling kernel.md",
+    "page_id": "2960410414",
+    "title": "[v1.2]optimize pooling kernel",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2960410414"
+  },
+  {
+    "filename": "_validate_Test New Model.md",
+    "page_id": "1451447469",
+    "title": "[validate]Test New Model",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1451447469"
+  },
+  {
+    "filename": "_validate_input has no diff but score has diff.md",
+    "page_id": "2549928620",
+    "title": "[validate]input has no diff but score has diff",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2549928620"
+  },
+  {
+    "filename": "_video_ Convert from TN Model to EGO Plain TXT.md",
+    "page_id": "1758356686",
+    "title": "[video] Convert from TN Model to EGO Plain TXT",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1758356686"
+  },
+  {
+    "filename": "_上线规范_online release guide v2.md",
+    "page_id": "2068656559",
+    "title": "[上线规范]online release guide v2",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2068656559"
+  },
+  {
+    "filename": "_上线规范_online release guide.md",
+    "page_id": "1108989058",
+    "title": "[上线规范]online release guide",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1108989058"
+  },
+  {
+    "filename": "accelerate ps load_checkpoint in the release model pipeline.md",
+    "page_id": "2382933926",
+    "title": "accelerate ps load_checkpoint in the release model pipeline",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2382933926"
+  },
+  {
+    "filename": "add_slot_optimizers.md",
+    "page_id": "1403824473",
+    "title": "add_slot_optimizers",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403824473"
+  },
+  {
+    "filename": "adf_plugin configuration _depreicated_configured in ego-api_.md",
+    "page_id": "760829524",
+    "title": "adf_plugin configuration （depreicated，configured in ego-api）",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=760829524"
+  },
+  {
+    "filename": "auto mixed precision benchmark.md",
+    "page_id": "2212965424",
+    "title": "auto mixed precision benchmark",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2212965424"
+  },
+  {
+    "filename": "baolong.guo.md",
+    "page_id": "2658112550",
+    "title": "baolong.guo",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2658112550"
+  },
+  {
+    "filename": "batch 512vs1024 _PDP_.md",
+    "page_id": "2173262661",
+    "title": "batch 512vs1024 (PDP)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2173262661"
+  },
+  {
+    "filename": "batch 512vs1024压测对比_Cart场景_.md",
+    "page_id": "2162604352",
+    "title": "batch 512vs1024压测对比(Cart场景)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2162604352"
+  },
+  {
+    "filename": "batch 512vs1024压测对比_DD场景_.md",
+    "page_id": "2145030507",
+    "title": "batch 512vs1024压测对比(DD场景)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2145030507"
+  },
+  {
+    "filename": "benchmark for multi_user_graph.md",
+    "page_id": "1375975276",
+    "title": "benchmark for multi_user_graph",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1375975276"
+  },
+  {
+    "filename": "best executor_GPU model_.md",
+    "page_id": "1788850312",
+    "title": "best executor(GPU model)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1788850312"
+  },
+  {
+    "filename": "bf16和图优化.md",
+    "page_id": "2604160688",
+    "title": "bf16和图优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2604160688"
+  },
+  {
+    "filename": "bill.wu.md",
+    "page_id": "2949138120",
+    "title": "bill.wu",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2949138120"
+  },
+  {
+    "filename": "building _zmap_s in a distributional manner.md",
+    "page_id": "807714828",
+    "title": "building \"zmap\"s in a distributional manner",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=807714828"
+  },
+  {
+    "filename": "colocate.md",
+    "page_id": "1954781818",
+    "title": "colocate",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1954781818"
+  },
+  {
+    "filename": "compose a BatchFea from samples with the same tag.md",
+    "page_id": "2566549679",
+    "title": "compose a BatchFea from samples with the same tag",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2566549679"
+  },
+  {
+    "filename": "config module_ ego-learner_yaml.md",
+    "page_id": "1547770091",
+    "title": "config module: ego-learner.yaml",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1547770091"
+  },
+  {
+    "filename": "config module_ flags_txt.md",
+    "page_id": "1706725544",
+    "title": "config module: flags.txt",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1706725544"
+  },
+  {
+    "filename": "config_adf.md",
+    "page_id": "1400164430",
+    "title": "config_adf",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1400164430"
+  },
+  {
+    "filename": "config_default_nn_optimizer.md",
+    "page_id": "1403826131",
+    "title": "config_default_nn_optimizer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403826131"
+  },
+  {
+    "filename": "config_dump_tensor.md",
+    "page_id": "1545593033",
+    "title": "config_dump_tensor",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1545593033"
+  },
+  {
+    "filename": "config_feature_admission_evict.md",
+    "page_id": "1443932982",
+    "title": "config_feature_admission_evict",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1443932982"
+  },
+  {
+    "filename": "config_list_wise.md",
+    "page_id": "1552500628",
+    "title": "config_list_wise",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1552500628"
+  },
+  {
+    "filename": "config_lr and config_mf.md",
+    "page_id": "1400162555",
+    "title": "config_lr and config_mf",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1400162555"
+  },
+  {
+    "filename": "config_retrieve_slot_categories.md",
+    "page_id": "1547783513",
+    "title": "config_retrieve_slot_categories",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1547783513"
+  },
+  {
+    "filename": "cuda graph优化.md",
+    "page_id": "2442078065",
+    "title": "cuda graph优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2442078065"
+  },
+  {
+    "filename": "cuda graph优化方案设计.md",
+    "page_id": "2517959866",
+    "title": "cuda graph优化方案设计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2517959866"
+  },
+  {
+    "filename": "cudagraph 优化.md",
+    "page_id": "2573490041",
+    "title": "cudagraph 优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2573490041"
+  },
+  {
+    "filename": "cudagraph 改造细节.md",
+    "page_id": "2630792363",
+    "title": "cudagraph 改造细节",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2630792363"
+  },
+  {
+    "filename": "cvm_plugin configuration.md",
+    "page_id": "762480304",
+    "title": "cvm_plugin configuration",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=762480304"
+  },
+  {
+    "filename": "cvr_v31_mc_no_br_place_pay_sg性能对比_stable auc_.md",
+    "page_id": "3065938742",
+    "title": "cvr_v31_mc_no_br_place_pay_sg性能对比(stable auc)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3065938742"
+  },
+  {
+    "filename": "data pipeline configuration.md",
+    "page_id": "758773834",
+    "title": "data pipeline configuration",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=758773834"
+  },
+  {
+    "filename": "dd 粗排_混排 CPU VS GPU置换比测试.md",
+    "page_id": "2298348833",
+    "title": "dd 粗排+混排 CPU VS GPU置换比测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2298348833"
+  },
+  {
+    "filename": "deepctr_py for torch backend.md",
+    "page_id": "2693330026",
+    "title": "deepctr.py for torch backend",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2693330026"
+  },
+  {
+    "filename": "deploy different sub-models across multi-bundles while using the same sparse table.md",
+    "page_id": "2385937383",
+    "title": "deploy different sub-models across multi-bundles while using the same sparse table",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2385937383"
+  },
+  {
+    "filename": "depreciated_ profiling SampleServer_rebase master 20241126_ optimize others_.md",
+    "page_id": "2566535934",
+    "title": "depreciated: profiling SampleServer(rebase master 20241126, optimize others)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2566535934"
+  },
+  {
+    "filename": "different poolings in EGO V1_0.md",
+    "page_id": "1878150723",
+    "title": "different poolings in EGO V1.0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1878150723"
+  },
+  {
+    "filename": "disk cache function.md",
+    "page_id": "2274071290",
+    "title": "disk cache function",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2274071290"
+  },
+  {
+    "filename": "doing feature importance test in egotf.md",
+    "page_id": "875416787",
+    "title": "doing feature importance test in egotf",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=875416787"
+  },
+  {
+    "filename": "dumptensor相关报错.md",
+    "page_id": "3006907426",
+    "title": "dumptensor相关报错",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3006907426"
+  },
+  {
+    "filename": "duplicate fetch_报错.md",
+    "page_id": "2672717689",
+    "title": "duplicate fetch:报错",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2672717689"
+  },
+  {
+    "filename": "dynamic shape.md",
+    "page_id": "2434814526",
+    "title": "dynamic shape",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434814526"
+  },
+  {
+    "filename": "dynamic shape优化和batch size调整.md",
+    "page_id": "2972030191",
+    "title": "dynamic shape优化和batch size调整",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2972030191"
+  },
+  {
+    "filename": "ego job type explanation.md",
+    "page_id": "2104938290",
+    "title": "ego job type explanation",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2104938290"
+  },
+  {
+    "filename": "ego-lite tutorial.md",
+    "page_id": "2434817533",
+    "title": "ego-lite tutorial",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817533"
+  },
+  {
+    "filename": "ego-lite.md",
+    "page_id": "2434817506",
+    "title": "ego-lite",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817506"
+  },
+  {
+    "filename": "ego-predictor性能测试_统一pooling代码vsego-predictor单独维护pooling代码_.md",
+    "page_id": "1654375457",
+    "title": "ego-predictor性能测试(统一pooling代码vsego-predictor单独维护pooling代码)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1654375457"
+  },
+  {
+    "filename": "ego2tf_py and generate_model_conf.md",
+    "page_id": "629328138",
+    "title": "ego2tf.py and generate_model_conf",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=629328138"
+  },
+  {
+    "filename": "egopredictor error code.md",
+    "page_id": "1871380786",
+    "title": "egopredictor error code",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1871380786"
+  },
+  {
+    "filename": "ego支持pytorch backend.md",
+    "page_id": "2658112558",
+    "title": "ego支持pytorch backend",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2658112558"
+  },
+  {
+    "filename": "emb_builder _for egotf users_.md",
+    "page_id": "750006125",
+    "title": "emb_builder (for egotf users)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=750006125"
+  },
+  {
+    "filename": "emb_builder_v2 _general version for all users_.md",
+    "page_id": "805471035",
+    "title": "emb_builder_v2 (general version for all users)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=805471035"
+  },
+  {
+    "filename": "embedding pooling methods _deprecated_.md",
+    "page_id": "756736485",
+    "title": "embedding pooling methods (deprecated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=756736485"
+  },
+  {
+    "filename": "embedding内存连续支持.md",
+    "page_id": "2727653128",
+    "title": "embedding内存连续支持",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2727653128"
+  },
+  {
+    "filename": "enable tf run with cuda graph tech design draft.md",
+    "page_id": "2521540824",
+    "title": "enable tf run with cuda graph tech design draft",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2521540824"
+  },
+  {
+    "filename": "feature admission and elimination.md",
+    "page_id": "758757789",
+    "title": "feature admission and elimination",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=758757789"
+  },
+  {
+    "filename": "feedback  v0_1_0.md",
+    "page_id": "1369469703",
+    "title": "feedback  v0.1.0",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1369469703"
+  },
+  {
+    "filename": "fix mem leak of TensorFlow.md",
+    "page_id": "853783711",
+    "title": "fix mem leak of TensorFlow",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=853783711"
+  },
+  {
+    "filename": "fp16 _ big batch size.md",
+    "page_id": "2442080380",
+    "title": "fp16 & big batch size",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2442080380"
+  },
+  {
+    "filename": "fread_ fwrite_ pread_direct_ non-direct__ pwrite_direct_ non-direct_速率盘点.md",
+    "page_id": "2389544103",
+    "title": "fread, fwrite, pread(direct, non-direct), pwrite(direct, non-direct)速率盘点",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2389544103"
+  },
+  {
+    "filename": "further discussions.md",
+    "page_id": "2903593283",
+    "title": "further discussions",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2903593283"
+  },
+  {
+    "filename": "g10v6内存分配和限流保护优化.md",
+    "page_id": "3079147148",
+    "title": "g10v6内存分配和限流保护优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3079147148"
+  },
+  {
+    "filename": "gauc calculation.md",
+    "page_id": "756736816",
+    "title": "gauc calculation",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=756736816"
+  },
+  {
+    "filename": "get_dense_feature.md",
+    "page_id": "1398267611",
+    "title": "get_dense_feature",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1398267611"
+  },
+  {
+    "filename": "get_label_weight.md",
+    "page_id": "1399717998",
+    "title": "get_label_weight",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1399717998"
+  },
+  {
+    "filename": "get_seq3d_slot.md",
+    "page_id": "3054898812",
+    "title": "get_seq3d_slot",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3054898812"
+  },
+  {
+    "filename": "get_slots.md",
+    "page_id": "1398269572",
+    "title": "get_slots",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1398269572"
+  },
+  {
+    "filename": "gnn_init.md",
+    "page_id": "1790874858",
+    "title": "gnn_init",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1790874858"
+  },
+  {
+    "filename": "gnn_sample.md",
+    "page_id": "1790875315",
+    "title": "gnn_sample",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1790875315"
+  },
+  {
+    "filename": "gnn_update.md",
+    "page_id": "1790877129",
+    "title": "gnn_update",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1790877129"
+  },
+  {
+    "filename": "gpu pdp cvr多国家基线模型图优化.md",
+    "page_id": "2819103791",
+    "title": "gpu pdp cvr多国家基线模型图优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2819103791"
+  },
+  {
+    "filename": "gpu pdp多国家基线模型图优化.md",
+    "page_id": "2747827877",
+    "title": "gpu pdp多国家基线模型图优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2747827877"
+  },
+  {
+    "filename": "gpu sguide上动态路由.md",
+    "page_id": "2374860111",
+    "title": "gpu sguide上动态路由",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2374860111"
+  },
+  {
+    "filename": "gpu video 模型图优化.md",
+    "page_id": "2781057065",
+    "title": "gpu video 模型图优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2781057065"
+  },
+  {
+    "filename": "gpu video图优化.md",
+    "page_id": "2641251076",
+    "title": "gpu video图优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2641251076"
+  },
+  {
+    "filename": "gpu_dsrm_v6_2_business_pal 模型优化.md",
+    "page_id": "2911496610",
+    "title": "gpu_dsrm_v6_2_business_pal 模型优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2911496610"
+  },
+  {
+    "filename": "gpu_ecom_click_marm_v1m8_opt 模型图优化.md",
+    "page_id": "2994811867",
+    "title": "gpu_ecom_click_marm_v1m8_opt 模型图优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2994811867"
+  },
+  {
+    "filename": "gpu_prerank2_rrm_id_v1_8 模型优化.md",
+    "page_id": "2994811362",
+    "title": "gpu_prerank2_rrm_id_v1_8 模型优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2994811362"
+  },
+  {
+    "filename": "gpulivestream图优化.md",
+    "page_id": "2654874231",
+    "title": "gpulivestream图优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2654874231"
+  },
+  {
+    "filename": "gpushop优化.md",
+    "page_id": "2860958717",
+    "title": "gpushop优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2860958717"
+  },
+  {
+    "filename": "gpusse-us优化.md",
+    "page_id": "2619958710",
+    "title": "gpusse-us优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2619958710"
+  },
+  {
+    "filename": "gpuvideo-us 集群性能优化.md",
+    "page_id": "2719027232",
+    "title": "gpuvideo-us 集群性能优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2719027232"
+  },
+  {
+    "filename": "gr模型访问ps压测报告.md",
+    "page_id": "2953143916",
+    "title": "gr模型访问ps压测报告",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2953143916"
+  },
+  {
+    "filename": "guideline for self-debug.md",
+    "page_id": "1446401328",
+    "title": "guideline for self-debug",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1446401328"
+  },
+  {
+    "filename": "half precision transfer performence.md",
+    "page_id": "1398263207",
+    "title": "half precision transfer performence",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1398263207"
+  },
+  {
+    "filename": "how to utilise gdb tool in remote cluster.md",
+    "page_id": "2220101998",
+    "title": "how to utilise gdb tool in remote cluster",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2220101998"
+  },
+  {
+    "filename": "howto.md",
+    "page_id": "2434817852",
+    "title": "howto",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817852"
+  },
+  {
+    "filename": "import_extra_dense_feature.md",
+    "page_id": "2434818247",
+    "title": "import_extra_dense_feature",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434818247"
+  },
+  {
+    "filename": "import_extra_slots.md",
+    "page_id": "1411519046",
+    "title": "import_extra_slots",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1411519046"
+  },
+  {
+    "filename": "input data configuration_required_.md",
+    "page_id": "758770354",
+    "title": "input data configuration（required)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=758770354"
+  },
+  {
+    "filename": "jingzhe.md",
+    "page_id": "823247998",
+    "title": "jingzhe",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=823247998"
+  },
+  {
+    "filename": "job为什么没有训练就succeed了.md",
+    "page_id": "2819115697",
+    "title": "job为什么没有训练就succeed了",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2819115697"
+  },
+  {
+    "filename": "lei.zou.md",
+    "page_id": "823248077",
+    "title": "lei.zou",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=823248077"
+  },
+  {
+    "filename": "load part of embeddings.md",
+    "page_id": "756736335",
+    "title": "load part of embeddings",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=756736335"
+  },
+  {
+    "filename": "lr_plugin configuration _deprecated_.md",
+    "page_id": "762480538",
+    "title": "lr_plugin configuration (deprecated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=762480538"
+  },
+  {
+    "filename": "map精排压测_ple_train_v7_2t_drpt0_1_keras_reorg_.md",
+    "page_id": "1819139234",
+    "title": "map精排压测（ple_train_v7_2t_drpt0.1_keras_reorg）",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1819139234"
+  },
+  {
+    "filename": "megatron模型并行调研.md",
+    "page_id": "2658129562",
+    "title": "megatron模型并行调研",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2658129562"
+  },
+  {
+    "filename": "metric calc耗时优化.md",
+    "page_id": "2792994149",
+    "title": "metric calc耗时优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2792994149"
+  },
+  {
+    "filename": "metric计算并行化改造.md",
+    "page_id": "2378556698",
+    "title": "metric计算并行化改造",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2378556698"
+  },
+  {
+    "filename": "mf_plugin configuration _deprecated_.md",
+    "page_id": "760826608",
+    "title": "mf_plugin configuration (deprecated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=760826608"
+  },
+  {
+    "filename": "mini ranker对外接口.md",
+    "page_id": "2054274447",
+    "title": "mini ranker对外接口",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2054274447"
+  },
+  {
+    "filename": "model agent分享.md",
+    "page_id": "2557031071",
+    "title": "model agent分享",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2557031071"
+  },
+  {
+    "filename": "model-wise lb gray release.md",
+    "page_id": "2880002756",
+    "title": "model-wise lb gray release",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2880002756"
+  },
+  {
+    "filename": "model_json推理模型配置_User model config file_.md",
+    "page_id": "1645039197",
+    "title": "model.json推理模型配置(User model config file)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1645039197"
+  },
+  {
+    "filename": "my机房xla推广进展及问题.md",
+    "page_id": "2703457247",
+    "title": "my机房xla推广进展及问题",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2703457247"
+  },
+  {
+    "filename": "ncu工具profile EgoBox_deepctr_ T4卡_.md",
+    "page_id": "2803415753",
+    "title": "ncu工具profile EgoBox(deepctr, T4卡)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2803415753"
+  },
+  {
+    "filename": "nick.yi.md",
+    "page_id": "2641246995",
+    "title": "nick.yi",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2641246995"
+  },
+  {
+    "filename": "nl8_pdpv5_4.md",
+    "page_id": "1400149104",
+    "title": "nl8_pdpv5_4",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1400149104"
+  },
+  {
+    "filename": "non-live resources application.md",
+    "page_id": "1057311040",
+    "title": "non-live resources application",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1057311040"
+  },
+  {
+    "filename": "offline ps Fault location and handling SOP.md",
+    "page_id": "1400145664",
+    "title": "offline ps Fault location and handling SOP",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1400145664"
+  },
+  {
+    "filename": "offline ps monitor_alarm_SLI_SLO_performance test.md",
+    "page_id": "1400145615",
+    "title": "offline ps monitor&alarm&SLI/SLO&performance test",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1400145615"
+  },
+  {
+    "filename": "offline ps 部署基线.md",
+    "page_id": "1398254688",
+    "title": "offline ps 部署基线",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1398254688"
+  },
+  {
+    "filename": "online learning user guideline.md",
+    "page_id": "1925270326",
+    "title": "online learning user guideline",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1925270326"
+  },
+  {
+    "filename": "online ps Fault location and handling SOP.md",
+    "page_id": "1300584081",
+    "title": "online ps Fault location and handling SOP",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1300584081"
+  },
+  {
+    "filename": "online ps monitor_alarm_SLI_SLO_performance test.md",
+    "page_id": "1273909760",
+    "title": "online ps monitor&alarm&SLI/SLO&performance test",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1273909760"
+  },
+  {
+    "filename": "online ps 部署基线.md",
+    "page_id": "1273903384",
+    "title": "online ps 部署基线",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1273903384"
+  },
+  {
+    "filename": "onlineps-videoa 灰度.md",
+    "page_id": "2703435670",
+    "title": "onlineps-videoa 灰度",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2703435670"
+  },
+  {
+    "filename": "pad matmul on gpu-dd.md",
+    "page_id": "2473665943",
+    "title": "pad matmul on gpu-dd",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2473665943"
+  },
+  {
+    "filename": "performance comparison_ O2 vs O3 compile config.md",
+    "page_id": "2222141698",
+    "title": "performance comparison, O2 vs O3 compile config",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2222141698"
+  },
+  {
+    "filename": "predictor 支持online learning模型更新.md",
+    "page_id": "2749059433",
+    "title": "predictor 支持online learning模型更新",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2749059433"
+  },
+  {
+    "filename": "predictorMgr接口文档.md",
+    "page_id": "2785031708",
+    "title": "predictorMgr接口文档",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2785031708"
+  },
+  {
+    "filename": "previous IO benchmark.md",
+    "page_id": "2149567031",
+    "title": "previous IO benchmark",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2149567031"
+  },
+  {
+    "filename": "print out each batch_s info and pred.md",
+    "page_id": "756736559",
+    "title": "print out each batch's info and pred",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=756736559"
+  },
+  {
+    "filename": "print out the middle result in mlp model.md",
+    "page_id": "765055431",
+    "title": "print out the middle result in mlp model",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=765055431"
+  },
+  {
+    "filename": "profiling SampleServer _master 20241211_.md",
+    "page_id": "2571579579",
+    "title": "profiling SampleServer (master 20241211)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2571579579"
+  },
+  {
+    "filename": "profiling SampleServer.md",
+    "page_id": "2542031505",
+    "title": "profiling SampleServer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2542031505"
+  },
+  {
+    "filename": "profiling SampleServer_rebase master 20241126_ optimize dynamic_cast_.md",
+    "page_id": "2549937764",
+    "title": "profiling SampleServer(rebase master 20241126, optimize dynamic_cast)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2549937764"
+  },
+  {
+    "filename": "ps load checkpoint失败.md",
+    "page_id": "2672706657",
+    "title": "ps load checkpoint失败",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2672706657"
+  },
+  {
+    "filename": "ps load_checkpoint报错_err_msg_Load model got exception_nn slice_594_ invalid__ error_code_104_.md",
+    "page_id": "2690394804",
+    "title": "ps load_checkpoint报错：err_msg=Load model got exception[nn slice[594] invalid], error_code=104;",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2690394804"
+  },
+  {
+    "filename": "ps performance related factors.md",
+    "page_id": "1585300917",
+    "title": "ps performance related factors",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1585300917"
+  },
+  {
+    "filename": "python worker.md",
+    "page_id": "1954794616",
+    "title": "python worker",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1954794616"
+  },
+  {
+    "filename": "rdma benchmark.md",
+    "page_id": "2839486017",
+    "title": "rdma benchmark",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2839486017"
+  },
+  {
+    "filename": "rdma服务发现联调.md",
+    "page_id": "2919921949",
+    "title": "rdma服务发现联调",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2919921949"
+  },
+  {
+    "filename": "rdma问题整理.md",
+    "page_id": "2966174943",
+    "title": "rdma问题整理",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2966174943"
+  },
+  {
+    "filename": "relase note.md",
+    "page_id": "2434817804",
+    "title": "relase note",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2434817804"
+  },
+  {
+    "filename": "replace_gradient.md",
+    "page_id": "1557705289",
+    "title": "replace_gradient",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1557705289"
+  },
+  {
+    "filename": "round configuration _deprecated_.md",
+    "page_id": "758770778",
+    "title": "round configuration (deprecated)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=758770778"
+  },
+  {
+    "filename": "s3报错_ too many requests error_App ID _91025041_ exceeds max bandwidth _100_000000 Gb_s_.md",
+    "page_id": "2694711218",
+    "title": "s3报错： too many requests error:App ID \"91025041\" exceeds max bandwidth (100.000000 Gb/s)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2694711218"
+  },
+  {
+    "filename": "save checkpoint and load checkpoint_required_.md",
+    "page_id": "758769600",
+    "title": "save checkpoint and load checkpoint（required）",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=758769600"
+  },
+  {
+    "filename": "search-sguide-ranker迁移记录.md",
+    "page_id": "1982372877",
+    "title": "search-sguide-ranker迁移记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1982372877"
+  },
+  {
+    "filename": "set_layers_optimizer.md",
+    "page_id": "1403826174",
+    "title": "set_layers_optimizer",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1403826174"
+  },
+  {
+    "filename": "sguide-ranker-us部署到space.md",
+    "page_id": "2267408144",
+    "title": "sguide-ranker-us部署到space",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2267408144"
+  },
+  {
+    "filename": "ss in worker_do sample convert in worker pod_.md",
+    "page_id": "2503075145",
+    "title": "ss in worker(do sample convert in worker pod)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2503075145"
+  },
+  {
+    "filename": "ss in worker优化.md",
+    "page_id": "2385955527",
+    "title": "ss in worker优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2385955527"
+  },
+  {
+    "filename": "ss pooling benchmark comparison.md",
+    "page_id": "1518989444",
+    "title": "ss pooling benchmark comparison",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1518989444"
+  },
+  {
+    "filename": "ss_worker pooling gpu perf comparison.md",
+    "page_id": "1628116766",
+    "title": "ss/worker pooling gpu perf comparison",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1628116766"
+  },
+  {
+    "filename": "streaming VQ ego侧改造设计方案.md",
+    "page_id": "2811876785",
+    "title": "streaming VQ ego侧改造设计方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2811876785"
+  },
+  {
+    "filename": "task configuration in ego-learner_yaml.md",
+    "page_id": "765038946",
+    "title": "task configuration in ego-learner.yaml",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=765038946"
+  },
+  {
+    "filename": "testing consistency by validating samples.md",
+    "page_id": "902030950",
+    "title": "testing consistency by validating samples",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=902030950"
+  },
+  {
+    "filename": "tf2_15 gpu_trt10_8_cuda12_8优化.md",
+    "page_id": "2674562278",
+    "title": "tf2.15 gpu+trt10.8+cuda12.8优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2674562278"
+  },
+  {
+    "filename": "timeline-map精排模型.md",
+    "page_id": "1833443754",
+    "title": "timeline-map精排模型",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1833443754"
+  },
+  {
+    "filename": "triton server测试.md",
+    "page_id": "2306393096",
+    "title": "triton server测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2306393096"
+  },
+  {
+    "filename": "trt 10_图优化.md",
+    "page_id": "2501404559",
+    "title": "trt 10+图优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2501404559"
+  },
+  {
+    "filename": "trt context切换开销.md",
+    "page_id": "2485774425",
+    "title": "trt context切换开销",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2485774425"
+  },
+  {
+    "filename": "trt10_14升级优化.md",
+    "page_id": "3083957189",
+    "title": "trt10.14升级优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3083957189"
+  },
+  {
+    "filename": "trt_backend vs xla_backend vs tf_backend 性能对比.md",
+    "page_id": "2617518117",
+    "title": "trt_backend vs xla_backend vs tf_backend 性能对比",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2617518117"
+  },
+  {
+    "filename": "trtexec VS perf_graph.md",
+    "page_id": "2408220352",
+    "title": "trtexec VS perf_graph",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2408220352"
+  },
+  {
+    "filename": "use tf print to debug release fail.md",
+    "page_id": "1786863326",
+    "title": "use tf print to debug release fail",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1786863326"
+  },
+  {
+    "filename": "v0_1_0 FE tech design.md",
+    "page_id": "1257522258",
+    "title": "v0.1.0 FE tech design",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1257522258"
+  },
+  {
+    "filename": "validate sample and request.md",
+    "page_id": "2239436116",
+    "title": "validate sample and request",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2239436116"
+  },
+  {
+    "filename": "validate sample.md",
+    "page_id": "758754868",
+    "title": "validate sample",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=758754868"
+  },
+  {
+    "filename": "videoads tensorrt10_9 _ 开启cuda graph优化.md",
+    "page_id": "3004905910",
+    "title": "videoads tensorrt10.9 + 开启cuda graph优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3004905910"
+  },
+  {
+    "filename": "video训练集群资源使用率提升.md",
+    "page_id": "2357633711",
+    "title": "video训练集群资源使用率提升",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2357633711"
+  },
+  {
+    "filename": "wc - _Caused by_ java_io_IOException_ java_net_SocketTimeoutException_ 60000 millis timeout while waiting for channel to be ready for read_.md",
+    "page_id": "2737817060",
+    "title": "wc - “Caused by: java.io.IOException: java.net.SocketTimeoutException: 60000 millis timeout while waiting for channel to be ready for read”",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2737817060"
+  },
+  {
+    "filename": "worker报错,.md",
+    "page_id": "3105870634",
+    "title": "worker报错,",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3105870634"
+  },
+  {
+    "filename": "xla mockps performance test.md",
+    "page_id": "2355770237",
+    "title": "xla mockps performance test",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2355770237"
+  },
+  {
+    "filename": "xla优化_tf2_16 MYDD的搜推集群优化.md",
+    "page_id": "2727641426",
+    "title": "xla优化+tf2.16 MYDD的搜推集群优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2727641426"
+  },
+  {
+    "filename": "xla优化_tf2_16.md",
+    "page_id": "2714575087",
+    "title": "xla优化+tf2.16",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2714575087"
+  },
+  {
+    "filename": "xla优化rcmd粗排召回收益统计.md",
+    "page_id": "2935719308",
+    "title": "xla优化rcmd粗排召回收益统计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2935719308"
+  },
+  {
+    "filename": "xla优化search my机房收益统计记录.md",
+    "page_id": "2729778924",
+    "title": "xla优化search my机房收益统计记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2729778924"
+  },
+  {
+    "filename": "xla优化各业务线推广记录.md",
+    "page_id": "2528093221",
+    "title": "xla优化各业务线推广记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2528093221"
+  },
+  {
+    "filename": "yanbin_zhao.md",
+    "page_id": "1057310971",
+    "title": "yanbin.zhao",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1057310971"
+  },
+  {
+    "filename": "yansheng.zhang.md",
+    "page_id": "2357633703",
+    "title": "yansheng.zhang",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2357633703"
+  },
+  {
+    "filename": "上线讨论.md",
+    "page_id": "2688571224",
+    "title": "上线讨论",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2688571224"
+  },
+  {
+    "filename": "不同GPU机型性能测试.md",
+    "page_id": "2307853232",
+    "title": "不同GPU机型性能测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2307853232"
+  },
+  {
+    "filename": "业务服务集群.md",
+    "page_id": "2009372941",
+    "title": "业务服务集群",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2009372941"
+  },
+  {
+    "filename": "以太网 vs rdma性能测试.md",
+    "page_id": "2848797887",
+    "title": "以太网 vs rdma性能测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2848797887"
+  },
+  {
+    "filename": "任务在SOC平台上被killed_如何查看是谁操作的.md",
+    "page_id": "2674586226",
+    "title": "任务在SOC平台上被killed，如何查看是谁操作的",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2674586226"
+  },
+  {
+    "filename": "任务持续训练_但是metric指标不显示的问题.md",
+    "page_id": "2683851981",
+    "title": "任务持续训练，但是metric指标不显示的问题",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2683851981"
+  },
+  {
+    "filename": "任务阻塞_查看一台机器上_各个任务占用的磁盘大小.md",
+    "page_id": "2700110268",
+    "title": "任务阻塞：查看一台机器上，各个任务占用的磁盘大小",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2700110268"
+  },
+  {
+    "filename": "任务阻塞不训练的问题_任务没有显示AUC_.md",
+    "page_id": "2674559427",
+    "title": "任务阻塞不训练的问题(任务没有显示AUC)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2674559427"
+  },
+  {
+    "filename": "优化.md",
+    "page_id": "2349294459",
+    "title": "优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2349294459"
+  },
+  {
+    "filename": "优化_提升一次IO请求读取的数据量.md",
+    "page_id": "2485758515",
+    "title": "优化：提升一次IO请求读取的数据量",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2485758515"
+  },
+  {
+    "filename": "优化记录.md",
+    "page_id": "2700093656",
+    "title": "优化记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2700093656"
+  },
+  {
+    "filename": "使用conan _ bazel构建c_c__项目.md",
+    "page_id": "978738010",
+    "title": "使用conan + bazel构建c/c++项目",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=978738010"
+  },
+  {
+    "filename": "关于ego集成pytorch的可能方案.md",
+    "page_id": "2612935700",
+    "title": "关于ego集成pytorch的可能方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2612935700"
+  },
+  {
+    "filename": "动态路由redis keys.md",
+    "page_id": "2487299809",
+    "title": "动态路由redis keys",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2487299809"
+  },
+  {
+    "filename": "华佗2_自动调优灰度实验结果.md",
+    "page_id": "2897711002",
+    "title": "华佗2，自动调优灰度实验结果",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2897711002"
+  },
+  {
+    "filename": "华佗二期_ego-auto-param-tune-kit.md",
+    "page_id": "2829605225",
+    "title": "华佗二期：ego-auto-param-tune-kit",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2829605225"
+  },
+  {
+    "filename": "单卡单模型VS单卡多模型.md",
+    "page_id": "1961502426",
+    "title": "单卡单模型VS单卡多模型",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1961502426"
+  },
+  {
+    "filename": "单网卡双网卡训练速度性能对比.md",
+    "page_id": "2925302548",
+    "title": "单网卡双网卡训练速度性能对比",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2925302548"
+  },
+  {
+    "filename": "双周报_Controller.md",
+    "page_id": "2484769273",
+    "title": "[Biweekly Report]2024-9-27~2024-10-10",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2484769273"
+  },
+  {
+    "filename": "发布任务报错_缺失特征_Check failed_ dense_feas_ptr-_contains_p_first__ iterable_dense_.md",
+    "page_id": "2676493642",
+    "title": "发布任务报错，缺失特征(Check failed: dense_feas_ptr->contains(p.first). iterable_dense)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2676493642"
+  },
+  {
+    "filename": "取消WORKER_END_ROUND barrier实验.md",
+    "page_id": "2376815078",
+    "title": "取消WORKER_END_ROUND barrier实验",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2376815078"
+  },
+  {
+    "filename": "变更记录.md",
+    "page_id": "2564954887",
+    "title": "变更记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2564954887"
+  },
+  {
+    "filename": "图优化.md",
+    "page_id": "2462345596",
+    "title": "图优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2462345596"
+  },
+  {
+    "filename": "基于大模型调度优化.md",
+    "page_id": "2740499838",
+    "title": "基于大模型调度优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2740499838"
+  },
+  {
+    "filename": "填充label报错 _Check failed_ _batch_fea_-_label_weight_pairs_num_elements___ 64_ ones_1_0_.md",
+    "page_id": "2687684024",
+    "title": "填充label报错 (Check failed: !batch_fea_->label_weight_pairs.num_elements(). 64, ones_1:0)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2687684024"
+  },
+  {
+    "filename": "多机房部署.md",
+    "page_id": "1782359639",
+    "title": "多机房部署",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1782359639"
+  },
+  {
+    "filename": "如何从日志找出加载了哪些NN参数.md",
+    "page_id": "2811886039",
+    "title": "如何从日志找出加载了哪些NN参数",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2811886039"
+  },
+  {
+    "filename": "如何使用grafana或者tensorboard来展示tensor的变化_depreciated_作废_.md",
+    "page_id": "2670833636",
+    "title": "如何使用grafana或者tensorboard来展示tensor的变化(depreciated，作废)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2670833636"
+  },
+  {
+    "filename": "如何找到失败任务具体的报错信息.md",
+    "page_id": "2668249380",
+    "title": "如何找到失败任务具体的报错信息",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2668249380"
+  },
+  {
+    "filename": "如何更新model_version下的模型文件.md",
+    "page_id": "2672714009",
+    "title": "如何更新model_version下的模型文件",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2672714009"
+  },
+  {
+    "filename": "如何获取模型配置文件.md",
+    "page_id": "2674584234",
+    "title": "如何获取模型配置文件",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2674584234"
+  },
+  {
+    "filename": "如何追查同一个任务运行两次_数据量不一致的问题.md",
+    "page_id": "2819110582",
+    "title": "如何追查同一个任务运行两次，数据量不一致的问题",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2819110582"
+  },
+  {
+    "filename": "如何验证样本转换是否符合预期_EgoPlugin_cpp-data-converters_.md",
+    "page_id": "2632215687",
+    "title": "如何验证样本转换是否符合预期(EgoPlugin/cpp-data-converters)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2632215687"
+  },
+  {
+    "filename": "容灾_降级用户手册.md",
+    "page_id": "1762906491",
+    "title": "容灾、降级用户手册",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1762906491"
+  },
+  {
+    "filename": "尝试优化pre_run_batch耗时及分析根因.md",
+    "page_id": "2664597826",
+    "title": "尝试优化pre_run_batch耗时及分析根因",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2664597826"
+  },
+  {
+    "filename": "广告异常任务分析.md",
+    "page_id": "2914745352",
+    "title": "广告异常任务分析",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2914745352"
+  },
+  {
+    "filename": "废弃[deprecated].md",
+    "page_id": "1169222032",
+    "title": "废弃[deprecated]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1169222032"
+  },
+  {
+    "filename": "开启Auto Mixed Precision并没有带来性能提升.md",
+    "page_id": "2169180494",
+    "title": "开启Auto Mixed Precision并没有带来性能提升",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2169180494"
+  },
+  {
+    "filename": "强化学习用户手册.md",
+    "page_id": "3086192272",
+    "title": "强化学习用户手册",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3086192272"
+  },
+  {
+    "filename": "当模型发布过程中_透出的目标与预期不符_如何追查.md",
+    "page_id": "2672714158",
+    "title": "当模型发布过程中，透出的目标与预期不符，如何追查",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2672714158"
+  },
+  {
+    "filename": "性能对比_.md",
+    "page_id": "3036437910",
+    "title": "性能对比：",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3036437910"
+  },
+  {
+    "filename": "性能对比_Tensorrt上开启fp16精度预测和开启tf32精度预测.md",
+    "page_id": "2186382436",
+    "title": "性能对比：Tensorrt上开启fp16精度预测和开启tf32精度预测",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2186382436"
+  },
+  {
+    "filename": "性能对比_stable auc_.md",
+    "page_id": "3039209325",
+    "title": "性能对比(stable auc)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3039209325"
+  },
+  {
+    "filename": "性能收益统计记录.md",
+    "page_id": "2729778901",
+    "title": "性能收益统计记录",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2729778901"
+  },
+  {
+    "filename": "指标突然骤跌问题追查方向.md",
+    "page_id": "2763345753",
+    "title": "指标突然骤跌问题追查方向",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2763345753"
+  },
+  {
+    "filename": "接入流程_How to enroll_.md",
+    "page_id": "1169222739",
+    "title": "接入流程[How to enroll]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1169222739"
+  },
+  {
+    "filename": "接口文档.md",
+    "page_id": "2693326846",
+    "title": "接口文档",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2693326846"
+  },
+  {
+    "filename": "推广ss优化镜像.md",
+    "page_id": "2597705372",
+    "title": "推广ss优化镜像",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2597705372"
+  },
+  {
+    "filename": "推理GPU化.md",
+    "page_id": "2466377886",
+    "title": "推理GPU化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2466377886"
+  },
+  {
+    "filename": "推理使用tensorRT和fp16.md",
+    "page_id": "1899271442",
+    "title": "推理使用tensorRT和fp16",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1899271442"
+  },
+  {
+    "filename": "推荐g8v2机器使用优化1.md",
+    "page_id": "2406605381",
+    "title": "推荐g8v2机器使用优化1",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2406605381"
+  },
+  {
+    "filename": "推荐g8v2部署优化2.md",
+    "page_id": "2447771321",
+    "title": "推荐g8v2部署优化2",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2447771321"
+  },
+  {
+    "filename": "搜索利用GPU机器的CPU.md",
+    "page_id": "2081100186",
+    "title": "搜索利用GPU机器的CPU",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2081100186"
+  },
+  {
+    "filename": "搜索问题梳理.md",
+    "page_id": "2763337974",
+    "title": "搜索问题梳理",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2763337974"
+  },
+  {
+    "filename": "攒batch.md",
+    "page_id": "2766085985",
+    "title": "攒batch",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2766085985"
+  },
+  {
+    "filename": "支持MPI多Checkpoint的Online Learning与Serving自动更新方案.md",
+    "page_id": "2963526094",
+    "title": "支持MPI多Checkpoint的Online Learning与Serving自动更新方案",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2963526094"
+  },
+  {
+    "filename": "故障记录分析.md",
+    "page_id": "1805825451",
+    "title": "故障记录分析",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1805825451"
+  },
+  {
+    "filename": "新模型发布流程介绍_可选_兼容老流程_.md",
+    "page_id": "2260426993",
+    "title": "新模型发布流程介绍(可选，兼容老流程)",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2260426993"
+  },
+  {
+    "filename": "机器置换测试.md",
+    "page_id": "2499290835",
+    "title": "机器置换测试",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2499290835"
+  },
+  {
+    "filename": "查找出具体哪个pod出现了OOM.md",
+    "page_id": "2668261364",
+    "title": "查找出具体哪个pod出现了OOM",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2668261364"
+  },
+  {
+    "filename": "检索单个worker上_每个round见过多少条数据.md",
+    "page_id": "2805521821",
+    "title": "检索单个worker上，每个round见过多少条数据",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2805521821"
+  },
+  {
+    "filename": "模型优化结果统计.md",
+    "page_id": "3096741964",
+    "title": "模型优化结果统计",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=3096741964"
+  },
+  {
+    "filename": "模型量化.md",
+    "page_id": "2170194330",
+    "title": "模型量化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2170194330"
+  },
+  {
+    "filename": "测试 _ 灰度.md",
+    "page_id": "2685821555",
+    "title": "测试 & 灰度",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2685821555"
+  },
+  {
+    "filename": "测试用例.md",
+    "page_id": "2549923114",
+    "title": "测试用例",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2549923114"
+  },
+  {
+    "filename": "测试问题.md",
+    "page_id": "2466367765",
+    "title": "测试问题",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2466367765"
+  },
+  {
+    "filename": "用户自定义指标计算.md",
+    "page_id": "2717575899",
+    "title": "用户自定义指标计算",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2717575899"
+  },
+  {
+    "filename": "磁盘不足阻塞训练流程梳理.md",
+    "page_id": "2955477716",
+    "title": "磁盘不足阻塞训练流程梳理",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2955477716"
+  },
+  {
+    "filename": "线上推理看板监控使用引导.md",
+    "page_id": "2899528165",
+    "title": "线上推理看板监控使用引导",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2899528165"
+  },
+  {
+    "filename": "计算user embedding.md",
+    "page_id": "1782369623",
+    "title": "计算user embedding",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1782369623"
+  },
+  {
+    "filename": "设计文档.md",
+    "page_id": "2425096830",
+    "title": "设计文档",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2425096830"
+  },
+  {
+    "filename": "调度_deprecated_.md",
+    "page_id": "1754239833",
+    "title": "调度[deprecated]",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1754239833"
+  },
+  {
+    "filename": "调度优化.md",
+    "page_id": "2072580741",
+    "title": "调度优化",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2072580741"
+  },
+  {
+    "filename": "调研_通过SPDK tool来管理nvme磁盘.md",
+    "page_id": "2431429478",
+    "title": "调研：通过SPDK tool来管理nvme磁盘",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2431429478"
+  },
+  {
+    "filename": "跨机房流量优化 model-wise LB.md",
+    "page_id": "2754180782",
+    "title": "跨机房流量优化 model-wise LB",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2754180782"
+  },
+  {
+    "filename": "配置模型在GPU集群只用cpu推理.md",
+    "page_id": "2031181755",
+    "title": "配置模型在GPU集群只用cpu推理",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2031181755"
+  },
+  {
+    "filename": "集群拆分_.md",
+    "page_id": "2588007837",
+    "title": "集群拆分?",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2588007837"
+  },
+  {
+    "filename": "集群接入手册.md",
+    "page_id": "1784690068",
+    "title": "集群接入手册",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=1784690068"
+  },
+  {
+    "filename": "集群自动压测配置表.md",
+    "page_id": "2103199344",
+    "title": "集群自动压测配置表",
+    "url": "https://confluence.shopee.io/pages/viewpage.action?pageId=2103199344"
+  }
+]
