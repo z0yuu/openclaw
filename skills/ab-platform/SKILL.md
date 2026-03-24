@@ -105,7 +105,7 @@ python /root/agent/skills/ab-platform/scripts/compare.py 15367,15368,15369 --met
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | experiment_id       | **6850**（实验名: vector in coarse ranking）                                                                                                        |
 | project_id          | **27**                                                                                                                                              |
-| regions             | **ID**                                                                                                                                              |
+| regions             | **从 defaults.json 的 regions 字段读取（当前: MY）**                                                                                                |
 | metrics             | **从 defaults.json 的 metrics 字段读取（当前: order_cnt, gmv, gmv_995, ads_revenue_usd, abtest_region, gmv_per_uu, order_per_uu, gmv_per_uu_995）** |
 | control_groups      | **31430, 31438**                                                                                                                                    |
 | treatment_groups    | **31421, 31425**                                                                                                                                    |

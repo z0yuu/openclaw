@@ -94,10 +94,6 @@ def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None,
         regions = defaults.get("regions") or []
 
     cache = CacheManager(cache_dir=os.path.join(SKILL_ROOT, ".cache"), ttl=300)
-    cache_key = "ab_metrics_{}_{}_{}_{}".format(project_id, experiment_id, metrics, dates)
-    cached = cache.get(cache_key)
-    if cached:
-        return cached
 
     client = PlatformAPIClient(token=token)
     kwargs = {}
@@ -115,6 +111,28 @@ def fetch_metrics_for_experiment(experiment_id, project_id=None, metrics=None,
     treatments_list = defaults.get("treatment_groups") or []
     treatments = [str(t).strip() for t in treatments_list if str(t).strip()]
     normalization = defaults.get("normalization")
+    card_type = defaults.get("card_type")
+    sort_type = defaults.get("sort_type")
+
+    cache_payload = {
+        "project_id": project_id,
+        "experiment_id": experiment_id,
+        "metrics": metrics,
+        "dates": dates,
+        "regions": regions,
+        "dims": dims,
+        "control": control,
+        "treatments": treatments,
+        "normalization": normalization,
+        "card_type": card_type,
+        "sort_type": sort_type,
+        "template_name": kwargs["template_name"],
+        "template_group_name": kwargs["template_group_name"],
+    }
+    cache_key = "ab_metrics_" + json.dumps(cache_payload, sort_keys=True, ensure_ascii=False)
+    cached = cache.get(cache_key)
+    if cached:
+        return cached
 
     result = client.get_ab_metrics(
         project_id=project_id,

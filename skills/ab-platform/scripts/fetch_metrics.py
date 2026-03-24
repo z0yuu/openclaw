@@ -121,7 +121,71 @@ def fetch_metrics(
         project_id = int(defaults.get("project_id") or os.getenv("AB_PROJECT_ID", "27"))
     cache_dir = os.path.join(SKILL_ROOT, ".cache")
     cache = CacheManager(cache_dir=cache_dir, ttl=300)
-    cache_key = "ab_metrics_{}_{}_{}_{}".format(project_id, experiment_id, metrics, dates)
+
+    preview_control = control
+    preview_treatments = treatments
+    preview_regions = regions
+    preview_dims = dims
+    preview_normalization = normalization
+    preview_card_type = card_type
+    preview_sort_type = sort_type
+
+    if not preview_control:
+        control_groups = defaults.get("control_groups") or []
+        if control_groups:
+            parts = []
+            for x in control_groups:
+                for p in str(x).replace(";", ",").split(","):
+                    p = p.strip()
+                    if p:
+                        parts.append(p)
+            preview_control = ";".join(parts) if parts else ""
+
+    if not preview_treatments:
+        treatment_groups = defaults.get("treatment_groups") or []
+        if treatment_groups:
+            preview_treatments = []
+            for x in treatment_groups:
+                for p in str(x).split(","):
+                    p = p.strip()
+                    if p:
+                        preview_treatments.append(p)
+
+    if not preview_regions:
+        preview_regions = defaults.get("regions") or []
+
+    if not preview_dims:
+        preview_dims = defaults.get("dims") or []
+
+    if not preview_normalization:
+        preview_normalization = defaults.get("normalization") or None
+
+    if not preview_card_type:
+        preview_card_type = defaults.get("card_type") or None
+
+    if not preview_sort_type:
+        preview_sort_type = defaults.get("sort_type") or None
+
+    preview_metrics = metrics if metrics else (defaults.get("metrics") or get_default_metrics())
+    preview_template_name = defaults.get("template_name") or "One Page - Search Core Metric"
+    preview_template_group_name = defaults.get("template_group_name") or "Rollout Checklist"
+
+    cache_payload = {
+        "project_id": project_id,
+        "experiment_id": experiment_id,
+        "metrics": preview_metrics,
+        "dates": dates,
+        "control": preview_control,
+        "treatments": preview_treatments,
+        "regions": preview_regions,
+        "dims": preview_dims,
+        "normalization": preview_normalization,
+        "card_type": preview_card_type,
+        "sort_type": preview_sort_type,
+        "template_name": preview_template_name,
+        "template_group_name": preview_template_group_name,
+    }
+    cache_key = "ab_metrics_" + json.dumps(cache_payload, sort_keys=True, ensure_ascii=False)
     if use_cache:
         cached = cache.get(cache_key)
         if cached:
