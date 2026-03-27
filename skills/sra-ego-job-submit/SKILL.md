@@ -174,3 +174,17 @@ tags: [ego, train]
 - 此 skill 的 Python 脚本最低按 **Python 3.10+** 使用。
 - 依据：PEP 585 built-in generics without postponed annotations；PEP 604 union syntax (X | Y)。
 - 若系统默认 `python3` 低于该版本，请先切到对应版本后再执行，避免语法错误或直接运行失败。
+- **环境兜底（已验证）**：如果现场机器只有 **Python 3.8**，且尝试切 Python 3.10+ 失败（例如 `conda` 实际是 pip/easy_install 装的壳，无法创建环境），**不要卡住任务**，改用 **Python 3.8 + `requests` 直调 EGO Portal HTTP API** 完成提单/重发。
+- 兜底时继续沿用本 skill 的流程约束、字段覆盖规则和 references 文档，只是**绕过本 skill 下要求 3.10+ 的脚本封装**。
+- 兜底时最少需要覆盖这些接口：
+  - `GET /api/ego/portal/job/{job_id}`：拿原任务完整配置，作为重发模版
+  - `GET /api/ego/portal/jobs`：列任务 / 找运行中任务
+  - `GET /api/ego/portal/model/{model_id}/version/{version_id}/checkpoints`：查 ckpt
+  - `POST /api/ego/portal/upload_file`：上传修改后的 `ego-learner.yaml`
+  - `POST /api/ego/portal/job`：创建新任务
+  - `POST /api/ego/portal/job/{job_id}/stop`：停止误发或旧任务
+- 认证方式不变：请求头使用 `Cookie: userID=$USER_ID_OPENAPI`。
+- 兜底时注意两个已踩坑的返回结构：
+  - `POST /api/ego/portal/job` 成功时，`data` 可能直接是 **int job_id**，不是对象
+  - `POST /api/ego/portal/upload_file` 成功时，上传结果在 `data.results[0]`
+- 典型重发做法：先取原 job 配置 → 如需续训则查最新可用 ckpt → 按需修改 `ego-learner.yaml` 中 `train_config.days` → 上传新 yaml → 复用原 job 的 `data_converter` / `flag_file` / `initialization_script` / `resource` / `train_image` 等字段 → 调 `POST /job` 重发。
